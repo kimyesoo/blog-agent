@@ -22,13 +22,21 @@ def normalize_title(title):
     return re.sub(r'[^가-힣a-zA-Z0-9]', '', title)
 
 def extract_core_concept(topic):
-    words = topic.split()
+    """
+    Ensure core concepts retain the test/task name, preventing generic grouping
+    like "현장_실무".
+    """
     if "시험" in topic:
         idx = topic.find("시험") + 2
         return topic[:idx].strip()
-    elif "조사" in topic or "평가" in topic:
-        idx = max(topic.find("조사"), topic.find("평가")) + 2
-        return topic[:idx].strip()
+    elif "다짐도 평가" in topic:
+        return "현장 다짐도 평가"
+    elif "보고서 해석" in topic:
+        return "지반조사 보고서 해석"
+    elif "성적서 판독" in topic:
+        return "시험 성적서 판독"
+
+    words = topic.split()
     return words[0] if words else ""
 
 def validate_content_type(topic, current_ct):
@@ -81,10 +89,13 @@ def validate_search_intent(topic, current_intent):
 
 def evaluate_standalone_value(topic, content_type):
     # 5: High independence, 4: likely, 3: medium, 2: low indep, 1: none
-    if content_type in ["시험방법", "계산방법", "결과해석", "문제해결", "평가방법", "현장가이드", "현장실무"]:
+    if content_type in ["시험방법", "계산방법", "결과해석", "문제해결", "평가방법", "현장실무"]:
+        # Catch scope/semantic ambiguity in calculated titles
+        if "계산 방법" in topic and ("보고서 해석" in topic or "판독" in topic or "평가" in topic):
+            return "medium", 2
         return "high", 5
     elif content_type in ["개념설명", "기준정리"]:
-        if "이란" in topic or "개요" in topic:
+        if "이란" in topic or "개요" in topic or "관련 기준" in topic:
             return "medium", 3
         else:
             return "high", 4
@@ -95,12 +106,14 @@ def evaluate_standalone_value(topic, content_type):
 
 def evaluate_clarity(topic):
     if "방법" in topic or "계산" in topic or "해석" in topic or "대책" in topic or "원인" in topic or "판독" in topic:
+        if "보고서 해석 계산 방법" in topic or "다짐도 평가 현장 적용 방법" in topic:
+            return "low", 2 # Semantic ambiguity
         return "high", 5
     elif "이란" in topic or "기준" in topic or "평가" in topic:
         return "high", 4
     elif "실무" in topic or "개념" in topic:
         return "medium", 3
-    elif "요약" in topic or "관련" in topic:
+    elif "요약" in topic or "관련 정보" in topic:
         return "low", 2
     else:
         return "low", 1
@@ -139,6 +152,36 @@ def evaluate_content_gap(norm_topic, norm_core, existing_titles, content_type):
     if related:
         return "high", 4 # Safe extension
     return "high", 5 # New topic entirely
+
+def determine_review_reasons(item):
+    """
+    Populates the reason_codes list based on the item's validation properties.
+    """
+    reasons = []
+    v = item["validation"]
+
+    if v.get("content_type_valid") is False:
+        reasons.append("content_type_reclassification")
+
+    if v.get("search_intent_valid") is False:
+        reasons.append("search_intent_reclassification")
+
+    if item["score_detail"]["content_gap"] <= 2 and not v.get("duplicate"):
+        reasons.append("existing_content_overlap")
+
+    if item["score_detail"]["standalone_value"] <= 2:
+        reasons.append("candidate_scope_ambiguity")
+
+    if item["score_detail"]["clarity"] <= 2:
+        reasons.append("title_semantic_ambiguity")
+
+    if v.get("confidence") == "low" and "low_confidence" not in reasons:
+        reasons.append("low_confidence")
+
+    if not reasons:
+        reasons.append("other")
+
+    return reasons
 
 def process_candidates(candidates, existing_titles):
     validated_results = []
@@ -233,21 +276,28 @@ def process_candidates(candidates, existing_titles):
                 continue
 
             # REVIEW conditions
-            if item["score_detail"]["content_gap"] == 2:
-                # Existing generic post exists, this is a method post. Don't reject, but REVIEW
-                item["validation"]["decision"] = "review"
-                item["validation"]["confidence"] = "medium"
-                item["reason"] = "기존에 포괄적인 주제의 게시물이 존재하여, 본 내용의 중복 여부를 원문 확인 후 판단해야 함."
-                stats["review"] += 1
-                continue
+            # Instead of auto-reviewing just for content_type reclassification, we check if it triggers severe scope/clarity issues or overlap
+            is_review = False
+            review_reason = ""
+            conf = "medium"
 
-            if not item["validation"]["content_type_valid"] or not item["validation"]["search_intent_valid"]:
-                # Misclassified or ambiguous intent -> REVIEW
-                # BUT if it's part of a mergeable cluster, we might merge it. Let's defer to merge logic if len > 1.
-                if len(items) == 1:
+            if item["score_detail"]["content_gap"] == 2:
+                is_review = True
+                review_reason = "기존에 포괄적인 주제의 게시물이 존재하여, 본 내용의 중복 여부를 원문 확인 후 판단해야 함."
+            elif item["score_detail"]["clarity"] <= 2 or item["score_detail"]["standalone_value"] <= 2:
+                is_review = True
+                conf = "low"
+                review_reason = "콘텐츠 범위나 제목의 의미가 모호하여 독립 콘텐츠 구성 판단이 불확실함."
+
+            # Note: We do NOT force REVIEW just because content_type_valid is False anymore.
+            # We record reason_codes later for all REVIEW items.
+
+            if is_review:
+                # If there are multiple items, they might still merge, but we allow REVIEW overrides if it's severe.
+                if len(items) == 1 or item["score_detail"]["clarity"] <= 2:
                     item["validation"]["decision"] = "review"
-                    item["validation"]["confidence"] = "low"
-                    item["reason"] = "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함."
+                    item["validation"]["confidence"] = conf
+                    item["reason"] = review_reason
                     stats["review"] += 1
                     continue
 
@@ -299,6 +349,11 @@ def process_candidates(candidates, existing_titles):
         # Append rejected/reviewed items to the final output as well (they are still part of the pool)
         for item in items:
             if item["validation"]["decision"] in ["reject", "review"]:
+                # Attach specific reason codes for REVIEW items as requested in V1.2.1
+                if item["validation"]["decision"] == "review":
+                    item["reason_codes"] = determine_review_reasons(item)
+                    if not item["reason"]:
+                        item["reason"] = "콘텐츠 유형 재분류 또는 모호성에 의한 추가 검토 필요"
                 validated_results.append(item)
 
         # Also, if multiple valid items were found but not merged because the condition (len(valid_items) > 1)

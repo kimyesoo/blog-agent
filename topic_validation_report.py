@@ -25,18 +25,27 @@ def calculate_distribution(data_list, key_extractor):
         }
     return result
 
-def categorize_review_reason(reason):
+def categorize_review_reason(r_item):
+    """
+    Parses V1.2.1 reason_codes array if available,
+    otherwise falls back to heuristic parsing of the string reason.
+    """
+    codes = r_item.get("reason_codes", [])
+    if codes:
+        return codes
+
+    reason = r_item.get("reason", "")
     if "포괄적인" in reason or "중복 여부를 원문 확인" in reason:
-        return "existing_content_overlap"
+        return ["existing_content_overlap"]
     elif "유형" in reason or "재분류" in reason:
         if "모호" in reason:
-            return "semantic_ambiguity"
+            return ["title_semantic_ambiguity"]
         else:
-            return "content_type_reclassification"
+            return ["content_type_reclassification"]
     elif "가치" in reason or "부족하여" in reason:
-        return "low_confidence"
+        return ["low_confidence"]
     else:
-        return "other"
+        return ["other"]
 
 def generate_report_data(topics, summary):
     total = len(topics)
@@ -82,8 +91,14 @@ def generate_report_data(topics, summary):
     reclassifications = []
 
     for r in review_topics:
-        code = categorize_review_reason(r.get("reason", ""))
-        review_reasons_dist[code] += 1
+        codes = categorize_review_reason(r)
+        for code in codes:
+            review_reasons_dist[code] += 1
+
+    # Track all reclassifications across all decisions, not just REVIEW
+    for r in topics:
+        if r["validation"]["decision"] == "merge_child":
+            continue
 
         orig_ct = r.get("content_type", "")
         sugg_ct = r["validation"].get("content_type_suggested") or orig_ct
@@ -93,29 +108,43 @@ def generate_report_data(topics, summary):
                 "topic": r["topic"],
                 "original": orig_ct,
                 "suggested": sugg_ct,
-                "decision": "review"
+                "decision": r["validation"]["decision"]
             })
 
-        review_details.append({
-            "topic": r["topic"],
-            "decision": "review",
-            "reason": r.get("reason", ""),
-            "reason_code": code,
-            "confidence": r["validation"]["confidence"],
-            "validation_score": r["validation_score"],
-            "content_type_original": orig_ct,
-            "content_type_suggested": sugg_ct,
-            "search_intent": r.get("search_intent", ""),
-            "related_existing_posts": r.get("related_existing_posts", []),
-            "merge_candidates": r.get("merge_candidates", []),
-            "related_topics": r.get("related_topics", [])
-        })
+        if r["validation"]["decision"] == "review":
+            review_details.append({
+                "topic": r["topic"],
+                "decision": "review",
+                "reason": r.get("reason", ""),
+                "reason_codes": r.get("reason_codes", categorize_review_reason(r)),
+                "confidence": r["validation"]["confidence"],
+                "validation_score": r["validation_score"],
+                "content_type_original": orig_ct,
+                "content_type_suggested": sugg_ct,
+                "search_intent": r.get("search_intent", ""),
+                "related_existing_posts": r.get("related_existing_posts", []),
+                "merge_candidates": r.get("merge_candidates", []),
+                "related_topics": r.get("related_topics", [])
+            })
 
     # 5. Confidence Analysis
     confidence_distribution = calculate_distribution(topics, lambda x: x["validation"].get("confidence", "unknown"))
+
+    # Cross-tabulation: Confidence x Decision
+    confidence_by_decision = {
+        "high": {"keep": 0, "merge": 0, "review": 0, "reject": 0},
+        "medium": {"keep": 0, "merge": 0, "review": 0, "reject": 0},
+        "low": {"keep": 0, "merge": 0, "review": 0, "reject": 0}
+    }
+
     low_confidence_topics = []
     for t in topics:
-        if t["validation"].get("confidence") == "low":
+        dec = t["validation"]["decision"]
+        conf = t["validation"].get("confidence", "unknown").lower()
+        if conf in confidence_by_decision and dec in ["keep", "merge", "review", "reject"]:
+            confidence_by_decision[conf][dec] += 1
+
+        if conf == "low":
             low_confidence_topics.append({
                 "topic": t["topic"],
                 "decision": t["validation"]["decision"],
@@ -168,11 +197,11 @@ def generate_report_data(topics, summary):
     rep_cases = {
         "keep_high_score": [t["topic"] for t in sorted(keep_topics, key=lambda x: x["validation_score"], reverse=True)[:3]],
         "keep_low_score": [t["topic"] for t in sorted(keep_topics, key=lambda x: x["validation_score"])[:3]],
-        "merge_groups": [m["topic"] for m in merge_topics[:3]],
-        "review_existing_overlap": [r["topic"] for r in review_details if r["reason_code"] == "existing_content_overlap"][:2],
-        "review_content_reclass": [r["topic"] for r in review_details if r["reason_code"] == "content_type_reclassification"][:2],
-        "review_semantic": [r["topic"] for r in review_details if r["reason_code"] == "semantic_ambiguity"][:2],
-        "review_low_confidence": [r["topic"] for r in review_details if r["reason_code"] == "low_confidence"][:2]
+        "merge_groups": [m["topic"] for m in primary_merge_topics[:3]],
+        "review_existing_overlap": [r["topic"] for r in review_details if "existing_content_overlap" in r.get("reason_codes", [])][:2],
+        "review_content_reclass": [r["topic"] for r in review_details if "content_type_reclassification" in r.get("reason_codes", [])][:2],
+        "review_semantic": [r["topic"] for r in review_details if "title_semantic_ambiguity" in r.get("reason_codes", [])][:2],
+        "review_low_confidence": [r["topic"] for r in review_details if "low_confidence" in r.get("reason_codes", [])][:2]
     }
 
     return {
@@ -184,6 +213,7 @@ def generate_report_data(topics, summary):
         "review_details": review_details,
         "content_type_reclassification": reclassifications,
         "confidence_distribution": confidence_distribution,
+        "confidence_by_decision": confidence_by_decision,
         "low_confidence_topics": low_confidence_topics,
         "similarity_group_distribution": group_sizes,
         "multi_topic_groups": multi_topic_groups,
@@ -194,7 +224,7 @@ def generate_report_data(topics, summary):
 def generate_markdown(data, output_path):
     s = data["summary_stats"]
     lines = [
-        "# Topic Validation V1.2 Report\n",
+        "# Topic Validation V1.2.1 Report\n",
         "## 1. 전체 결과\n",
         f"- 입력 후보: {s.get('input_count', 0)}",
         f"- KEEP: {s.get('keep_count', 0)}",
@@ -209,30 +239,51 @@ def generate_markdown(data, output_path):
     lines.append(f"- 유사성 그룹은 총 {s.get('similarity_group_count', 0)}개 형성되었으며, 그 중 단일 후보 그룹이 {data['similarity_group_distribution']['single_topic_groups']}개로 대다수를 이룸.")
     lines.append(f"- Confidence 수준은 High가 {data['confidence_distribution'].get('high', {}).get('count', 0)}건 관찰됨.\n")
 
-    lines.append("## 3. REVIEW 주요 원인\n")
+    lines.append("## 3. Confidence × Decision 교차 통계\n")
+    lines.append("| Confidence | KEEP | MERGE | REVIEW | REJECT |")
+    lines.append("|---|---:|---:|---:|---:|")
+    cbd = data["confidence_by_decision"]
+    lines.append(f"| High | {cbd['high']['keep']} | {cbd['high']['merge']} | {cbd['high']['review']} | {cbd['high']['reject']} |")
+    lines.append(f"| Medium | {cbd['medium']['keep']} | {cbd['medium']['merge']} | {cbd['medium']['review']} | {cbd['medium']['reject']} |")
+    lines.append(f"| Low | {cbd['low']['keep']} | {cbd['low']['merge']} | {cbd['low']['review']} | {cbd['low']['reject']} |\n")
+
+    lines.append("## 4. REVIEW 주요 원인\n")
+    lines.append("| Reason | Count |")
+    lines.append("|---|---:|")
     for reason, count in data["review_reasons"].items():
-        lines.append(f"- {reason}: {count}건")
-    lines.append("\n## 4. 자동 재분류 사례\n")
+        lines.append(f"| {reason} | {count} |")
+
+    lines.append("\n## 5. 자동 재분류 사례\n")
     for reclass in data["content_type_reclassification"]:
-        lines.append(f"- {reclass['topic']}: {reclass['original']} -> {reclass['suggested']}")
+        lines.append(f"- **{reclass['topic']}**")
+        lines.append(f"  - 기존: {reclass['original']}")
+        lines.append(f"  - 제안: {reclass['suggested']}")
+        lines.append(f"  - 결정: {reclass['decision']}\n")
     if not data["content_type_reclassification"]:
         lines.append("- 자동 재분류 사례 없음")
 
-    lines.append("\n## 5. 이상 패턴\n")
+    lines.append("\n## 6. 이상 패턴\n")
     for pattern, items in data["anomalies"].items():
         lines.append(f"- {pattern}: {len(items)}건")
 
-    lines.append("\n## 6. 대표 사례\n")
+    lines.append("\n## 7. 대표 사례\n")
     lines.append("### KEEP")
     lines.append(f"- High Score: {', '.join(data['representative_cases']['keep_high_score'])}")
     lines.append(f"- Low Score: {', '.join(data['representative_cases']['keep_low_score'])}")
     lines.append("\n### MERGE")
     lines.append(f"- {', '.join(data['representative_cases']['merge_groups'])}")
     lines.append("\n### REVIEW")
-    lines.append(f"- Existing Overlap: {', '.join(data['representative_cases']['review_existing_overlap'])}")
-    lines.append(f"- Content Reclass: {', '.join(data['representative_cases']['review_content_reclass'])}")
 
-    lines.append("\n## 7. 다음 검토 대상\n")
+    lines.append("#### Existing Content Overlap")
+    for r in data['representative_cases']['review_existing_overlap']:
+        lines.append(f"- {r}")
+        # Note: in a fully robust system we'd pull original details from `review_details` but for markdown list this is sufficient.
+
+    lines.append("\n#### Content Type Reclassification")
+    for r in data['representative_cases']['review_content_reclass']:
+        lines.append(f"- {r}")
+
+    lines.append("\n## 8. 다음 검토 대상\n")
     lines.append("- REVIEW로 분류된 항목 중 기존 게시물 원문 대조가 필요한 항목들의 수동 검토 필요.")
     lines.append("- 모호한 유사도 그룹(generic_similarity_group)의 분류 세분화 고려.")
 
@@ -263,16 +314,37 @@ def main():
 
     generate_markdown(report_data, out_md)
 
-    print("Validation Report generated successfully.\n")
-    print(f"Input: {summary.get('input_count', 0)}")
+    print("=== Topic Validation V1.2.1 ===\n")
+    print(f"Input: {summary.get('input_count', 0)}\n")
     print(f"KEEP: {summary.get('keep_count', 0)}")
     print(f"MERGE: {summary.get('merge_count', 0)}")
     print(f"REVIEW: {summary.get('review_count', 0)}")
     print(f"REJECT: {summary.get('reject_count', 0)}\n")
     print(f"Similarity Groups: {summary.get('similarity_group_count', 0)}\n")
-    print("Report:")
-    print(out_json)
-    print(out_md)
+
+    print("=== REVIEW Reasons ===\n")
+    for reason, count in report_data["review_reasons"].items():
+        print(f"{reason}: {count}")
+
+    print("\n=== Confidence ===\n")
+    print(f"HIGH: {report_data['confidence_distribution'].get('high', {}).get('count', 0)}")
+    print(f"MEDIUM: {report_data['confidence_distribution'].get('medium', {}).get('count', 0)}")
+    print(f"LOW: {report_data['confidence_distribution'].get('low', {}).get('count', 0)}\n")
+
+    print("=== Anomalies ===\n")
+    # Output 0 if an anomaly is missing so the prompt format is fully respected
+    anomaly_keys = [
+        "high_score_merge", "low_confidence_keep", "high_confidence_review",
+        "low_confidence_reject", "self_reference_in_merge", "generic_similarity_group"
+    ]
+    for k in anomaly_keys:
+        print(f"{k}: {len(report_data['anomalies'].get(k, []))}")
+
+    print("\n=== Output ===\n")
+    print("topic_research/validated_topics.json")
+    print("topic_research/validation_summary.json")
+    print("topic_research/validation_report.json")
+    print("topic_research/validation_report.md")
 
 if __name__ == "__main__":
     main()
