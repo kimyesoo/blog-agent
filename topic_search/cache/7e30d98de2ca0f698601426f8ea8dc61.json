@@ -9,13 +9,25 @@
       "query": "단위중량 시험 현장 적용 방법",
       "query_type": "primary",
       "status": "search_failed",
-      "results": []
+      "results": [],
+      "error": {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      },
+      "searched_at": "2026-09-29T11:06:11.641724+00:00"
     },
     {
       "query": "단위중량 시험 현장 적용",
       "query_type": "variant",
       "status": "search_failed",
-      "results": []
+      "results": [],
+      "error": {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      },
+      "searched_at": "2026-09-29T11:06:12.173355+00:00"
     }
   ],
   "serp": {
@@ -39,6 +51,10 @@
   "existing_post": null,
   "research_status": "failed",
   "errors": [
-    "search_provider_unavailable"
+    {
+      "code": "authentication_error",
+      "exception": "InvalidAPIKeyError",
+      "message": "Unauthorized: missing or invalid API key."
+    }
   ]
 }

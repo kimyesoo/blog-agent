@@ -35,18 +35,37 @@ def generate_query_variants(topic):
     return list(dict.fromkeys(variants))[:4] # Return unique max 4
 
 class SearchProvider:
+    def __init__(self):
+        self.provider_status = {
+            "provider": "unknown",
+            "api_key_detected": False,
+            "client_initialized": False,
+            "search_test_success": False,
+            "last_error": ""
+        }
     def search(self, query: str, max_results: int = 10) -> dict:
         raise NotImplementedError
 
 class TavilySearchProvider(SearchProvider):
     def __init__(self):
+        super().__init__()
+        self.provider_status["provider"] = "tavily"
         self.api_key = os.environ.get("TAVILY_API_KEY")
-        if not self.api_key:
+
+        if self.api_key:
+            self.provider_status["api_key_detected"] = True
+            if self.api_key == "dummy":
+                self.provider_status["last_error"] = "dummy API key used"
+        else:
+            self.provider_status["last_error"] = "missing_api_key"
             raise ValueError("missing_api_key")
+
         if not TavilyClient:
+            self.provider_status["last_error"] = "tavily_sdk_not_installed"
             raise ValueError("tavily_sdk_not_installed")
 
         self.client = TavilyClient(api_key=self.api_key)
+        self.provider_status["client_initialized"] = True
 
     def search(self, query: str, max_results: int = 10) -> dict:
         max_retries = 2
@@ -69,31 +88,42 @@ class TavilySearchProvider(SearchProvider):
                         "provider_score": res.get("score", 0.0)
                     })
 
+                self.provider_status["search_test_success"] = True
+                self.provider_status["last_error"] = ""
                 return {
                     "status": "success",
                     "provider": "tavily",
                     "results": results
                 }
 
-            except MissingAPIKeyError:
-                return {"status": "search_failed", "error": "authentication_error"}
+            except MissingAPIKeyError as e:
+                self.provider_status["last_error"] = str(e)
+                return {"status": "search_failed", "error": "authentication_error", "exception": "MissingAPIKeyError", "message": str(e)}
             except Exception as e:
-                err_msg = str(e).lower()
-                if "unauthorized" in err_msg or "invalid api key" in err_msg:
-                    return {"status": "search_failed", "error": "authentication_error"}
+                err_msg = str(e)
+                self.provider_status["last_error"] = err_msg
+
+                if "unauthorized" in err_msg.lower() or "invalid api key" in err_msg.lower() or "not authorized" in err_msg.lower() or "401" in err_msg:
+                    return {"status": "search_failed", "error": "authentication_error", "exception": type(e).__name__, "message": err_msg}
 
                 if attempt < max_retries:
                     time.sleep(2) # Brief pause before retry
                     continue
                 else:
-                    return {"status": "search_failed", "error": "provider_error"}
+                    return {"status": "search_failed", "error": "provider_error", "exception": type(e).__name__, "message": err_msg}
 
 class DummySearchProvider(SearchProvider):
     """Fallback provider when no real provider is available."""
+    def __init__(self, last_error=""):
+        super().__init__()
+        self.provider_status["last_error"] = last_error
+
     def search(self, query: str, max_results: int = 10) -> dict:
         return {
             "status": "search_failed",
             "error": "search_provider_unavailable",
+            "exception": "DummyProviderError",
+            "message": "No active search provider",
             "results": []
         }
 
@@ -103,10 +133,10 @@ def get_provider(provider_name: str) -> SearchProvider:
             return TavilySearchProvider()
         except ValueError as e:
             print(f"Warning: Failed to initialize Tavily provider ({str(e)}). Falling back to safe dummy mode.")
-            return DummySearchProvider()
+            return DummySearchProvider(last_error=str(e))
     else:
         print(f"Warning: Provider '{provider_name}' not supported. Falling back to safe dummy mode.")
-        return DummySearchProvider()
+        return DummySearchProvider(last_error=f"Unsupported provider: {provider_name}")
 
 def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir, delay, refresh, provider, dry_run=False):
     topic = item["topic"]
@@ -147,6 +177,13 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
 
         if res.get("provider"):
             q_data["provider"] = res["provider"]
+
+        if res["status"] != "success":
+            q_data["error"] = {
+                "code": res.get("error", "unknown"),
+                "exception": res.get("exception", ""),
+                "message": res.get("message", "")
+            }
 
         # Add basic ISO timestamp for when this was searched
         # Keeping it simple per standard library specs
@@ -219,8 +256,13 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
         "existing_post": existing_post_data,
 
         "research_status": "failed" if not serp_presence else "complete",
-        "errors": ["search_provider_unavailable"] if not serp_presence else []
+        "errors": []
     }
+
+    # Collect errors into an array of objects
+    for qd in queries_data:
+        if qd.get("error") and qd["error"] not in result["errors"]:
+            result["errors"].append(qd["error"])
 
     save_json(result, cache_path)
     return result
@@ -234,6 +276,11 @@ def generate_report(results, summary, output_md):
         f"- 성공: {summary['success_count']}",
         f"- 실패: {summary['failed_count']}",
         f"- Cache hit: {summary.get('cache_hit_count', 0)}\n",
+        "## 1.1 Provider Status\n",
+        f"- API Key Detected: {summary.get('provider_status', {}).get('api_key_detected', False)}",
+        f"- Client Initialized: {summary.get('provider_status', {}).get('client_initialized', False)}",
+        f"- Search Test Success: {summary.get('provider_status', {}).get('search_test_success', False)}",
+        f"- Last Error: {summary.get('provider_status', {}).get('last_error', '')}\n",
         "## 2. Search Intent\n",
         "- Validation intent와 실제 관찰 intent가 일치/불일치한 후보 (데이터 없음: 검색 실패)\n",
         "## 3. SERP Findings\n",
@@ -248,7 +295,8 @@ def generate_report(results, summary, output_md):
 
     for r in results:
         if r["research_status"] == "failed":
-            lines.append(f"  - {r['topic']} (Reason: {', '.join(r['errors'])})")
+            errs = [e.get("code", "unknown") for e in r["errors"]]
+            lines.append(f"  - {r['topic']} (Reason: {', '.join(errs)})")
 
     with open(output_md, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
@@ -262,8 +310,13 @@ def main():
     parser.add_argument("--delay", type=float, default=0.5, help="Delay between searches in seconds")
     parser.add_argument("--dry-run", action="store_true", help="Print queries without executing search")
     parser.add_argument("--provider", type=str, default=os.environ.get("SEARCH_PROVIDER", "tavily"), help="Search provider to use")
+    parser.add_argument("--disable-cache", action="store_true", help="Disable caching mechanism")
+    parser.add_argument("--refresh-cache", action="store_true", help="Same as --refresh")
 
     args = parser.parse_args()
+
+    if args.refresh_cache or args.disable_cache:
+        args.refresh = True
 
     print("Blog Agent - Topic Search Research Agent V1\n")
 
@@ -330,6 +383,7 @@ def main():
 
         if res.pop("_cache_hit", False):
             cache_hit_c += 1
+            print(f"[{item['topic']}] CACHE HIT (Status: {res['research_status']})")
 
         results.append(res)
 
@@ -371,6 +425,7 @@ def main():
         "failed_count": failed_c,
         "cache_hit_count": cache_hit_c,
         "provider": args.provider,
+        "provider_status": provider.provider_status if hasattr(provider, "provider_status") else {},
         "search_volume_available_count": vol_c,
         "serp_found_count": serp_c,
         "intent_match_count": intent_match,

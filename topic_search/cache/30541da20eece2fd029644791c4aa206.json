@@ -10,14 +10,24 @@
       "query_type": "primary",
       "status": "search_failed",
       "results": [],
-      "searched_at": "2026-09-29T10:40:49.631919+00:00"
+      "error": {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      },
+      "searched_at": "2026-09-29T11:06:05.788992+00:00"
     },
     {
       "query": "함수비 시험",
       "query_type": "variant",
       "status": "search_failed",
       "results": [],
-      "searched_at": "2026-09-29T10:40:50.163473+00:00"
+      "error": {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      },
+      "searched_at": "2026-09-29T11:06:06.321045+00:00"
     }
   ],
   "serp": {
@@ -41,6 +51,10 @@
   "existing_post": null,
   "research_status": "failed",
   "errors": [
-    "search_provider_unavailable"
+    {
+      "code": "authentication_error",
+      "exception": "InvalidAPIKeyError",
+      "message": "Unauthorized: missing or invalid API key."
+    }
   ]
 }

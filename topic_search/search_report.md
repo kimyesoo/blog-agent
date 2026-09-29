@@ -7,7 +7,14 @@ Search Provider: tavily
 - 조사 후보: 7
 - 성공: 0
 - 실패: 7
-- Cache hit: 7
+- Cache hit: 0
+
+## 1.1 Provider Status
+
+- API Key Detected: True
+- Client Initialized: True
+- Search Test Success: False
+- Last Error: Unauthorized: missing or invalid API key.
 
 ## 2. Search Intent
 
@@ -29,10 +36,10 @@ Search Provider: tavily
 
 - 검색 실패 후보:
 
-  - 함수비 시험 방법 (Reason: search_provider_unavailable)
-  - 함수비 시험 계산 방법 (Reason: search_provider_unavailable)
-  - 함수비 시험 현장 적용 방법 (Reason: search_provider_unavailable)
-  - 함수비 시험 부적합 원인과 대책 (Reason: search_provider_unavailable)
-  - 단위중량 시험 방법 (Reason: search_provider_unavailable)
-  - 단위중량 시험 계산 방법 (Reason: search_provider_unavailable)
-  - 단위중량 시험 현장 적용 방법 (Reason: search_provider_unavailable)
+  - 함수비 시험 방법 (Reason: authentication_error)
+  - 함수비 시험 계산 방법 (Reason: authentication_error)
+  - 함수비 시험 현장 적용 방법 (Reason: authentication_error)
+  - 함수비 시험 부적합 원인과 대책 (Reason: authentication_error)
+  - 단위중량 시험 방법 (Reason: authentication_error)
+  - 단위중량 시험 계산 방법 (Reason: authentication_error)
+  - 단위중량 시험 현장 적용 방법 (Reason: authentication_error)

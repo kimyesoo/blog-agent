@@ -11,14 +11,24 @@
         "query_type": "primary",
         "status": "search_failed",
         "results": [],
-        "searched_at": "2026-09-29T10:40:49.631919+00:00"
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:05.788992+00:00"
       },
       {
         "query": "함수비 시험",
         "query_type": "variant",
         "status": "search_failed",
         "results": [],
-        "searched_at": "2026-09-29T10:40:50.163473+00:00"
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:06.321045+00:00"
       }
     ],
     "serp": {
@@ -42,7 +52,11 @@
     "existing_post": null,
     "research_status": "failed",
     "errors": [
-      "search_provider_unavailable"
+      {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      }
     ]
   },
   {
@@ -56,13 +70,25 @@
         "query": "함수비 시험 계산 방법",
         "query_type": "primary",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:06.853366+00:00"
       },
       {
         "query": "함수비 시험 계산",
         "query_type": "variant",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:07.385036+00:00"
       }
     ],
     "serp": {
@@ -86,7 +112,11 @@
     "existing_post": null,
     "research_status": "failed",
     "errors": [
-      "search_provider_unavailable"
+      {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      }
     ]
   },
   {
@@ -100,13 +130,25 @@
         "query": "함수비 시험 현장 적용 방법",
         "query_type": "primary",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:07.917560+00:00"
       },
       {
         "query": "함수비 시험 현장 적용",
         "query_type": "variant",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:08.448775+00:00"
       }
     ],
     "serp": {
@@ -130,7 +172,11 @@
     "existing_post": null,
     "research_status": "failed",
     "errors": [
-      "search_provider_unavailable"
+      {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      }
     ]
   },
   {
@@ -144,7 +190,13 @@
         "query": "함수비 시험 부적합 원인과 대책",
         "query_type": "primary",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:08.981254+00:00"
       }
     ],
     "serp": {
@@ -168,7 +220,11 @@
     "existing_post": null,
     "research_status": "failed",
     "errors": [
-      "search_provider_unavailable"
+      {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      }
     ]
   },
   {
@@ -182,13 +238,25 @@
         "query": "단위중량 시험 방법",
         "query_type": "primary",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:09.513805+00:00"
       },
       {
         "query": "단위중량 시험",
         "query_type": "variant",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:10.045518+00:00"
       }
     ],
     "serp": {
@@ -212,7 +280,11 @@
     "existing_post": null,
     "research_status": "failed",
     "errors": [
-      "search_provider_unavailable"
+      {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      }
     ]
   },
   {
@@ -226,13 +298,25 @@
         "query": "단위중량 시험 계산 방법",
         "query_type": "primary",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:10.577757+00:00"
       },
       {
         "query": "단위중량 시험 계산",
         "query_type": "variant",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:11.109514+00:00"
       }
     ],
     "serp": {
@@ -256,7 +340,11 @@
     "existing_post": null,
     "research_status": "failed",
     "errors": [
-      "search_provider_unavailable"
+      {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      }
     ]
   },
   {
@@ -270,13 +358,25 @@
         "query": "단위중량 시험 현장 적용 방법",
         "query_type": "primary",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:11.641724+00:00"
       },
       {
         "query": "단위중량 시험 현장 적용",
         "query_type": "variant",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "error": {
+          "code": "authentication_error",
+          "exception": "InvalidAPIKeyError",
+          "message": "Unauthorized: missing or invalid API key."
+        },
+        "searched_at": "2026-09-29T11:06:12.173355+00:00"
       }
     ],
     "serp": {
@@ -300,7 +400,11 @@
     "existing_post": null,
     "research_status": "failed",
     "errors": [
-      "search_provider_unavailable"
+      {
+        "code": "authentication_error",
+        "exception": "InvalidAPIKeyError",
+        "message": "Unauthorized: missing or invalid API key."
+      }
     ]
   }
 ]
