@@ -11,6 +11,9 @@ def main():
     with open(posts_path, "r", encoding="utf-8") as f:
         posts = json.load(f)
 
+    # Extract titles for our basic topic suggestion logic
+    post_titles = [post["title"] for post in posts if "title" in post]
+
     # Basic logic for topic suggestion based on existing topics
     # We output a list of related topics.
     candidates = [
