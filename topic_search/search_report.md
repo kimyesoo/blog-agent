@@ -1,10 +1,13 @@
 # Topic Search Research Report
 
+Search Provider: tavily
+
 ## 1. Summary
 
 - 조사 후보: 7
 - 성공: 0
 - 실패: 7
+- Cache hit: 7
 
 ## 2. Search Intent
 

@@ -3,6 +3,8 @@
   "researched_count": 7,
   "success_count": 0,
   "failed_count": 7,
+  "cache_hit_count": 7,
+  "provider": "tavily",
   "search_volume_available_count": 0,
   "serp_found_count": 0,
   "intent_match_count": 0,

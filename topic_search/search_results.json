@@ -10,13 +10,15 @@
         "query": "함수비 시험 방법",
         "query_type": "primary",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "searched_at": "2026-09-29T10:40:49.631919+00:00"
       },
       {
         "query": "함수비 시험",
         "query_type": "variant",
         "status": "search_failed",
-        "results": []
+        "results": [],
+        "searched_at": "2026-09-29T10:40:50.163473+00:00"
       }
     ],
     "serp": {

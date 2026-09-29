@@ -4,6 +4,13 @@ import sys
 import argparse
 import time
 import hashlib
+from urllib.parse import urlparse
+from typing import Dict, List, Optional
+try:
+    from tavily import TavilyClient, MissingAPIKeyError
+except ImportError:
+    TavilyClient = None
+    MissingAPIKeyError = Exception
 
 def load_json(filepath):
     if not os.path.exists(filepath):
@@ -27,43 +34,145 @@ def generate_query_variants(topic):
         variants.append(topic.replace(" 방법", ""))
     return list(dict.fromkeys(variants))[:4] # Return unique max 4
 
-def simulate_search(query, delay):
-    """
-    Simulates a web search since we are prohibited from using external APIs in V1.
-    Will gracefully fail and return structure as requested.
-    """
-    time.sleep(delay)
-    # Returning a failure response because no actual search provider is configured.
-    return {
-        "status": "search_failed",
-        "error": "search_provider_unavailable",
-        "results": []
-    }
+class SearchProvider:
+    def search(self, query: str, max_results: int = 10) -> dict:
+        raise NotImplementedError
 
-def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir, delay, refresh):
+class TavilySearchProvider(SearchProvider):
+    def __init__(self):
+        self.api_key = os.environ.get("TAVILY_API_KEY")
+        if not self.api_key:
+            raise ValueError("missing_api_key")
+        if not TavilyClient:
+            raise ValueError("tavily_sdk_not_installed")
+
+        self.client = TavilyClient(api_key=self.api_key)
+
+    def search(self, query: str, max_results: int = 10) -> dict:
+        max_retries = 2
+        for attempt in range(max_retries + 1):
+            try:
+                # Basic search query
+                response = self.client.search(query=query, max_results=max_results, search_depth="basic")
+                results = []
+
+                for idx, res in enumerate(response.get("results", [])):
+                    url = res.get("url", "")
+                    domain = urlparse(url).netloc if url else ""
+
+                    results.append({
+                        "rank": idx + 1,
+                        "title": res.get("title", ""),
+                        "url": url,
+                        "domain": domain,
+                        "snippet": res.get("content", ""),
+                        "provider_score": res.get("score", 0.0)
+                    })
+
+                return {
+                    "status": "success",
+                    "provider": "tavily",
+                    "results": results
+                }
+
+            except MissingAPIKeyError:
+                return {"status": "search_failed", "error": "authentication_error"}
+            except Exception as e:
+                err_msg = str(e).lower()
+                if "unauthorized" in err_msg or "invalid api key" in err_msg:
+                    return {"status": "search_failed", "error": "authentication_error"}
+
+                if attempt < max_retries:
+                    time.sleep(2) # Brief pause before retry
+                    continue
+                else:
+                    return {"status": "search_failed", "error": "provider_error"}
+
+class DummySearchProvider(SearchProvider):
+    """Fallback provider when no real provider is available."""
+    def search(self, query: str, max_results: int = 10) -> dict:
+        return {
+            "status": "search_failed",
+            "error": "search_provider_unavailable",
+            "results": []
+        }
+
+def get_provider(provider_name: str) -> SearchProvider:
+    if provider_name.lower() == "tavily":
+        try:
+            return TavilySearchProvider()
+        except ValueError as e:
+            print(f"Warning: Failed to initialize Tavily provider ({str(e)}). Falling back to safe dummy mode.")
+            return DummySearchProvider()
+    else:
+        print(f"Warning: Provider '{provider_name}' not supported. Falling back to safe dummy mode.")
+        return DummySearchProvider()
+
+def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir, delay, refresh, provider, dry_run=False):
     topic = item["topic"]
 
     # Check cache
     safe_hash = hashlib.md5(topic.encode('utf-8')).hexdigest()
     cache_path = os.path.join(cache_dir, f"{safe_hash}.json")
     if not refresh and os.path.exists(cache_path):
-        return load_json(cache_path)
+        res = load_json(cache_path)
+        res["_cache_hit"] = True
+        return res
 
     variants = generate_query_variants(topic)
-    queries_data = []
 
+    if dry_run:
+        print(f"[DRY-RUN] Will search queries: {variants}")
+        return None
+
+    queries_data = []
     serp_presence = False
+    unique_domains = set()
+    total_organic = 0
+    top_content = []
+
     for i, q in enumerate(variants):
-        res = simulate_search(q, delay)
+        if i > 0:
+            time.sleep(delay) # rate limiting
+
+        res = provider.search(q, max_results=10)
         q_type = "primary" if i == 0 else "variant"
-        queries_data.append({
+
+        q_data = {
             "query": q,
             "query_type": q_type,
             "status": res["status"],
-            "results": res["results"]
-        })
-        if res["status"] == "success" and len(res["results"]) > 0:
+            "results": res.get("results", [])
+        }
+
+        if res.get("provider"):
+            q_data["provider"] = res["provider"]
+
+        # Add basic ISO timestamp for when this was searched
+        # Keeping it simple per standard library specs
+        from datetime import datetime, timezone
+        q_data["searched_at"] = datetime.now(timezone.utc).isoformat()
+
+        queries_data.append(q_data)
+
+        if res["status"] == "success" and len(res.get("results", [])) > 0:
             serp_presence = True
+            total_organic += len(res["results"])
+            for r in res["results"]:
+                if r.get("domain"):
+                    unique_domains.add(r["domain"])
+
+            # Populate top_content from the primary query
+            if i == 0:
+                for idx, r in enumerate(res["results"]):
+                    top_content.append({
+                        "rank": r.get("rank", idx + 1),
+                        "title": r.get("title", ""),
+                        "url": r.get("url", ""),
+                        "domain": r.get("domain", ""),
+                        "content_type_observed": None, # Cannot determine without page extraction yet
+                        "likely_sections": []
+                    })
 
     # As per prompt constraints, we must map existing post data if available
     core = item["validation"].get("similarity_group", "").split("_")[0]
@@ -92,14 +201,14 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
 
         "serp": {
             "serp_presence": serp_presence,
-            "organic_result_count": 0,
-            "unique_domains": 0
+            "organic_result_count": total_organic,
+            "unique_domains": len(unique_domains)
         },
 
         "generated_related_keywords": gen_related_kws,
         "observed_related_queries": [],
 
-        "top_content": [],
+        "top_content": top_content,
         "content_gap": [],
 
         "search_volume": None,
@@ -119,10 +228,12 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
 def generate_report(results, summary, output_md):
     lines = [
         "# Topic Search Research Report\n",
+        f"Search Provider: {summary.get('provider', 'Unknown')}\n",
         "## 1. Summary\n",
         f"- 조사 후보: {summary['input_count']}",
         f"- 성공: {summary['success_count']}",
-        f"- 실패: {summary['failed_count']}\n",
+        f"- 실패: {summary['failed_count']}",
+        f"- Cache hit: {summary.get('cache_hit_count', 0)}\n",
         "## 2. Search Intent\n",
         "- Validation intent와 실제 관찰 intent가 일치/불일치한 후보 (데이터 없음: 검색 실패)\n",
         "## 3. SERP Findings\n",
@@ -149,6 +260,8 @@ def main():
     parser.add_argument("--topic", type=str, default=None, help="Specific topic to research")
     parser.add_argument("--refresh", action="store_true", help="Ignore cache and force refresh")
     parser.add_argument("--delay", type=float, default=0.5, help="Delay between searches in seconds")
+    parser.add_argument("--dry-run", action="store_true", help="Print queries without executing search")
+    parser.add_argument("--provider", type=str, default=os.environ.get("SEARCH_PROVIDER", "tavily"), help="Search provider to use")
 
     args = parser.parse_args()
 
@@ -195,9 +308,12 @@ def main():
     cache_dir = os.path.join(out_dir, "cache")
     os.makedirs(cache_dir, exist_ok=True)
 
+    provider = get_provider(args.provider)
+
     results = []
     success_c = 0
     failed_c = 0
+    cache_hit_c = 0
     serp_c = 0
     vol_c = 0
     intent_match = 0
@@ -205,7 +321,16 @@ def main():
 
     print("Researching...")
     for i, item in enumerate(targets):
-        res = process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir, args.delay, args.refresh)
+        if i > 0:
+            time.sleep(args.delay) # Delay between overall topics
+
+        res = process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir, args.delay, args.refresh, provider, args.dry_run)
+        if res is None:
+            continue
+
+        if res.pop("_cache_hit", False):
+            cache_hit_c += 1
+
         results.append(res)
 
         if res["research_status"] == "success" or res["research_status"] == "complete":
@@ -235,11 +360,17 @@ def main():
 
     save_json(results, res_path)
 
+    # Count cache hits by checking if it was just loaded vs processed
+    # We can approximate this if the result doesn't have an execution log or just rely on file checks.
+    # We will let cache_hit_count be 0 for simplicity if not tracked internally.
+
     summary = {
         "input_count": len(targets),
         "researched_count": len(results),
         "success_count": success_c,
         "failed_count": failed_c,
+        "cache_hit_count": cache_hit_c,
+        "provider": args.provider,
         "search_volume_available_count": vol_c,
         "serp_found_count": serp_c,
         "intent_match_count": intent_match,
