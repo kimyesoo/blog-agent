@@ -1,0 +1,6710 @@
+[
+  {
+    "topic": "함수비 시험 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "함수비 시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "함수비 시험 이란?",
+      "함수비 시험 계산 방법",
+      "함수비 시험 결과 해석",
+      "함수비 시험 관련 기준",
+      "함수비 시험 현장 적용 방법",
+      "함수비 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "함수비 시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "함수비 시험 계산 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "함수비 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "함수비 시험 이란?",
+      "함수비 시험 방법",
+      "함수비 시험 결과 해석",
+      "함수비 시험 관련 기준",
+      "함수비 시험 현장 적용 방법",
+      "함수비 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "함수비 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "함수비 시험 현장 적용 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "함수비 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "함수비 시험 이란?",
+      "함수비 시험 방법",
+      "함수비 시험 계산 방법",
+      "함수비 시험 결과 해석",
+      "함수비 시험 관련 기준",
+      "함수비 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "함수비 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "함수비 시험 부적합 원인과 대책",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "함수비 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "함수비 시험 이란?",
+      "함수비 시험 방법",
+      "함수비 시험 계산 방법",
+      "함수비 시험 결과 해석",
+      "함수비 시험 관련 기준",
+      "함수비 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "함수비 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "단위중량 시험 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "단위중량 시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "단위중량 시험 이란?",
+      "단위중량 시험 계산 방법",
+      "단위중량 시험 결과 해석",
+      "단위중량 시험 관련 기준",
+      "단위중량 시험 현장 적용 방법",
+      "단위중량 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "단위중량 시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "단위중량 시험 계산 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "단위중량 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "단위중량 시험 이란?",
+      "단위중량 시험 방법",
+      "단위중량 시험 결과 해석",
+      "단위중량 시험 관련 기준",
+      "단위중량 시험 현장 적용 방법",
+      "단위중량 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "단위중량 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "단위중량 시험 현장 적용 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "단위중량 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "단위중량 시험 이란?",
+      "단위중량 시험 방법",
+      "단위중량 시험 계산 방법",
+      "단위중량 시험 결과 해석",
+      "단위중량 시험 관련 기준",
+      "단위중량 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "단위중량 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "단위중량 시험 부적합 원인과 대책",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "단위중량 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "단위중량 시험 이란?",
+      "단위중량 시험 방법",
+      "단위중량 시험 계산 방법",
+      "단위중량 시험 결과 해석",
+      "단위중량 시험 관련 기준",
+      "단위중량 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "단위중량 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중계 시험 방법",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중계 시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중계 시험 이란?",
+      "비중계 시험 계산 방법",
+      "비중계 시험 결과 해석",
+      "비중계 시험 관련 기준",
+      "비중계 시험 현장 적용 방법",
+      "비중계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중계 시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중계 시험 계산 방법",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중계 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중계 시험 이란?",
+      "비중계 시험 방법",
+      "비중계 시험 결과 해석",
+      "비중계 시험 관련 기준",
+      "비중계 시험 현장 적용 방법",
+      "비중계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중계 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중계 시험 현장 적용 방법",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중계 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중계 시험 이란?",
+      "비중계 시험 방법",
+      "비중계 시험 계산 방법",
+      "비중계 시험 결과 해석",
+      "비중계 시험 관련 기준",
+      "비중계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중계 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중계 시험 부적합 원인과 대책",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중계 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중계 시험 이란?",
+      "비중계 시험 방법",
+      "비중계 시험 계산 방법",
+      "비중계 시험 결과 해석",
+      "비중계 시험 관련 기준",
+      "비중계 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "비중계 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "수축한계 시험 방법",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "수축한계 시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "수축한계 시험 이란?",
+      "수축한계 시험 계산 방법",
+      "수축한계 시험 결과 해석",
+      "수축한계 시험 관련 기준",
+      "수축한계 시험 현장 적용 방법",
+      "수축한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "수축한계 시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "수축한계 시험 계산 방법",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "수축한계 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "수축한계 시험 이란?",
+      "수축한계 시험 방법",
+      "수축한계 시험 결과 해석",
+      "수축한계 시험 관련 기준",
+      "수축한계 시험 현장 적용 방법",
+      "수축한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "수축한계 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "수축한계 시험 현장 적용 방법",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "수축한계 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "수축한계 시험 이란?",
+      "수축한계 시험 방법",
+      "수축한계 시험 계산 방법",
+      "수축한계 시험 결과 해석",
+      "수축한계 시험 관련 기준",
+      "수축한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "수축한계 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "수축한계 시험 부적합 원인과 대책",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "수축한계 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "수축한계 시험 이란?",
+      "수축한계 시험 방법",
+      "수축한계 시험 계산 방법",
+      "수축한계 시험 결과 해석",
+      "수축한계 시험 관련 기준",
+      "수축한계 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "수축한계 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "실내 다짐시험 방법",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "실내 다짐시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "실내 다짐시험 이란?",
+      "실내 다짐시험 계산 방법",
+      "실내 다짐시험 결과 해석",
+      "실내 다짐시험 관련 기준",
+      "실내 다짐시험 현장 적용 방법",
+      "실내 다짐시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "실내 다짐시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "실내 다짐시험 계산 방법",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "실내 다짐시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "실내 다짐시험 이란?",
+      "실내 다짐시험 방법",
+      "실내 다짐시험 결과 해석",
+      "실내 다짐시험 관련 기준",
+      "실내 다짐시험 현장 적용 방법",
+      "실내 다짐시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "실내 다짐시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "실내 다짐시험 현장 적용 방법",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "실내 다짐시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "실내 다짐시험 이란?",
+      "실내 다짐시험 방법",
+      "실내 다짐시험 계산 방법",
+      "실내 다짐시험 결과 해석",
+      "실내 다짐시험 관련 기준",
+      "실내 다짐시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "실내 다짐시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "실내 다짐시험 부적합 원인과 대책",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "실내 다짐시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "실내 다짐시험 이란?",
+      "실내 다짐시험 방법",
+      "실내 다짐시험 계산 방법",
+      "실내 다짐시험 결과 해석",
+      "실내 다짐시험 관련 기준",
+      "실내 다짐시험 현장 적용 방법"
+    ],
+    "suggested_topic": "실내 다짐시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "CBR 시험 방법",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "CBR 시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "CBR 시험 이란?",
+      "CBR 시험 계산 방법",
+      "CBR 시험 결과 해석",
+      "CBR 시험 관련 기준",
+      "CBR 시험 현장 적용 방법",
+      "CBR 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "CBR 시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "CBR 시험 계산 방법",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "CBR 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "CBR 시험 이란?",
+      "CBR 시험 방법",
+      "CBR 시험 결과 해석",
+      "CBR 시험 관련 기준",
+      "CBR 시험 현장 적용 방법",
+      "CBR 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "CBR 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "CBR 시험 현장 적용 방법",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "CBR 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "CBR 시험 이란?",
+      "CBR 시험 방법",
+      "CBR 시험 계산 방법",
+      "CBR 시험 결과 해석",
+      "CBR 시험 관련 기준",
+      "CBR 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "CBR 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "CBR 시험 부적합 원인과 대책",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "CBR 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "CBR 시험 이란?",
+      "CBR 시험 방법",
+      "CBR 시험 계산 방법",
+      "CBR 시험 결과 해석",
+      "CBR 시험 관련 기준",
+      "CBR 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "CBR 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "고무풍선법 밀도 시험 방법",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "고무풍선법 밀도 시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "고무풍선법 밀도 시험 이란?",
+      "고무풍선법 밀도 시험 계산 방법",
+      "고무풍선법 밀도 시험 결과 해석",
+      "고무풍선법 밀도 시험 관련 기준",
+      "고무풍선법 밀도 시험 현장 적용 방법",
+      "고무풍선법 밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "고무풍선법 밀도 시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "고무풍선법 밀도 시험 계산 방법",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "고무풍선법 밀도 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "고무풍선법 밀도 시험 이란?",
+      "고무풍선법 밀도 시험 방법",
+      "고무풍선법 밀도 시험 결과 해석",
+      "고무풍선법 밀도 시험 관련 기준",
+      "고무풍선법 밀도 시험 현장 적용 방법",
+      "고무풍선법 밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "고무풍선법 밀도 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "고무풍선법 밀도 시험 현장 적용 방법",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "고무풍선법 밀도 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "고무풍선법 밀도 시험 이란?",
+      "고무풍선법 밀도 시험 방법",
+      "고무풍선법 밀도 시험 계산 방법",
+      "고무풍선법 밀도 시험 결과 해석",
+      "고무풍선법 밀도 시험 관련 기준",
+      "고무풍선법 밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "고무풍선법 밀도 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "고무풍선법 밀도 시험 부적합 원인과 대책",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "고무풍선법 밀도 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "고무풍선법 밀도 시험 이란?",
+      "고무풍선법 밀도 시험 방법",
+      "고무풍선법 밀도 시험 계산 방법",
+      "고무풍선법 밀도 시험 결과 해석",
+      "고무풍선법 밀도 시험 관련 기준",
+      "고무풍선법 밀도 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "고무풍선법 밀도 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "일축압축시험 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "일축압축시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "일축압축시험 이란?",
+      "일축압축시험 계산 방법",
+      "일축압축시험 결과 해석",
+      "일축압축시험 관련 기준",
+      "일축압축시험 현장 적용 방법",
+      "일축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "일축압축시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "일축압축시험 계산 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "일축압축시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "일축압축시험 이란?",
+      "일축압축시험 방법",
+      "일축압축시험 결과 해석",
+      "일축압축시험 관련 기준",
+      "일축압축시험 현장 적용 방법",
+      "일축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "일축압축시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "일축압축시험 현장 적용 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "일축압축시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "일축압축시험 이란?",
+      "일축압축시험 방법",
+      "일축압축시험 계산 방법",
+      "일축압축시험 결과 해석",
+      "일축압축시험 관련 기준",
+      "일축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "일축압축시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "일축압축시험 부적합 원인과 대책",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "일축압축시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "일축압축시험 이란?",
+      "일축압축시험 방법",
+      "일축압축시험 계산 방법",
+      "일축압축시험 결과 해석",
+      "일축압축시험 관련 기준",
+      "일축압축시험 현장 적용 방법"
+    ],
+    "suggested_topic": "일축압축시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "직접전단시험 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "직접전단시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "직접전단시험 이란?",
+      "직접전단시험 계산 방법",
+      "직접전단시험 결과 해석",
+      "직접전단시험 관련 기준",
+      "직접전단시험 현장 적용 방법",
+      "직접전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "직접전단시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "직접전단시험 계산 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "직접전단시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "직접전단시험 이란?",
+      "직접전단시험 방법",
+      "직접전단시험 결과 해석",
+      "직접전단시험 관련 기준",
+      "직접전단시험 현장 적용 방법",
+      "직접전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "직접전단시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "직접전단시험 현장 적용 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "직접전단시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "직접전단시험 이란?",
+      "직접전단시험 방법",
+      "직접전단시험 계산 방법",
+      "직접전단시험 결과 해석",
+      "직접전단시험 관련 기준",
+      "직접전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "직접전단시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "직접전단시험 부적합 원인과 대책",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "직접전단시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "직접전단시험 이란?",
+      "직접전단시험 방법",
+      "직접전단시험 계산 방법",
+      "직접전단시험 결과 해석",
+      "직접전단시험 관련 기준",
+      "직접전단시험 현장 적용 방법"
+    ],
+    "suggested_topic": "직접전단시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "삼축압축시험 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "삼축압축시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "삼축압축시험 이란?",
+      "삼축압축시험 계산 방법",
+      "삼축압축시험 결과 해석",
+      "삼축압축시험 관련 기준",
+      "삼축압축시험 현장 적용 방법",
+      "삼축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "삼축압축시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "삼축압축시험 계산 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "삼축압축시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "삼축압축시험 이란?",
+      "삼축압축시험 방법",
+      "삼축압축시험 결과 해석",
+      "삼축압축시험 관련 기준",
+      "삼축압축시험 현장 적용 방법",
+      "삼축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "삼축압축시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "삼축압축시험 현장 적용 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "삼축압축시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "삼축압축시험 이란?",
+      "삼축압축시험 방법",
+      "삼축압축시험 계산 방법",
+      "삼축압축시험 결과 해석",
+      "삼축압축시험 관련 기준",
+      "삼축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "삼축압축시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "삼축압축시험 부적합 원인과 대책",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "삼축압축시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "삼축압축시험 이란?",
+      "삼축압축시험 방법",
+      "삼축압축시험 계산 방법",
+      "삼축압축시험 결과 해석",
+      "삼축압축시험 관련 기준",
+      "삼축압축시험 현장 적용 방법"
+    ],
+    "suggested_topic": "삼축압축시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "베인전단시험 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "베인전단시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "베인전단시험 이란?",
+      "베인전단시험 계산 방법",
+      "베인전단시험 결과 해석",
+      "베인전단시험 관련 기준",
+      "베인전단시험 현장 적용 방법",
+      "베인전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "베인전단시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "베인전단시험 계산 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "베인전단시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "베인전단시험 이란?",
+      "베인전단시험 방법",
+      "베인전단시험 결과 해석",
+      "베인전단시험 관련 기준",
+      "베인전단시험 현장 적용 방법",
+      "베인전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "베인전단시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "베인전단시험 현장 적용 방법",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "베인전단시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "베인전단시험 이란?",
+      "베인전단시험 방법",
+      "베인전단시험 계산 방법",
+      "베인전단시험 결과 해석",
+      "베인전단시험 관련 기준",
+      "베인전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "베인전단시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "베인전단시험 부적합 원인과 대책",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "베인전단시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "베인전단시험 이란?",
+      "베인전단시험 방법",
+      "베인전단시험 계산 방법",
+      "베인전단시험 결과 해석",
+      "베인전단시험 관련 기준",
+      "베인전단시험 현장 적용 방법"
+    ],
+    "suggested_topic": "베인전단시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "표준 압밀시험 방법",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "표준 압밀시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "표준 압밀시험 이란?",
+      "표준 압밀시험 계산 방법",
+      "표준 압밀시험 결과 해석",
+      "표준 압밀시험 관련 기준",
+      "표준 압밀시험 현장 적용 방법",
+      "표준 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "표준 압밀시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "표준 압밀시험 계산 방법",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "표준 압밀시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "표준 압밀시험 이란?",
+      "표준 압밀시험 방법",
+      "표준 압밀시험 결과 해석",
+      "표준 압밀시험 관련 기준",
+      "표준 압밀시험 현장 적용 방법",
+      "표준 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "표준 압밀시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "표준 압밀시험 현장 적용 방법",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "표준 압밀시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "표준 압밀시험 이란?",
+      "표준 압밀시험 방법",
+      "표준 압밀시험 계산 방법",
+      "표준 압밀시험 결과 해석",
+      "표준 압밀시험 관련 기준",
+      "표준 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "표준 압밀시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "표준 압밀시험 부적합 원인과 대책",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "표준 압밀시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "표준 압밀시험 이란?",
+      "표준 압밀시험 방법",
+      "표준 압밀시험 계산 방법",
+      "표준 압밀시험 결과 해석",
+      "표준 압밀시험 관련 기준",
+      "표준 압밀시험 현장 적용 방법"
+    ],
+    "suggested_topic": "표준 압밀시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "급속 압밀시험 방법",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "급속 압밀시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "급속 압밀시험 이란?",
+      "급속 압밀시험 계산 방법",
+      "급속 압밀시험 결과 해석",
+      "급속 압밀시험 관련 기준",
+      "급속 압밀시험 현장 적용 방법",
+      "급속 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "급속 압밀시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "급속 압밀시험 계산 방법",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "급속 압밀시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "급속 압밀시험 이란?",
+      "급속 압밀시험 방법",
+      "급속 압밀시험 결과 해석",
+      "급속 압밀시험 관련 기준",
+      "급속 압밀시험 현장 적용 방법",
+      "급속 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "급속 압밀시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "급속 압밀시험 현장 적용 방법",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "급속 압밀시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "급속 압밀시험 이란?",
+      "급속 압밀시험 방법",
+      "급속 압밀시험 계산 방법",
+      "급속 압밀시험 결과 해석",
+      "급속 압밀시험 관련 기준",
+      "급속 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "급속 압밀시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "급속 압밀시험 부적합 원인과 대책",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "급속 압밀시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "급속 압밀시험 이란?",
+      "급속 압밀시험 방법",
+      "급속 압밀시험 계산 방법",
+      "급속 압밀시험 결과 해석",
+      "급속 압밀시험 관련 기준",
+      "급속 압밀시험 현장 적용 방법"
+    ],
+    "suggested_topic": "급속 압밀시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "정수두 투수시험 방법",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "정수두 투수시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "정수두 투수시험 이란?",
+      "정수두 투수시험 계산 방법",
+      "정수두 투수시험 결과 해석",
+      "정수두 투수시험 관련 기준",
+      "정수두 투수시험 현장 적용 방법",
+      "정수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "정수두 투수시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "정수두 투수시험 계산 방법",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "정수두 투수시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "정수두 투수시험 이란?",
+      "정수두 투수시험 방법",
+      "정수두 투수시험 결과 해석",
+      "정수두 투수시험 관련 기준",
+      "정수두 투수시험 현장 적용 방법",
+      "정수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "정수두 투수시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "정수두 투수시험 현장 적용 방법",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "정수두 투수시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "정수두 투수시험 이란?",
+      "정수두 투수시험 방법",
+      "정수두 투수시험 계산 방법",
+      "정수두 투수시험 결과 해석",
+      "정수두 투수시험 관련 기준",
+      "정수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "정수두 투수시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "정수두 투수시험 부적합 원인과 대책",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "정수두 투수시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "정수두 투수시험 이란?",
+      "정수두 투수시험 방법",
+      "정수두 투수시험 계산 방법",
+      "정수두 투수시험 결과 해석",
+      "정수두 투수시험 관련 기준",
+      "정수두 투수시험 현장 적용 방법"
+    ],
+    "suggested_topic": "정수두 투수시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "변수두 투수시험 방법",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "변수두 투수시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "변수두 투수시험 이란?",
+      "변수두 투수시험 계산 방법",
+      "변수두 투수시험 결과 해석",
+      "변수두 투수시험 관련 기준",
+      "변수두 투수시험 현장 적용 방법",
+      "변수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "변수두 투수시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "변수두 투수시험 계산 방법",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "변수두 투수시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "변수두 투수시험 이란?",
+      "변수두 투수시험 방법",
+      "변수두 투수시험 결과 해석",
+      "변수두 투수시험 관련 기준",
+      "변수두 투수시험 현장 적용 방법",
+      "변수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "변수두 투수시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "변수두 투수시험 현장 적용 방법",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "변수두 투수시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "변수두 투수시험 이란?",
+      "변수두 투수시험 방법",
+      "변수두 투수시험 계산 방법",
+      "변수두 투수시험 결과 해석",
+      "변수두 투수시험 관련 기준",
+      "변수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "변수두 투수시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "변수두 투수시험 부적합 원인과 대책",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "변수두 투수시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "변수두 투수시험 이란?",
+      "변수두 투수시험 방법",
+      "변수두 투수시험 계산 방법",
+      "변수두 투수시험 결과 해석",
+      "변수두 투수시험 관련 기준",
+      "변수두 투수시험 현장 적용 방법"
+    ],
+    "suggested_topic": "변수두 투수시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "현장 다짐도 평가 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "merge",
+      "duplicate": false,
+      "similarity_group": "현장 다짐도 평가_평가방법_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "평가방법",
+      "search_intent_valid": false,
+      "search_intent_suggested": "현장 적용",
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [
+      "현장 다짐도 평가 부적합 원인과 대책",
+      "현장 다짐도 평가 이란?",
+      "현장 다짐도 평가 관련 기준"
+    ],
+    "related_topics": [
+      "현장 다짐도 평가 계산 방법",
+      "현장 다짐도 평가 결과 해석",
+      "현장 다짐도 평가 현장 적용 방법"
+    ],
+    "suggested_topic": "현장 다짐도 평가 통합 정리",
+    "reason": "동일한 정보 목적을 가진 매우 유사한 주제들이 존재하여 통합하는 것이 합리적임."
+  },
+  {
+    "topic": "현장 다짐도 평가 부적합 원인과 대책",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "merge_child",
+      "duplicate": false,
+      "similarity_group": "현장 다짐도 평가_평가방법_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "평가방법",
+      "search_intent_valid": false,
+      "search_intent_suggested": "현장 적용",
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "현장 다짐도 평가 이란?",
+      "현장 다짐도 평가 방법",
+      "현장 다짐도 평가 계산 방법",
+      "현장 다짐도 평가 결과 해석",
+      "현장 다짐도 평가 관련 기준",
+      "현장 다짐도 평가 현장 적용 방법"
+    ],
+    "suggested_topic": "현장 다짐도 평가 부적합 원인과 대책",
+    "reason": "'현장 다짐도 평가 방법' (으)로 통합됨."
+  },
+  {
+    "topic": "지반조사 보고서 해석 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "지반조사 보고서 해석_결과해석_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "지반조사 보고서 해석 이란?",
+      "지반조사 보고서 해석 계산 방법",
+      "지반조사 보고서 해석 결과 해석",
+      "지반조사 보고서 해석 관련 기준",
+      "지반조사 보고서 해석 현장 적용 방법",
+      "지반조사 보고서 해석 부적합 원인과 대책"
+    ],
+    "suggested_topic": "지반조사 보고서 해석 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "지반조사 보고서 해석 현장 적용 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "지반조사 보고서 해석_결과해석_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "지반조사 보고서 해석 이란?",
+      "지반조사 보고서 해석 방법",
+      "지반조사 보고서 해석 계산 방법",
+      "지반조사 보고서 해석 결과 해석",
+      "지반조사 보고서 해석 관련 기준",
+      "지반조사 보고서 해석 부적합 원인과 대책"
+    ],
+    "suggested_topic": "지반조사 보고서 해석 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "지반조사 보고서 해석 부적합 원인과 대책",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "지반조사 보고서 해석_결과해석_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 25,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "지반조사 보고서 해석 이란?",
+      "지반조사 보고서 해석 방법",
+      "지반조사 보고서 해석 계산 방법",
+      "지반조사 보고서 해석 결과 해석",
+      "지반조사 보고서 해석 관련 기준",
+      "지반조사 보고서 해석 현장 적용 방법"
+    ],
+    "suggested_topic": "지반조사 보고서 해석 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "함수비 시험 결과 해석",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "함수비 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "함수비 시험 이란?",
+      "함수비 시험 방법",
+      "함수비 시험 계산 방법",
+      "함수비 시험 관련 기준",
+      "함수비 시험 현장 적용 방법",
+      "함수비 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "함수비 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중 시험 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중 시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "모래의 비중 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중 시험 이란?",
+      "비중 시험 계산 방법",
+      "비중 시험 결과 해석",
+      "비중 시험 관련 기준",
+      "비중 시험 현장 적용 방법",
+      "비중 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중 시험 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중 시험 계산 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "모래의 비중 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중 시험 이란?",
+      "비중 시험 방법",
+      "비중 시험 결과 해석",
+      "비중 시험 관련 기준",
+      "비중 시험 현장 적용 방법",
+      "비중 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중 시험 현장 적용 방법",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "모래의 비중 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중 시험 이란?",
+      "비중 시험 방법",
+      "비중 시험 계산 방법",
+      "비중 시험 결과 해석",
+      "비중 시험 관련 기준",
+      "비중 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중 시험 부적합 원인과 대책",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "모래의 비중 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중 시험 이란?",
+      "비중 시험 방법",
+      "비중 시험 계산 방법",
+      "비중 시험 결과 해석",
+      "비중 시험 관련 기준",
+      "비중 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "비중 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "단위중량 시험 결과 해석",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "단위중량 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "단위중량 시험 이란?",
+      "단위중량 시험 방법",
+      "단위중량 시험 계산 방법",
+      "단위중량 시험 관련 기준",
+      "단위중량 시험 현장 적용 방법",
+      "단위중량 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "단위중량 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "체분석 시험 계산 방법",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "체분석 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "체분석 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "체분석 시험 이란?",
+      "체분석 시험 결과 해석",
+      "체분석 시험 관련 기준",
+      "체분석 시험 현장 적용 방법",
+      "체분석 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "체분석 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "체분석 시험 현장 적용 방법",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "체분석 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "체분석 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "체분석 시험 이란?",
+      "체분석 시험 계산 방법",
+      "체분석 시험 결과 해석",
+      "체분석 시험 관련 기준",
+      "체분석 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "체분석 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "체분석 시험 부적합 원인과 대책",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "체분석 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "체분석 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "체분석 시험 이란?",
+      "체분석 시험 계산 방법",
+      "체분석 시험 결과 해석",
+      "체분석 시험 관련 기준",
+      "체분석 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "체분석 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중계 시험 결과 해석",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중계 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중계 시험 이란?",
+      "비중계 시험 방법",
+      "비중계 시험 계산 방법",
+      "비중계 시험 관련 기준",
+      "비중계 시험 현장 적용 방법",
+      "비중계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중계 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "액성한계 시험 계산 방법",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "액성한계 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "액성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "액성한계 시험 이란?",
+      "액성한계 시험 결과 해석",
+      "액성한계 시험 관련 기준",
+      "액성한계 시험 현장 적용 방법",
+      "액성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "액성한계 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "액성한계 시험 현장 적용 방법",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "액성한계 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "액성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "액성한계 시험 이란?",
+      "액성한계 시험 계산 방법",
+      "액성한계 시험 결과 해석",
+      "액성한계 시험 관련 기준",
+      "액성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "액성한계 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "액성한계 시험 부적합 원인과 대책",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "액성한계 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "액성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "액성한계 시험 이란?",
+      "액성한계 시험 계산 방법",
+      "액성한계 시험 결과 해석",
+      "액성한계 시험 관련 기준",
+      "액성한계 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "액성한계 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "소성한계 시험 계산 방법",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "소성한계 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "소성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "소성한계 시험 이란?",
+      "소성한계 시험 결과 해석",
+      "소성한계 시험 관련 기준",
+      "소성한계 시험 현장 적용 방법",
+      "소성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "소성한계 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "소성한계 시험 현장 적용 방법",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "소성한계 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "소성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "소성한계 시험 이란?",
+      "소성한계 시험 계산 방법",
+      "소성한계 시험 결과 해석",
+      "소성한계 시험 관련 기준",
+      "소성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "소성한계 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "소성한계 시험 부적합 원인과 대책",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "소성한계 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "소성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "소성한계 시험 이란?",
+      "소성한계 시험 계산 방법",
+      "소성한계 시험 결과 해석",
+      "소성한계 시험 관련 기준",
+      "소성한계 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "소성한계 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "수축한계 시험 결과 해석",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "수축한계 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "수축한계 시험 이란?",
+      "수축한계 시험 방법",
+      "수축한계 시험 계산 방법",
+      "수축한계 시험 관련 기준",
+      "수축한계 시험 현장 적용 방법",
+      "수축한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "수축한계 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "실내 다짐시험 결과 해석",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "실내 다짐시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "실내 다짐시험 이란?",
+      "실내 다짐시험 방법",
+      "실내 다짐시험 계산 방법",
+      "실내 다짐시험 관련 기준",
+      "실내 다짐시험 현장 적용 방법",
+      "실내 다짐시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "실내 다짐시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "CBR 시험 결과 해석",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "CBR 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "CBR 시험 이란?",
+      "CBR 시험 방법",
+      "CBR 시험 계산 방법",
+      "CBR 시험 관련 기준",
+      "CBR 시험 현장 적용 방법",
+      "CBR 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "CBR 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "들밀도 시험 계산 방법",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "들밀도 시험_계산방법_계산방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "들밀도 시험"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "들밀도 시험 이란?",
+      "들밀도 시험 방법",
+      "들밀도 시험 결과 해석",
+      "들밀도 시험 관련 기준",
+      "들밀도 시험 현장 적용 방법",
+      "들밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "들밀도 시험 계산 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "들밀도 시험 현장 적용 방법",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "들밀도 시험_현장실무_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "현장실무",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "들밀도 시험"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "들밀도 시험 이란?",
+      "들밀도 시험 방법",
+      "들밀도 시험 계산 방법",
+      "들밀도 시험 결과 해석",
+      "들밀도 시험 관련 기준",
+      "들밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "들밀도 시험 현장 적용 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "들밀도 시험 부적합 원인과 대책",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "들밀도 시험_문제해결_문제 해결",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "들밀도 시험"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "들밀도 시험 이란?",
+      "들밀도 시험 방법",
+      "들밀도 시험 계산 방법",
+      "들밀도 시험 결과 해석",
+      "들밀도 시험 관련 기준",
+      "들밀도 시험 현장 적용 방법"
+    ],
+    "suggested_topic": "들밀도 시험 부적합 원인과 대책",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "고무풍선법 밀도 시험 결과 해석",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "고무풍선법 밀도 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "고무풍선법 밀도 시험 이란?",
+      "고무풍선법 밀도 시험 방법",
+      "고무풍선법 밀도 시험 계산 방법",
+      "고무풍선법 밀도 시험 관련 기준",
+      "고무풍선법 밀도 시험 현장 적용 방법",
+      "고무풍선법 밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "고무풍선법 밀도 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "일축압축시험 결과 해석",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "일축압축시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "일축압축시험 이란?",
+      "일축압축시험 방법",
+      "일축압축시험 계산 방법",
+      "일축압축시험 관련 기준",
+      "일축압축시험 현장 적용 방법",
+      "일축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "일축압축시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "직접전단시험 결과 해석",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "직접전단시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "직접전단시험 이란?",
+      "직접전단시험 방법",
+      "직접전단시험 계산 방법",
+      "직접전단시험 관련 기준",
+      "직접전단시험 현장 적용 방법",
+      "직접전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "직접전단시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "삼축압축시험 결과 해석",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "삼축압축시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "삼축압축시험 이란?",
+      "삼축압축시험 방법",
+      "삼축압축시험 계산 방법",
+      "삼축압축시험 관련 기준",
+      "삼축압축시험 현장 적용 방법",
+      "삼축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "삼축압축시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "베인전단시험 결과 해석",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "베인전단시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "베인전단시험 이란?",
+      "베인전단시험 방법",
+      "베인전단시험 계산 방법",
+      "베인전단시험 관련 기준",
+      "베인전단시험 현장 적용 방법",
+      "베인전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "베인전단시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "표준 압밀시험 결과 해석",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "표준 압밀시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "표준 압밀시험 이란?",
+      "표준 압밀시험 방법",
+      "표준 압밀시험 계산 방법",
+      "표준 압밀시험 관련 기준",
+      "표준 압밀시험 현장 적용 방법",
+      "표준 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "표준 압밀시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "급속 압밀시험 결과 해석",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "급속 압밀시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "급속 압밀시험 이란?",
+      "급속 압밀시험 방법",
+      "급속 압밀시험 계산 방법",
+      "급속 압밀시험 관련 기준",
+      "급속 압밀시험 현장 적용 방법",
+      "급속 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "급속 압밀시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "정수두 투수시험 결과 해석",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "정수두 투수시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "정수두 투수시험 이란?",
+      "정수두 투수시험 방법",
+      "정수두 투수시험 계산 방법",
+      "정수두 투수시험 관련 기준",
+      "정수두 투수시험 현장 적용 방법",
+      "정수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "정수두 투수시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "변수두 투수시험 결과 해석",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "변수두 투수시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "변수두 투수시험 이란?",
+      "변수두 투수시험 방법",
+      "변수두 투수시험 계산 방법",
+      "변수두 투수시험 관련 기준",
+      "변수두 투수시험 현장 적용 방법",
+      "변수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "변수두 투수시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "현장 다짐도 평가 결과 해석",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "현장 다짐도 평가_평가방법_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "평가방법",
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "현장 다짐도 평가 이란?",
+      "현장 다짐도 평가 방법",
+      "현장 다짐도 평가 계산 방법",
+      "현장 다짐도 평가 관련 기준",
+      "현장 다짐도 평가 현장 적용 방법",
+      "현장 다짐도 평가 부적합 원인과 대책"
+    ],
+    "suggested_topic": "현장 다짐도 평가 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "지반조사 보고서 해석 결과 해석",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "지반조사 보고서 해석_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "지반조사 보고서 해석 이란?",
+      "지반조사 보고서 해석 방법",
+      "지반조사 보고서 해석 계산 방법",
+      "지반조사 보고서 해석 관련 기준",
+      "지반조사 보고서 해석 현장 적용 방법",
+      "지반조사 보고서 해석 부적합 원인과 대책"
+    ],
+    "suggested_topic": "지반조사 보고서 해석 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "시험 성적서 판독 결과 해석",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "merge",
+      "duplicate": false,
+      "similarity_group": "시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [
+      "시험 성적서 판독 현장 적용 방법",
+      "시험 성적서 판독 부적합 원인과 대책",
+      "시험 성적서 판독 이란?",
+      "시험 성적서 판독 관련 기준"
+    ],
+    "related_topics": [
+      "시험 성적서 판독 방법",
+      "시험 성적서 판독 계산 방법"
+    ],
+    "suggested_topic": "시험 통합 정리",
+    "reason": "동일한 정보 목적을 가진 매우 유사한 주제들이 존재하여 통합하는 것이 합리적임."
+  },
+  {
+    "topic": "시험 성적서 판독 현장 적용 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "merge_child",
+      "duplicate": false,
+      "similarity_group": "시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "시험 성적서 판독 이란?",
+      "시험 성적서 판독 방법",
+      "시험 성적서 판독 계산 방법",
+      "시험 성적서 판독 결과 해석",
+      "시험 성적서 판독 관련 기준",
+      "시험 성적서 판독 부적합 원인과 대책"
+    ],
+    "suggested_topic": "시험 성적서 판독 현장 적용 방법",
+    "reason": "'시험 성적서 판독 결과 해석' (으)로 통합됨."
+  },
+  {
+    "topic": "시험 성적서 판독 부적합 원인과 대책",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제해결",
+    "validation": {
+      "decision": "merge_child",
+      "duplicate": false,
+      "similarity_group": "시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "시험 성적서 판독 이란?",
+      "시험 성적서 판독 방법",
+      "시험 성적서 판독 계산 방법",
+      "시험 성적서 판독 결과 해석",
+      "시험 성적서 판독 관련 기준",
+      "시험 성적서 판독 현장 적용 방법"
+    ],
+    "suggested_topic": "시험 성적서 판독 부적합 원인과 대책",
+    "reason": "'시험 성적서 판독 결과 해석' (으)로 통합됨."
+  },
+  {
+    "topic": "시험 성적서 판독 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "시험_결과해석_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 24,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "시험 성적서 판독 이란?",
+      "시험 성적서 판독 계산 방법",
+      "시험 성적서 판독 결과 해석",
+      "시험 성적서 판독 관련 기준",
+      "시험 성적서 판독 현장 적용 방법",
+      "시험 성적서 판독 부적합 원인과 대책"
+    ],
+    "suggested_topic": "시험 성적서 판독 방법",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중 시험 결과 해석",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 23,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "모래의 비중 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중 시험 이란?",
+      "비중 시험 방법",
+      "비중 시험 계산 방법",
+      "비중 시험 관련 기준",
+      "비중 시험 현장 적용 방법",
+      "비중 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "체분석 시험 결과 해석",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "체분석 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 23,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "체분석 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "체분석 시험 이란?",
+      "체분석 시험 계산 방법",
+      "체분석 시험 관련 기준",
+      "체분석 시험 현장 적용 방법",
+      "체분석 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "체분석 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "액성한계 시험 결과 해석",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "액성한계 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 23,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "액성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "액성한계 시험 이란?",
+      "액성한계 시험 계산 방법",
+      "액성한계 시험 관련 기준",
+      "액성한계 시험 현장 적용 방법",
+      "액성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "액성한계 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "소성한계 시험 결과 해석",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "소성한계 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 23,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "소성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "소성한계 시험 이란?",
+      "소성한계 시험 계산 방법",
+      "소성한계 시험 관련 기준",
+      "소성한계 시험 현장 적용 방법",
+      "소성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "소성한계 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "들밀도 시험 결과 해석",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "결과 해석",
+    "content_type": "결과해석",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "들밀도 시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 23,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "들밀도 시험"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "들밀도 시험 이란?",
+      "들밀도 시험 방법",
+      "들밀도 시험 계산 방법",
+      "들밀도 시험 관련 기준",
+      "들밀도 시험 현장 적용 방법",
+      "들밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "들밀도 시험 결과 해석",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "들밀도 시험 방법",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "시험방법 확인",
+    "content_type": "시험방법",
+    "validation": {
+      "decision": "review",
+      "duplicate": false,
+      "similarity_group": "들밀도 시험_시험방법_시험방법 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "medium",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "medium"
+    },
+    "validation_score": 22,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 2
+    },
+    "related_existing_posts": [
+      "들밀도 시험"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "들밀도 시험 이란?",
+      "들밀도 시험 계산 방법",
+      "들밀도 시험 결과 해석",
+      "들밀도 시험 관련 기준",
+      "들밀도 시험 현장 적용 방법",
+      "들밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "들밀도 시험 방법",
+    "reason": "기존에 포괄적인 주제의 게시물이 존재하여, 본 내용의 중복 여부를 원문 확인 후 판단해야 함.",
+    "reason_codes": [
+      "existing_content_overlap"
+    ]
+  },
+  {
+    "topic": "현장 다짐도 평가 현장 적용 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "현장 적용",
+    "content_type": "현장가이드",
+    "validation": {
+      "decision": "review",
+      "duplicate": false,
+      "similarity_group": "현장 다짐도 평가_평가방법_현장 적용",
+      "standalone_value": "high",
+      "clarity": "low",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "평가방법",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "low"
+    },
+    "validation_score": 22,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 2,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "현장 다짐도 평가 이란?",
+      "현장 다짐도 평가 방법",
+      "현장 다짐도 평가 계산 방법",
+      "현장 다짐도 평가 결과 해석",
+      "현장 다짐도 평가 관련 기준",
+      "현장 다짐도 평가 부적합 원인과 대책"
+    ],
+    "suggested_topic": "현장 다짐도 평가 현장 적용 방법",
+    "reason": "콘텐츠 범위나 제목의 의미가 모호하여 독립 콘텐츠 구성 판단이 불확실함.",
+    "reason_codes": [
+      "content_type_reclassification",
+      "title_semantic_ambiguity",
+      "low_confidence"
+    ]
+  },
+  {
+    "topic": "현장 다짐도 평가 계산 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "review",
+      "duplicate": false,
+      "similarity_group": "현장 다짐도 평가_평가방법_계산방법 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "평가방법",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "low"
+    },
+    "validation_score": 22,
+    "score_detail": {
+      "standalone_value": 2,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "현장 다짐도 평가 이란?",
+      "현장 다짐도 평가 방법",
+      "현장 다짐도 평가 결과 해석",
+      "현장 다짐도 평가 관련 기준",
+      "현장 다짐도 평가 현장 적용 방법",
+      "현장 다짐도 평가 부적합 원인과 대책"
+    ],
+    "suggested_topic": "현장 다짐도 평가 계산 방법",
+    "reason": "콘텐츠 범위나 제목의 의미가 모호하여 독립 콘텐츠 구성 판단이 불확실함.",
+    "reason_codes": [
+      "content_type_reclassification",
+      "candidate_scope_ambiguity",
+      "low_confidence"
+    ]
+  },
+  {
+    "topic": "지반조사 보고서 해석 이란?",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "지반조사 보고서 해석_결과해석_정보 탐색",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 22,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "지반조사 보고서 해석 방법",
+      "지반조사 보고서 해석 계산 방법",
+      "지반조사 보고서 해석 결과 해석",
+      "지반조사 보고서 해석 관련 기준",
+      "지반조사 보고서 해석 현장 적용 방법",
+      "지반조사 보고서 해석 부적합 원인과 대책"
+    ],
+    "suggested_topic": "지반조사 보고서 해석 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "지반조사 보고서 해석 관련 기준",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "지반조사 보고서 해석_결과해석_기준 확인",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 22,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "지반조사 보고서 해석 이란?",
+      "지반조사 보고서 해석 방법",
+      "지반조사 보고서 해석 계산 방법",
+      "지반조사 보고서 해석 결과 해석",
+      "지반조사 보고서 해석 현장 적용 방법",
+      "지반조사 보고서 해석 부적합 원인과 대책"
+    ],
+    "suggested_topic": "지반조사 보고서 해석 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "시험 성적서 판독 이란?",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "merge_child",
+      "duplicate": false,
+      "similarity_group": "시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 22,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 3,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "시험 성적서 판독 방법",
+      "시험 성적서 판독 계산 방법",
+      "시험 성적서 판독 결과 해석",
+      "시험 성적서 판독 관련 기준",
+      "시험 성적서 판독 현장 적용 방법",
+      "시험 성적서 판독 부적합 원인과 대책"
+    ],
+    "suggested_topic": "시험 성적서 판독 이란?",
+    "reason": "'시험 성적서 판독 결과 해석' (으)로 통합됨."
+  },
+  {
+    "topic": "시험 성적서 판독 관련 기준",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "merge_child",
+      "duplicate": false,
+      "similarity_group": "시험_결과해석_결과해석",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": false,
+      "search_intent_suggested": "결과해석",
+      "confidence": "high"
+    },
+    "validation_score": 22,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 5,
+      "practical_value": 3,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "시험 성적서 판독 이란?",
+      "시험 성적서 판독 방법",
+      "시험 성적서 판독 계산 방법",
+      "시험 성적서 판독 결과 해석",
+      "시험 성적서 판독 현장 적용 방법",
+      "시험 성적서 판독 부적합 원인과 대책"
+    ],
+    "suggested_topic": "시험 성적서 판독 관련 기준",
+    "reason": "'시험 성적서 판독 결과 해석' (으)로 통합됨."
+  },
+  {
+    "topic": "현장 다짐도 평가 이란?",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "merge_child",
+      "duplicate": false,
+      "similarity_group": "현장 다짐도 평가_평가방법_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "평가방법",
+      "search_intent_valid": false,
+      "search_intent_suggested": "현장 적용",
+      "confidence": "high"
+    },
+    "validation_score": 21,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "현장 다짐도 평가 방법",
+      "현장 다짐도 평가 계산 방법",
+      "현장 다짐도 평가 결과 해석",
+      "현장 다짐도 평가 관련 기준",
+      "현장 다짐도 평가 현장 적용 방법",
+      "현장 다짐도 평가 부적합 원인과 대책"
+    ],
+    "suggested_topic": "현장 다짐도 평가 이란?",
+    "reason": "'현장 다짐도 평가 방법' (으)로 통합됨."
+  },
+  {
+    "topic": "현장 다짐도 평가 관련 기준",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "merge_child",
+      "duplicate": false,
+      "similarity_group": "현장 다짐도 평가_평가방법_현장 적용",
+      "standalone_value": "high",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "평가방법",
+      "search_intent_valid": false,
+      "search_intent_suggested": "현장 적용",
+      "confidence": "high"
+    },
+    "validation_score": 21,
+    "score_detail": {
+      "standalone_value": 5,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "현장 다짐도 평가 이란?",
+      "현장 다짐도 평가 방법",
+      "현장 다짐도 평가 계산 방법",
+      "현장 다짐도 평가 결과 해석",
+      "현장 다짐도 평가 현장 적용 방법",
+      "현장 다짐도 평가 부적합 원인과 대책"
+    ],
+    "suggested_topic": "현장 다짐도 평가 관련 기준",
+    "reason": "'현장 다짐도 평가 방법' (으)로 통합됨."
+  },
+  {
+    "topic": "시험 성적서 판독 계산 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "review",
+      "duplicate": false,
+      "similarity_group": "시험_결과해석_계산방법 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "low"
+    },
+    "validation_score": 21,
+    "score_detail": {
+      "standalone_value": 2,
+      "clarity": 5,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 4
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "시험 성적서 판독 이란?",
+      "시험 성적서 판독 방법",
+      "시험 성적서 판독 결과 해석",
+      "시험 성적서 판독 관련 기준",
+      "시험 성적서 판독 현장 적용 방법",
+      "시험 성적서 판독 부적합 원인과 대책"
+    ],
+    "suggested_topic": "시험 성적서 판독 계산 방법",
+    "reason": "콘텐츠 범위나 제목의 의미가 모호하여 독립 콘텐츠 구성 판단이 불확실함.",
+    "reason_codes": [
+      "content_type_reclassification",
+      "candidate_scope_ambiguity",
+      "low_confidence"
+    ]
+  },
+  {
+    "topic": "함수비 시험 관련 기준",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "함수비 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "함수비 시험 이란?",
+      "함수비 시험 방법",
+      "함수비 시험 계산 방법",
+      "함수비 시험 결과 해석",
+      "함수비 시험 현장 적용 방법",
+      "함수비 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "함수비 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "단위중량 시험 관련 기준",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "단위중량 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "단위중량 시험 이란?",
+      "단위중량 시험 방법",
+      "단위중량 시험 계산 방법",
+      "단위중량 시험 결과 해석",
+      "단위중량 시험 현장 적용 방법",
+      "단위중량 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "단위중량 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중계 시험 관련 기준",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중계 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중계 시험 이란?",
+      "비중계 시험 방법",
+      "비중계 시험 계산 방법",
+      "비중계 시험 결과 해석",
+      "비중계 시험 현장 적용 방법",
+      "비중계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중계 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "수축한계 시험 관련 기준",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "수축한계 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "수축한계 시험 이란?",
+      "수축한계 시험 방법",
+      "수축한계 시험 계산 방법",
+      "수축한계 시험 결과 해석",
+      "수축한계 시험 현장 적용 방법",
+      "수축한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "수축한계 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "실내 다짐시험 관련 기준",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "실내 다짐시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "실내 다짐시험 이란?",
+      "실내 다짐시험 방법",
+      "실내 다짐시험 계산 방법",
+      "실내 다짐시험 결과 해석",
+      "실내 다짐시험 현장 적용 방법",
+      "실내 다짐시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "실내 다짐시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "CBR 시험 관련 기준",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "CBR 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "CBR 시험 이란?",
+      "CBR 시험 방법",
+      "CBR 시험 계산 방법",
+      "CBR 시험 결과 해석",
+      "CBR 시험 현장 적용 방법",
+      "CBR 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "CBR 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "고무풍선법 밀도 시험 관련 기준",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "고무풍선법 밀도 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "고무풍선법 밀도 시험 이란?",
+      "고무풍선법 밀도 시험 방법",
+      "고무풍선법 밀도 시험 계산 방법",
+      "고무풍선법 밀도 시험 결과 해석",
+      "고무풍선법 밀도 시험 현장 적용 방법",
+      "고무풍선법 밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "고무풍선법 밀도 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "일축압축시험 관련 기준",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "일축압축시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "일축압축시험 이란?",
+      "일축압축시험 방법",
+      "일축압축시험 계산 방법",
+      "일축압축시험 결과 해석",
+      "일축압축시험 현장 적용 방법",
+      "일축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "일축압축시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "직접전단시험 관련 기준",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "직접전단시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "직접전단시험 이란?",
+      "직접전단시험 방법",
+      "직접전단시험 계산 방법",
+      "직접전단시험 결과 해석",
+      "직접전단시험 현장 적용 방법",
+      "직접전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "직접전단시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "삼축압축시험 관련 기준",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "삼축압축시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "삼축압축시험 이란?",
+      "삼축압축시험 방법",
+      "삼축압축시험 계산 방법",
+      "삼축압축시험 결과 해석",
+      "삼축압축시험 현장 적용 방법",
+      "삼축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "삼축압축시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "베인전단시험 관련 기준",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "베인전단시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "베인전단시험 이란?",
+      "베인전단시험 방법",
+      "베인전단시험 계산 방법",
+      "베인전단시험 결과 해석",
+      "베인전단시험 현장 적용 방법",
+      "베인전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "베인전단시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "표준 압밀시험 관련 기준",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "표준 압밀시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "표준 압밀시험 이란?",
+      "표준 압밀시험 방법",
+      "표준 압밀시험 계산 방법",
+      "표준 압밀시험 결과 해석",
+      "표준 압밀시험 현장 적용 방법",
+      "표준 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "표준 압밀시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "급속 압밀시험 관련 기준",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "급속 압밀시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "급속 압밀시험 이란?",
+      "급속 압밀시험 방법",
+      "급속 압밀시험 계산 방법",
+      "급속 압밀시험 결과 해석",
+      "급속 압밀시험 현장 적용 방법",
+      "급속 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "급속 압밀시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "정수두 투수시험 관련 기준",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "정수두 투수시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "정수두 투수시험 이란?",
+      "정수두 투수시험 방법",
+      "정수두 투수시험 계산 방법",
+      "정수두 투수시험 결과 해석",
+      "정수두 투수시험 현장 적용 방법",
+      "정수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "정수두 투수시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "변수두 투수시험 관련 기준",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "변수두 투수시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "변수두 투수시험 이란?",
+      "변수두 투수시험 방법",
+      "변수두 투수시험 계산 방법",
+      "변수두 투수시험 결과 해석",
+      "변수두 투수시험 현장 적용 방법",
+      "변수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "변수두 투수시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "지반조사 보고서 해석 계산 방법",
+    "topic_cluster": "토질시험 실무",
+    "category": "토질시험",
+    "search_intent": "계산방법 확인",
+    "content_type": "계산방법",
+    "validation": {
+      "decision": "review",
+      "duplicate": false,
+      "similarity_group": "지반조사 보고서 해석_결과해석_계산방법 확인",
+      "standalone_value": "medium",
+      "clarity": "low",
+      "practical_value": "high",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": false,
+      "content_type_suggested": "결과해석",
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "low"
+    },
+    "validation_score": 19,
+    "score_detail": {
+      "standalone_value": 2,
+      "clarity": 2,
+      "practical_value": 5,
+      "topic_specificity": 5,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "지반조사 보고서 해석 이란?",
+      "지반조사 보고서 해석 방법",
+      "지반조사 보고서 해석 결과 해석",
+      "지반조사 보고서 해석 관련 기준",
+      "지반조사 보고서 해석 현장 적용 방법",
+      "지반조사 보고서 해석 부적합 원인과 대책"
+    ],
+    "suggested_topic": "지반조사 보고서 해석 계산 방법",
+    "reason": "콘텐츠 범위나 제목의 의미가 모호하여 독립 콘텐츠 구성 판단이 불확실함.",
+    "reason_codes": [
+      "content_type_reclassification",
+      "candidate_scope_ambiguity",
+      "title_semantic_ambiguity",
+      "low_confidence"
+    ]
+  },
+  {
+    "topic": "함수비 시험 이란?",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "함수비 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "함수비 시험 방법",
+      "함수비 시험 계산 방법",
+      "함수비 시험 결과 해석",
+      "함수비 시험 관련 기준",
+      "함수비 시험 현장 적용 방법",
+      "함수비 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "함수비 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중 시험 관련 기준",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "모래의 비중 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중 시험 이란?",
+      "비중 시험 방법",
+      "비중 시험 계산 방법",
+      "비중 시험 결과 해석",
+      "비중 시험 현장 적용 방법",
+      "비중 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "단위중량 시험 이란?",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "단위중량 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "단위중량 시험 방법",
+      "단위중량 시험 계산 방법",
+      "단위중량 시험 결과 해석",
+      "단위중량 시험 관련 기준",
+      "단위중량 시험 현장 적용 방법",
+      "단위중량 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "단위중량 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "체분석 시험 관련 기준",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "체분석 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "체분석 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "체분석 시험 이란?",
+      "체분석 시험 계산 방법",
+      "체분석 시험 결과 해석",
+      "체분석 시험 현장 적용 방법",
+      "체분석 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "체분석 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중계 시험 이란?",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중계 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중계 시험 방법",
+      "비중계 시험 계산 방법",
+      "비중계 시험 결과 해석",
+      "비중계 시험 관련 기준",
+      "비중계 시험 현장 적용 방법",
+      "비중계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중계 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "액성한계 시험 관련 기준",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "액성한계 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "액성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "액성한계 시험 이란?",
+      "액성한계 시험 계산 방법",
+      "액성한계 시험 결과 해석",
+      "액성한계 시험 현장 적용 방법",
+      "액성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "액성한계 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "소성한계 시험 관련 기준",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "소성한계 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "소성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "소성한계 시험 이란?",
+      "소성한계 시험 계산 방법",
+      "소성한계 시험 결과 해석",
+      "소성한계 시험 현장 적용 방법",
+      "소성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "소성한계 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "수축한계 시험 이란?",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "수축한계 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "수축한계 시험 방법",
+      "수축한계 시험 계산 방법",
+      "수축한계 시험 결과 해석",
+      "수축한계 시험 관련 기준",
+      "수축한계 시험 현장 적용 방법",
+      "수축한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "수축한계 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "실내 다짐시험 이란?",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "실내 다짐시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "실내 다짐시험 방법",
+      "실내 다짐시험 계산 방법",
+      "실내 다짐시험 결과 해석",
+      "실내 다짐시험 관련 기준",
+      "실내 다짐시험 현장 적용 방법",
+      "실내 다짐시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "실내 다짐시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "CBR 시험 이란?",
+    "topic_cluster": "다짐시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "CBR 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "CBR 시험 방법",
+      "CBR 시험 계산 방법",
+      "CBR 시험 결과 해석",
+      "CBR 시험 관련 기준",
+      "CBR 시험 현장 적용 방법",
+      "CBR 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "CBR 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "들밀도 시험 관련 기준",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "기준 확인",
+    "content_type": "기준정리",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "들밀도 시험_기준정리_기준 확인",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "high",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 4,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "들밀도 시험"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "들밀도 시험 이란?",
+      "들밀도 시험 방법",
+      "들밀도 시험 계산 방법",
+      "들밀도 시험 결과 해석",
+      "들밀도 시험 현장 적용 방법",
+      "들밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "들밀도 시험 관련 기준",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "고무풍선법 밀도 시험 이란?",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "고무풍선법 밀도 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "고무풍선법 밀도 시험 방법",
+      "고무풍선법 밀도 시험 계산 방법",
+      "고무풍선법 밀도 시험 결과 해석",
+      "고무풍선법 밀도 시험 관련 기준",
+      "고무풍선법 밀도 시험 현장 적용 방법",
+      "고무풍선법 밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "고무풍선법 밀도 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "일축압축시험 이란?",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "일축압축시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "일축압축시험 방법",
+      "일축압축시험 계산 방법",
+      "일축압축시험 결과 해석",
+      "일축압축시험 관련 기준",
+      "일축압축시험 현장 적용 방법",
+      "일축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "일축압축시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "직접전단시험 이란?",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "직접전단시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "직접전단시험 방법",
+      "직접전단시험 계산 방법",
+      "직접전단시험 결과 해석",
+      "직접전단시험 관련 기준",
+      "직접전단시험 현장 적용 방법",
+      "직접전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "직접전단시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "삼축압축시험 이란?",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "삼축압축시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "삼축압축시험 방법",
+      "삼축압축시험 계산 방법",
+      "삼축압축시험 결과 해석",
+      "삼축압축시험 관련 기준",
+      "삼축압축시험 현장 적용 방법",
+      "삼축압축시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "삼축압축시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "베인전단시험 이란?",
+    "topic_cluster": "강도시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "베인전단시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "베인전단시험 방법",
+      "베인전단시험 계산 방법",
+      "베인전단시험 결과 해석",
+      "베인전단시험 관련 기준",
+      "베인전단시험 현장 적용 방법",
+      "베인전단시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "베인전단시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "표준 압밀시험 이란?",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "표준 압밀시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "표준 압밀시험 방법",
+      "표준 압밀시험 계산 방법",
+      "표준 압밀시험 결과 해석",
+      "표준 압밀시험 관련 기준",
+      "표준 압밀시험 현장 적용 방법",
+      "표준 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "표준 압밀시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "급속 압밀시험 이란?",
+    "topic_cluster": "압밀시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "급속 압밀시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "급속 압밀시험 방법",
+      "급속 압밀시험 계산 방법",
+      "급속 압밀시험 결과 해석",
+      "급속 압밀시험 관련 기준",
+      "급속 압밀시험 현장 적용 방법",
+      "급속 압밀시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "급속 압밀시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "정수두 투수시험 이란?",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "정수두 투수시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "정수두 투수시험 방법",
+      "정수두 투수시험 계산 방법",
+      "정수두 투수시험 결과 해석",
+      "정수두 투수시험 관련 기준",
+      "정수두 투수시험 현장 적용 방법",
+      "정수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "정수두 투수시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "변수두 투수시험 이란?",
+    "topic_cluster": "투수시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "변수두 투수시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 18,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 5
+    },
+    "related_existing_posts": [],
+    "merge_candidates": [],
+    "related_topics": [
+      "변수두 투수시험 방법",
+      "변수두 투수시험 계산 방법",
+      "변수두 투수시험 결과 해석",
+      "변수두 투수시험 관련 기준",
+      "변수두 투수시험 현장 적용 방법",
+      "변수두 투수시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "변수두 투수시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "비중 시험 이란?",
+    "topic_cluster": "기본물성시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "비중 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 17,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "모래의 비중 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "비중 시험 방법",
+      "비중 시험 계산 방법",
+      "비중 시험 결과 해석",
+      "비중 시험 관련 기준",
+      "비중 시험 현장 적용 방법",
+      "비중 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "비중 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "체분석 시험 이란?",
+    "topic_cluster": "입도시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "체분석 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 17,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "체분석 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "체분석 시험 계산 방법",
+      "체분석 시험 결과 해석",
+      "체분석 시험 관련 기준",
+      "체분석 시험 현장 적용 방법",
+      "체분석 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "체분석 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "액성한계 시험 이란?",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "액성한계 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 17,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "액성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "액성한계 시험 계산 방법",
+      "액성한계 시험 결과 해석",
+      "액성한계 시험 관련 기준",
+      "액성한계 시험 현장 적용 방법",
+      "액성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "액성한계 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "소성한계 시험 이란?",
+    "topic_cluster": "컨시스턴시시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "소성한계 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 17,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "소성한계 시험방법"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "소성한계 시험 계산 방법",
+      "소성한계 시험 결과 해석",
+      "소성한계 시험 관련 기준",
+      "소성한계 시험 현장 적용 방법",
+      "소성한계 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "소성한계 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  },
+  {
+    "topic": "들밀도 시험 이란?",
+    "topic_cluster": "밀도시험",
+    "category": "토질시험",
+    "search_intent": "정보 탐색",
+    "content_type": "개념설명",
+    "validation": {
+      "decision": "keep",
+      "duplicate": false,
+      "similarity_group": "들밀도 시험_개념설명_정보 탐색",
+      "standalone_value": "medium",
+      "clarity": "high",
+      "practical_value": "medium",
+      "topic_specificity": "medium",
+      "content_gap": "high",
+      "content_type_valid": true,
+      "content_type_suggested": null,
+      "search_intent_valid": true,
+      "search_intent_suggested": null,
+      "confidence": "high"
+    },
+    "validation_score": 17,
+    "score_detail": {
+      "standalone_value": 3,
+      "clarity": 4,
+      "practical_value": 3,
+      "topic_specificity": 3,
+      "content_gap": 4
+    },
+    "related_existing_posts": [
+      "들밀도 시험"
+    ],
+    "merge_candidates": [],
+    "related_topics": [
+      "들밀도 시험 방법",
+      "들밀도 시험 계산 방법",
+      "들밀도 시험 결과 해석",
+      "들밀도 시험 관련 기준",
+      "들밀도 시험 현장 적용 방법",
+      "들밀도 시험 부적합 원인과 대책"
+    ],
+    "suggested_topic": "들밀도 시험 이란?",
+    "reason": "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+  }
+]

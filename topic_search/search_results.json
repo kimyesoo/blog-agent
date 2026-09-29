@@ -17,7 +17,7 @@
           "exception": "InvalidAPIKeyError",
           "message": "Unauthorized: missing or invalid API key."
         },
-        "searched_at": "2026-09-29T12:28:50.584779+00:00"
+        "searched_at": "2026-09-29T21:45:53.497288+00:00"
       },
       {
         "query": "함수비 시험",
@@ -29,7 +29,7 @@
           "exception": "InvalidAPIKeyError",
           "message": "Unauthorized: missing or invalid API key."
         },
-        "searched_at": "2026-09-29T12:28:51.117715+00:00"
+        "searched_at": "2026-09-29T21:45:54.027369+00:00"
       }
     ],
     "serp": {
@@ -81,7 +81,7 @@
           "exception": "InvalidAPIKeyError",
           "message": "Unauthorized: missing or invalid API key."
         },
-        "searched_at": "2026-09-29T12:28:51.650321+00:00"
+        "searched_at": "2026-09-29T21:45:54.556792+00:00"
       },
       {
         "query": "함수비 시험 계산",
@@ -93,7 +93,7 @@
           "exception": "InvalidAPIKeyError",
           "message": "Unauthorized: missing or invalid API key."
         },
-        "searched_at": "2026-09-29T12:28:52.182504+00:00"
+        "searched_at": "2026-09-29T21:45:55.086131+00:00"
       }
     ],
     "serp": {
@@ -145,7 +145,7 @@
           "exception": "InvalidAPIKeyError",
           "message": "Unauthorized: missing or invalid API key."
         },
-        "searched_at": "2026-09-29T12:28:52.714869+00:00"
+        "searched_at": "2026-09-29T21:45:55.615869+00:00"
       },
       {
         "query": "함수비 시험 현장 적용",
@@ -157,7 +157,7 @@
           "exception": "InvalidAPIKeyError",
           "message": "Unauthorized: missing or invalid API key."
         },
-        "searched_at": "2026-09-29T12:28:53.247247+00:00"
+        "searched_at": "2026-09-29T21:45:56.145076+00:00"
       }
     ],
     "serp": {
