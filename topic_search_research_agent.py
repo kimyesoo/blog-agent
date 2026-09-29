@@ -6,6 +6,10 @@ import time
 import hashlib
 from urllib.parse import urlparse
 from typing import Dict, List, Optional
+from dotenv import load_dotenv
+
+load_dotenv()
+
 try:
     from tavily import TavilyClient, MissingAPIKeyError
 except ImportError:
@@ -64,8 +68,13 @@ class TavilySearchProvider(SearchProvider):
             self.provider_status["last_error"] = "tavily_sdk_not_installed"
             raise ValueError("tavily_sdk_not_installed")
 
-        self.client = TavilyClient(api_key=self.api_key)
-        self.provider_status["client_initialized"] = True
+        try:
+            self.client = TavilyClient(api_key=self.api_key)
+            self.provider_status["client_initialized"] = True
+        except Exception as e:
+            self.provider_status["client_initialized"] = False
+            self.provider_status["last_error"] = f"initialization_failed: {str(e)}"
+            raise ValueError(f"initialization_failed: {str(e)}")
 
     def search(self, query: str, max_results: int = 10) -> dict:
         max_retries = 2
@@ -146,8 +155,10 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
     cache_path = os.path.join(cache_dir, f"{safe_hash}.json")
     if not refresh and os.path.exists(cache_path):
         res = load_json(cache_path)
-        res["_cache_hit"] = True
-        return res
+        # Verify it wasn't a failed search before returning. Failed searches shouldn't be permanently cached.
+        if res.get("research_status") != "failed":
+            res["_cache_hit"] = True
+            return res
 
     variants = generate_query_variants(topic)
 
@@ -264,7 +275,10 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
         if qd.get("error") and qd["error"] not in result["errors"]:
             result["errors"].append(qd["error"])
 
-    save_json(result, cache_path)
+    # Only cache successful queries to avoid persistent failure caching
+    if result["research_status"] != "failed":
+        save_json(result, cache_path)
+
     return result
 
 def generate_report(results, summary, output_md):
@@ -312,13 +326,51 @@ def main():
     parser.add_argument("--provider", type=str, default=os.environ.get("SEARCH_PROVIDER", "tavily"), help="Search provider to use")
     parser.add_argument("--disable-cache", action="store_true", help="Disable caching mechanism")
     parser.add_argument("--refresh-cache", action="store_true", help="Same as --refresh")
+    parser.add_argument("--diagnose", action="store_true", help="Run provider diagnostics")
+    parser.add_argument("--clear-cache", action="store_true", help="Delete all cache files")
 
     args = parser.parse_args()
 
     if args.refresh_cache or args.disable_cache:
         args.refresh = True
 
+    out_dir = "topic_search"
+    cache_dir = os.path.join(out_dir, "cache")
+
+    if args.clear_cache:
+        if os.path.exists(cache_dir):
+            import glob
+            files = glob.glob(os.path.join(cache_dir, "*.json"))
+            for f in files:
+                os.remove(f)
+            print(f"Cleared {len(files)} cache files from {cache_dir}.")
+        else:
+            print("No cache directory found to clear.")
+        sys.exit(0)
+
+    if args.diagnose:
+        print("Running Diagnostics...\n")
+        provider = get_provider(args.provider)
+        print(f"Provider: {provider.provider_status.get('provider', 'unknown')}")
+        print(f"API Key Detected: {provider.provider_status.get('api_key_detected', False)}")
+        print(f"Client Initialized: {provider.provider_status.get('client_initialized', False)}")
+
+        # Test search
+        if provider.provider_status.get('client_initialized', False):
+            print("Testing search execution...")
+            res = provider.search("테스트", max_results=1)
+            print(f"Search Test Success: {provider.provider_status.get('search_test_success', False)}")
+            if not provider.provider_status.get('search_test_success', False):
+                print(f"Last Error: {provider.provider_status.get('last_error', '')}")
+        else:
+            print(f"Search Test Success: False")
+            print(f"Last Error: {provider.provider_status.get('last_error', '')}")
+
+        sys.exit(0)
+
     print("Blog Agent - Topic Search Research Agent V1\n")
+
+    os.makedirs(cache_dir, exist_ok=True)
 
     validated_path = "topic_research/validated_topics.json"
     posts_path = "content_db/posts.json"
@@ -359,7 +411,6 @@ def main():
 
     out_dir = "topic_search"
     cache_dir = os.path.join(out_dir, "cache")
-    os.makedirs(cache_dir, exist_ok=True)
 
     provider = get_provider(args.provider)
 

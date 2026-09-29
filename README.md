@@ -46,15 +46,24 @@
 * **필요한 환경**: Python 3.x
 * **의존성 설치**:
   ```bash
-  pip install tavily-python
+  pip install tavily-python python-dotenv>=1.0.0
   ```
   *(Topic Search Research Agent에서 실제 검색 결과를 얻기 위해 필요합니다. 설치하지 않거나 `TAVILY_API_KEY`가 없을 경우 안전한 fallback 모드로 동작합니다.)*
+
+* **환경 변수 설정**:
+  ```bash
+  cp .env.example .env
+  ```
+  이후 `.env` 파일에 `TAVILY_API_KEY=실제_발급받은_API_KEY` 를 입력합니다.
+
 * **실행 명령어**:
   * Topic Agent 실행: `python3 topic_agent.py`
   * Topic Research Agent 실행: `python3 topic_research_agent.py` (또는 `python3 topic_research_agent.py "분야명"`)
   * Topic Validation Agent 실행: `python3 topic_validation_agent.py`
   * Topic Validation Report 생성: `python3 topic_validation_report.py`
-  * Topic Search Research Agent 실행: `python3 topic_search_research_agent.py --limit 7` (지원 플래그: `--decision`, `--limit`, `--topic`, `--refresh`)
+  * Topic Search Research Agent 진단: `python3 topic_search_research_agent.py --diagnose`
+  * Topic Search Research Agent 캐시 삭제: `python3 topic_search_research_agent.py --clear-cache`
+  * Topic Search Research Agent 실행: `python3 topic_search_research_agent.py --decision KEEP --limit 5` (추가 플래그: `--topic`, `--refresh`, `--disable-cache`)
   * Research Agent 실행: `python3 research_agent.py`
 * **입력 파일**:
   * `content_db/posts.json` (Topic Agent, Topic Research Agent, Topic Validation Agent, Topic Search Research Agent용)

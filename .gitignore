@@ -1,0 +1,4 @@
+.env
+topic_search/cache/
+__pycache__/
+*.pyc

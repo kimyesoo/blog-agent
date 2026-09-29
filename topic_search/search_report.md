@@ -4,9 +4,9 @@ Search Provider: tavily
 
 ## 1. Summary
 
-- 조사 후보: 7
+- 조사 후보: 5
 - 성공: 0
-- 실패: 7
+- 실패: 5
 - Cache hit: 0
 
 ## 1.1 Provider Status
@@ -41,5 +41,3 @@ Search Provider: tavily
   - 함수비 시험 현장 적용 방법 (Reason: authentication_error)
   - 함수비 시험 부적합 원인과 대책 (Reason: authentication_error)
   - 단위중량 시험 방법 (Reason: authentication_error)
-  - 단위중량 시험 계산 방법 (Reason: authentication_error)
-  - 단위중량 시험 현장 적용 방법 (Reason: authentication_error)
