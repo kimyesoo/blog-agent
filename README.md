@@ -9,6 +9,7 @@
 * **Content Database**: 이전에 발행된 블로그 게시물(또는 작성된 문서)의 주제 목록을 저장하고 관리하는 데이터베이스(JSON 형태)입니다.
 * **Topic Agent**: 기존 콘텐츠 데이터를 기반으로 관련 주제를 추천하는 기능입니다.
 * **Topic Research Agent**: 특정 분야(예: 토질시험)의 콘텐츠 후보군을 조사/확장하여 체계적인 콘텐츠 구조를 생성하는 기능입니다.
+* **Topic Validation Agent**: Topic Research Agent가 생성한 후보 주제를 검증하여 중복 검사, 유사성 그룹화, 독립 콘텐츠 가치 평가, 제목 명확성 평가, 실무 가치 평가 등을 수행하고 keep/merge/reject를 결정하는 에이전트입니다.
 * **Research Agent**: Topic Agent가 추천한 주제 중 하나를 선택하여 정해진 목차(시험 목적, 시험 원리 등 8개 항목)에 따라 기본 리서치 마크다운 템플릿 문서를 자동 생성하는 에이전트입니다.
 
 ## 3. 폴더 구조
@@ -24,8 +25,10 @@
 ├── topic_candidates/
 │   └── candidates.json          # Topic Agent가 생성한 추천 주제 목록
 ├── topic_research_agent.py      # Topic Research Agent 스크립트
+├── topic_validation_agent.py    # Topic Validation Agent 스크립트
 └── topic_research/
-    └── topic_candidates.json    # Topic Research Agent가 생성한 확장 콘텐츠 후보 목록
+    ├── topic_candidates.json    # Topic Research Agent가 생성한 확장 콘텐츠 후보 목록
+    └── validated_topics.json    # Topic Validation Agent가 검증 및 정리한 최종 후보 목록
 ```
 
 ## 4. 실행 방법
@@ -33,13 +36,16 @@
 * **실행 명령어**:
   * Topic Agent 실행: `python3 topic_agent.py`
   * Topic Research Agent 실행: `python3 topic_research_agent.py` (또는 `python3 topic_research_agent.py "분야명"`)
+  * Topic Validation Agent 실행: `python3 topic_validation_agent.py`
   * Research Agent 실행: `python3 research_agent.py`
 * **입력 파일**:
-  * `content_db/posts.json` (Topic Agent 및 Topic Research Agent용)
+  * `content_db/posts.json` (Topic Agent, Topic Research Agent, Topic Validation Agent용)
   * `topic_candidates/candidates.json` (Research Agent용)
+  * `topic_research/topic_candidates.json` (Topic Validation Agent용)
 * **출력 파일**:
   * `topic_candidates/candidates.json` (Topic Agent 출력)
   * `topic_research/topic_candidates.json` (Topic Research Agent 출력)
+  * `topic_research/validated_topics.json` (Topic Validation Agent 출력)
   * `research/*.md` (Research Agent 출력)
 
 ## 5. 현재 데이터 구조
