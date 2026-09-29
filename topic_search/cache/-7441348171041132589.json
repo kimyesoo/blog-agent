@@ -1,0 +1,39 @@
+{
+  "topic": "단위중량 시험 현장 적용 방법",
+  "topic_cluster": "기본물성시험",
+  "validation_decision": "keep",
+  "validation_search_intent": "현장 적용",
+  "observed_search_intent": null,
+  "queries": [
+    {
+      "query": "단위중량 시험 현장 적용 방법",
+      "query_type": "primary",
+      "status": "search_failed",
+      "results": []
+    },
+    {
+      "query": "단위중량 시험 현장 적용",
+      "query_type": "variant",
+      "status": "search_failed",
+      "results": []
+    }
+  ],
+  "serp": {
+    "serp_presence": false,
+    "organic_result_count": 0,
+    "unique_domains": 0
+  },
+  "generated_related_keywords": [],
+  "observed_related_queries": [],
+  "top_content": [],
+  "content_gap": [],
+  "search_volume": null,
+  "search_volume_source": null,
+  "competition": null,
+  "competition_source": null,
+  "existing_post": null,
+  "research_status": "failed",
+  "errors": [
+    "search_provider_unavailable"
+  ]
+}

@@ -1,0 +1,28 @@
+1. 변경 파일
+- `topic_search_research_agent.py` (신규 작성)
+- `README.md` (Topic Search Research Agent V1 소개 추가)
+
+2. 실행 명령
+- 전체 실행: `python3 topic_search_research_agent.py`
+- 조건 실행: `python3 topic_search_research_agent.py --decision KEEP --limit 7 --delay 0.5`
+
+3. 테스트 결과
+- 100% 정상 작동하며 Regression 없이 기존 V1.2.1 결과 (KEEP 144, MERGE 9, REVIEW 5)가 그대로 보존됩니다.
+
+4. 생성된 파일
+- `topic_search/search_results.json` (개별 후보의 Query 정보, SERP 여부, Content gap 및 기존 포스트 조회수 정보 등 구조화 데이터)
+- `topic_search/search_summary.json` (성공/실패 등 전체 통계)
+- `topic_search/search_report.md` (사람이 읽기 쉬운 요약 보고서)
+- `topic_search/cache/*.json` (동일 쿼리 재요청 방지를 위한 MD5 기반의 캐시 시스템)
+
+5. 실제 검색 가능 여부
+- search provider: 없음 (V1 제약에 의해 Mock-up / 안전 실패 로직 탑재)
+- API: 연결 안됨.
+- 검색 결과: "search_failed" 처리.
+
+6. 데이터 한계
+- 검색량 데이터 확보 여부: null (API 부재로 안전하게 null 처리)
+- 경쟁도 데이터 확보 여부: null (위와 동일)
+- SERP 확보 여부: false (위와 동일)
+- 연관검색어 확보 여부: AI생성본(`generated_related_keywords`)은 기존 객체로부터 병합하였으나 실제 관찰본(`observed_related_queries`)은 빈 배열로 둠.
+- Topic Research의 의도(validation_search_intent)와 관찰된 의도(observed_search_intent)를 엄격히 분리하도록 JSON 구조화 완료.
