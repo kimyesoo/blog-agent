@@ -9,7 +9,7 @@
 * **Content Database**: 이전에 발행된 블로그 게시물(또는 작성된 문서)의 주제 목록을 저장하고 관리하는 데이터베이스(JSON 형태)입니다.
 * **Topic Agent**: 기존 콘텐츠 데이터를 기반으로 관련 주제를 추천하는 기능입니다.
 * **Topic Research Agent**: 특정 분야(예: 토질시험)의 콘텐츠 후보군을 조사/확장하여 체계적인 콘텐츠 구조를 생성하는 기능입니다.
-* **Topic Validation Agent**: Topic Research Agent가 생성한 후보 주제를 검증하여 중복 검사, 유사성 그룹화, 독립 콘텐츠 가치 평가, 제목 명확성 평가, 실무 가치 평가 등을 수행하고 keep/merge/reject를 결정하는 에이전트입니다.
+* **Topic Validation Agent (V1.1)**: Topic Research Agent가 생성한 후보 주제를 검증합니다. V1.1에서는 콘텐츠의 목적(`search_intent`, `content_type`)을 활용하여 논리적 유사성 그룹화를 수행하며, 독립적인 콘텐츠 가치, 제목 명확성, 실무 가치를 기반으로 고도화된 keep/merge/reject 판정을 내립니다.
 * **Research Agent**: Topic Agent가 추천한 주제 중 하나를 선택하여 정해진 목차(시험 목적, 시험 원리 등 8개 항목)에 따라 기본 리서치 마크다운 템플릿 문서를 자동 생성하는 에이전트입니다.
 
 ## 3. 폴더 구조
