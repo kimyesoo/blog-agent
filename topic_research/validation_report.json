@@ -1,0 +1,1858 @@
+{
+  "summary_stats": {
+    "input_count": 158,
+    "keep_count": 96,
+    "merge_count": 10,
+    "reject_count": 0,
+    "review_count": 52,
+    "similarity_group_count": 150
+  },
+  "decision_distribution": {
+    "keep": {
+      "count": 96,
+      "percentage": 60.76
+    },
+    "merge": {
+      "count": 10,
+      "percentage": 6.33
+    },
+    "review": {
+      "count": 52,
+      "percentage": 32.91
+    },
+    "reject": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "keep_analysis": {
+    "by_content_type": {
+      "계산방법": {
+        "count": 20,
+        "percentage": 20.83
+      },
+      "문제해결": {
+        "count": 20,
+        "percentage": 20.83
+      },
+      "기준정리": {
+        "count": 20,
+        "percentage": 20.83
+      },
+      "개념설명": {
+        "count": 20,
+        "percentage": 20.83
+      },
+      "시험방법": {
+        "count": 16,
+        "percentage": 16.67
+      }
+    },
+    "by_search_intent": {
+      "계산방법 확인": {
+        "count": 20,
+        "percentage": 20.83
+      },
+      "문제 해결": {
+        "count": 20,
+        "percentage": 20.83
+      },
+      "기준 확인": {
+        "count": 20,
+        "percentage": 20.83
+      },
+      "정보 탐색": {
+        "count": 20,
+        "percentage": 20.83
+      },
+      "시험방법 확인": {
+        "count": 16,
+        "percentage": 16.67
+      }
+    },
+    "by_validation_score": {
+      "25": {
+        "count": 45,
+        "percentage": 46.88
+      },
+      "20": {
+        "count": 15,
+        "percentage": 15.62
+      },
+      "18": {
+        "count": 15,
+        "percentage": 15.62
+      },
+      "24": {
+        "count": 11,
+        "percentage": 11.46
+      },
+      "19": {
+        "count": 5,
+        "percentage": 5.21
+      },
+      "17": {
+        "count": 5,
+        "percentage": 5.21
+      }
+    }
+  },
+  "merge_analysis": [
+    {
+      "canonical_topic": "현장 다짐도 평가 통합 정리",
+      "merge_group_id": "현장 다짐도 평가_평가방법_현장 적용",
+      "child_topics": [
+        "현장 다짐도 평가 현장 적용 방법",
+        "현장 다짐도 평가 부적합 원인과 대책",
+        "현장 다짐도 평가 이란?",
+        "현장 다짐도 평가 관련 기준"
+      ],
+      "child_count": 4,
+      "reason": "동일한 정보 목적을 가진 매우 유사한 주제들이 존재하여 통합하는 것이 합리적임.",
+      "confidence": "high",
+      "self_reference_detected": false
+    },
+    {
+      "canonical_topic": "시험 통합 정리",
+      "merge_group_id": "시험_결과해석_결과해석",
+      "child_topics": [
+        "시험 성적서 판독 현장 적용 방법",
+        "시험 성적서 판독 부적합 원인과 대책",
+        "시험 성적서 판독 이란?",
+        "시험 성적서 판독 관련 기준"
+      ],
+      "child_count": 4,
+      "reason": "동일한 정보 목적을 가진 매우 유사한 주제들이 존재하여 통합하는 것이 합리적임.",
+      "confidence": "high",
+      "self_reference_detected": false
+    }
+  ],
+  "review_reasons": {
+    "semantic_ambiguity": 51,
+    "existing_content_overlap": 1
+  },
+  "review_details": [
+    {
+      "topic": "함수비 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "함수비 시험 이란?",
+        "함수비 시험 방법",
+        "함수비 시험 계산 방법",
+        "함수비 시험 결과 해석",
+        "함수비 시험 관련 기준",
+        "함수비 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "단위중량 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "단위중량 시험 이란?",
+        "단위중량 시험 방법",
+        "단위중량 시험 계산 방법",
+        "단위중량 시험 결과 해석",
+        "단위중량 시험 관련 기준",
+        "단위중량 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "비중계 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "비중계 시험 이란?",
+        "비중계 시험 방법",
+        "비중계 시험 계산 방법",
+        "비중계 시험 결과 해석",
+        "비중계 시험 관련 기준",
+        "비중계 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "수축한계 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "수축한계 시험 이란?",
+        "수축한계 시험 방법",
+        "수축한계 시험 계산 방법",
+        "수축한계 시험 결과 해석",
+        "수축한계 시험 관련 기준",
+        "수축한계 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "실내 다짐시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "실내 다짐시험 이란?",
+        "실내 다짐시험 방법",
+        "실내 다짐시험 계산 방법",
+        "실내 다짐시험 결과 해석",
+        "실내 다짐시험 관련 기준",
+        "실내 다짐시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "CBR 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "CBR 시험 이란?",
+        "CBR 시험 방법",
+        "CBR 시험 계산 방법",
+        "CBR 시험 결과 해석",
+        "CBR 시험 관련 기준",
+        "CBR 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "고무풍선법 밀도 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "고무풍선법 밀도 시험 이란?",
+        "고무풍선법 밀도 시험 방법",
+        "고무풍선법 밀도 시험 계산 방법",
+        "고무풍선법 밀도 시험 결과 해석",
+        "고무풍선법 밀도 시험 관련 기준",
+        "고무풍선법 밀도 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "일축압축시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "일축압축시험 이란?",
+        "일축압축시험 방법",
+        "일축압축시험 계산 방법",
+        "일축압축시험 결과 해석",
+        "일축압축시험 관련 기준",
+        "일축압축시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "직접전단시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "직접전단시험 이란?",
+        "직접전단시험 방법",
+        "직접전단시험 계산 방법",
+        "직접전단시험 결과 해석",
+        "직접전단시험 관련 기준",
+        "직접전단시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "삼축압축시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "삼축압축시험 이란?",
+        "삼축압축시험 방법",
+        "삼축압축시험 계산 방법",
+        "삼축압축시험 결과 해석",
+        "삼축압축시험 관련 기준",
+        "삼축압축시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "베인전단시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "베인전단시험 이란?",
+        "베인전단시험 방법",
+        "베인전단시험 계산 방법",
+        "베인전단시험 결과 해석",
+        "베인전단시험 관련 기준",
+        "베인전단시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "표준 압밀시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "표준 압밀시험 이란?",
+        "표준 압밀시험 방법",
+        "표준 압밀시험 계산 방법",
+        "표준 압밀시험 결과 해석",
+        "표준 압밀시험 관련 기준",
+        "표준 압밀시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "급속 압밀시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "급속 압밀시험 이란?",
+        "급속 압밀시험 방법",
+        "급속 압밀시험 계산 방법",
+        "급속 압밀시험 결과 해석",
+        "급속 압밀시험 관련 기준",
+        "급속 압밀시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "정수두 투수시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "정수두 투수시험 이란?",
+        "정수두 투수시험 방법",
+        "정수두 투수시험 계산 방법",
+        "정수두 투수시험 결과 해석",
+        "정수두 투수시험 관련 기준",
+        "정수두 투수시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "변수두 투수시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "변수두 투수시험 이란?",
+        "변수두 투수시험 방법",
+        "변수두 투수시험 계산 방법",
+        "변수두 투수시험 결과 해석",
+        "변수두 투수시험 관련 기준",
+        "변수두 투수시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "현장 다짐도 평가 계산 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "계산방법",
+      "content_type_suggested": "평가방법",
+      "search_intent": "계산방법 확인",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "현장 다짐도 평가 이란?",
+        "현장 다짐도 평가 방법",
+        "현장 다짐도 평가 결과 해석",
+        "현장 다짐도 평가 관련 기준",
+        "현장 다짐도 평가 현장 적용 방법",
+        "현장 다짐도 평가 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "지반조사 보고서 해석 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "시험방법",
+      "content_type_suggested": "결과해석",
+      "search_intent": "시험방법 확인",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "지반조사 보고서 해석 이란?",
+        "지반조사 보고서 해석 계산 방법",
+        "지반조사 보고서 해석 결과 해석",
+        "지반조사 보고서 해석 관련 기준",
+        "지반조사 보고서 해석 현장 적용 방법",
+        "지반조사 보고서 해석 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "지반조사 보고서 해석 계산 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "계산방법",
+      "content_type_suggested": "결과해석",
+      "search_intent": "계산방법 확인",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "지반조사 보고서 해석 이란?",
+        "지반조사 보고서 해석 방법",
+        "지반조사 보고서 해석 결과 해석",
+        "지반조사 보고서 해석 관련 기준",
+        "지반조사 보고서 해석 현장 적용 방법",
+        "지반조사 보고서 해석 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "지반조사 보고서 해석 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "결과해석",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "지반조사 보고서 해석 이란?",
+        "지반조사 보고서 해석 방법",
+        "지반조사 보고서 해석 계산 방법",
+        "지반조사 보고서 해석 결과 해석",
+        "지반조사 보고서 해석 관련 기준",
+        "지반조사 보고서 해석 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "지반조사 보고서 해석 부적합 원인과 대책",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 25,
+      "content_type_original": "문제해결",
+      "content_type_suggested": "결과해석",
+      "search_intent": "문제 해결",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "지반조사 보고서 해석 이란?",
+        "지반조사 보고서 해석 방법",
+        "지반조사 보고서 해석 계산 방법",
+        "지반조사 보고서 해석 결과 해석",
+        "지반조사 보고서 해석 관련 기준",
+        "지반조사 보고서 해석 현장 적용 방법"
+      ]
+    },
+    {
+      "topic": "함수비 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "함수비 시험 이란?",
+        "함수비 시험 방법",
+        "함수비 시험 계산 방법",
+        "함수비 시험 관련 기준",
+        "함수비 시험 현장 적용 방법",
+        "함수비 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "비중 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [
+        "모래의 비중 시험방법"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "비중 시험 이란?",
+        "비중 시험 방법",
+        "비중 시험 계산 방법",
+        "비중 시험 결과 해석",
+        "비중 시험 관련 기준",
+        "비중 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "단위중량 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "단위중량 시험 이란?",
+        "단위중량 시험 방법",
+        "단위중량 시험 계산 방법",
+        "단위중량 시험 관련 기준",
+        "단위중량 시험 현장 적용 방법",
+        "단위중량 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "체분석 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [
+        "체분석 시험방법"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "체분석 시험 이란?",
+        "체분석 시험 계산 방법",
+        "체분석 시험 결과 해석",
+        "체분석 시험 관련 기준",
+        "체분석 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "비중계 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "비중계 시험 이란?",
+        "비중계 시험 방법",
+        "비중계 시험 계산 방법",
+        "비중계 시험 관련 기준",
+        "비중계 시험 현장 적용 방법",
+        "비중계 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "액성한계 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [
+        "액성한계 시험방법"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "액성한계 시험 이란?",
+        "액성한계 시험 계산 방법",
+        "액성한계 시험 결과 해석",
+        "액성한계 시험 관련 기준",
+        "액성한계 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "소성한계 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [
+        "소성한계 시험방법"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "소성한계 시험 이란?",
+        "소성한계 시험 계산 방법",
+        "소성한계 시험 결과 해석",
+        "소성한계 시험 관련 기준",
+        "소성한계 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "수축한계 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "수축한계 시험 이란?",
+        "수축한계 시험 방법",
+        "수축한계 시험 계산 방법",
+        "수축한계 시험 관련 기준",
+        "수축한계 시험 현장 적용 방법",
+        "수축한계 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "실내 다짐시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "실내 다짐시험 이란?",
+        "실내 다짐시험 방법",
+        "실내 다짐시험 계산 방법",
+        "실내 다짐시험 관련 기준",
+        "실내 다짐시험 현장 적용 방법",
+        "실내 다짐시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "CBR 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "CBR 시험 이란?",
+        "CBR 시험 방법",
+        "CBR 시험 계산 방법",
+        "CBR 시험 관련 기준",
+        "CBR 시험 현장 적용 방법",
+        "CBR 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "들밀도 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "현장가이드",
+      "content_type_suggested": "현장실무",
+      "search_intent": "현장 적용",
+      "related_existing_posts": [
+        "들밀도 시험"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "들밀도 시험 이란?",
+        "들밀도 시험 방법",
+        "들밀도 시험 계산 방법",
+        "들밀도 시험 결과 해석",
+        "들밀도 시험 관련 기준",
+        "들밀도 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "고무풍선법 밀도 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "고무풍선법 밀도 시험 이란?",
+        "고무풍선법 밀도 시험 방법",
+        "고무풍선법 밀도 시험 계산 방법",
+        "고무풍선법 밀도 시험 관련 기준",
+        "고무풍선법 밀도 시험 현장 적용 방법",
+        "고무풍선법 밀도 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "일축압축시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "일축압축시험 이란?",
+        "일축압축시험 방법",
+        "일축압축시험 계산 방법",
+        "일축압축시험 관련 기준",
+        "일축압축시험 현장 적용 방법",
+        "일축압축시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "직접전단시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "직접전단시험 이란?",
+        "직접전단시험 방법",
+        "직접전단시험 계산 방법",
+        "직접전단시험 관련 기준",
+        "직접전단시험 현장 적용 방법",
+        "직접전단시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "삼축압축시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "삼축압축시험 이란?",
+        "삼축압축시험 방법",
+        "삼축압축시험 계산 방법",
+        "삼축압축시험 관련 기준",
+        "삼축압축시험 현장 적용 방법",
+        "삼축압축시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "베인전단시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "베인전단시험 이란?",
+        "베인전단시험 방법",
+        "베인전단시험 계산 방법",
+        "베인전단시험 관련 기준",
+        "베인전단시험 현장 적용 방법",
+        "베인전단시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "표준 압밀시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "표준 압밀시험 이란?",
+        "표준 압밀시험 방법",
+        "표준 압밀시험 계산 방법",
+        "표준 압밀시험 관련 기준",
+        "표준 압밀시험 현장 적용 방법",
+        "표준 압밀시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "급속 압밀시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "급속 압밀시험 이란?",
+        "급속 압밀시험 방법",
+        "급속 압밀시험 계산 방법",
+        "급속 압밀시험 관련 기준",
+        "급속 압밀시험 현장 적용 방법",
+        "급속 압밀시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "정수두 투수시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "정수두 투수시험 이란?",
+        "정수두 투수시험 방법",
+        "정수두 투수시험 계산 방법",
+        "정수두 투수시험 관련 기준",
+        "정수두 투수시험 현장 적용 방법",
+        "정수두 투수시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "변수두 투수시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "변수두 투수시험 이란?",
+        "변수두 투수시험 방법",
+        "변수두 투수시험 계산 방법",
+        "변수두 투수시험 관련 기준",
+        "변수두 투수시험 현장 적용 방법",
+        "변수두 투수시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "현장 다짐도 평가 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "평가방법",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "현장 다짐도 평가 이란?",
+        "현장 다짐도 평가 방법",
+        "현장 다짐도 평가 계산 방법",
+        "현장 다짐도 평가 관련 기준",
+        "현장 다짐도 평가 현장 적용 방법",
+        "현장 다짐도 평가 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "지반조사 보고서 해석 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "지반조사 보고서 해석 이란?",
+        "지반조사 보고서 해석 방법",
+        "지반조사 보고서 해석 계산 방법",
+        "지반조사 보고서 해석 관련 기준",
+        "지반조사 보고서 해석 현장 적용 방법",
+        "지반조사 보고서 해석 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "시험 성적서 판독 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "시험방법",
+      "content_type_suggested": "결과해석",
+      "search_intent": "시험방법 확인",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "시험 성적서 판독 이란?",
+        "시험 성적서 판독 계산 방법",
+        "시험 성적서 판독 결과 해석",
+        "시험 성적서 판독 관련 기준",
+        "시험 성적서 판독 현장 적용 방법",
+        "시험 성적서 판독 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "시험 성적서 판독 계산 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 24,
+      "content_type_original": "계산방법",
+      "content_type_suggested": "결과해석",
+      "search_intent": "계산방법 확인",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "시험 성적서 판독 이란?",
+        "시험 성적서 판독 방법",
+        "시험 성적서 판독 결과 해석",
+        "시험 성적서 판독 관련 기준",
+        "시험 성적서 판독 현장 적용 방법",
+        "시험 성적서 판독 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "비중 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 23,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [
+        "모래의 비중 시험방법"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "비중 시험 이란?",
+        "비중 시험 방법",
+        "비중 시험 계산 방법",
+        "비중 시험 관련 기준",
+        "비중 시험 현장 적용 방법",
+        "비중 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "체분석 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 23,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [
+        "체분석 시험방법"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "체분석 시험 이란?",
+        "체분석 시험 계산 방법",
+        "체분석 시험 관련 기준",
+        "체분석 시험 현장 적용 방법",
+        "체분석 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "액성한계 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 23,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [
+        "액성한계 시험방법"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "액성한계 시험 이란?",
+        "액성한계 시험 계산 방법",
+        "액성한계 시험 관련 기준",
+        "액성한계 시험 현장 적용 방법",
+        "액성한계 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "소성한계 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 23,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [
+        "소성한계 시험방법"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "소성한계 시험 이란?",
+        "소성한계 시험 계산 방법",
+        "소성한계 시험 관련 기준",
+        "소성한계 시험 현장 적용 방법",
+        "소성한계 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "들밀도 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 23,
+      "content_type_original": "결과해석",
+      "content_type_suggested": "결과해석",
+      "search_intent": "결과 해석",
+      "related_existing_posts": [
+        "들밀도 시험"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "들밀도 시험 이란?",
+        "들밀도 시험 방법",
+        "들밀도 시험 계산 방법",
+        "들밀도 시험 관련 기준",
+        "들밀도 시험 현장 적용 방법",
+        "들밀도 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "들밀도 시험 방법",
+      "decision": "review",
+      "reason": "기존에 포괄적인 주제의 게시물이 존재하여, 본 내용의 중복 여부를 원문 확인 후 판단해야 함.",
+      "reason_code": "existing_content_overlap",
+      "confidence": "medium",
+      "validation_score": 22,
+      "content_type_original": "시험방법",
+      "content_type_suggested": "시험방법",
+      "search_intent": "시험방법 확인",
+      "related_existing_posts": [
+        "들밀도 시험"
+      ],
+      "merge_candidates": [],
+      "related_topics": [
+        "들밀도 시험 이란?",
+        "들밀도 시험 계산 방법",
+        "들밀도 시험 결과 해석",
+        "들밀도 시험 관련 기준",
+        "들밀도 시험 현장 적용 방법",
+        "들밀도 시험 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "지반조사 보고서 해석 이란?",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 22,
+      "content_type_original": "개념설명",
+      "content_type_suggested": "결과해석",
+      "search_intent": "정보 탐색",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "지반조사 보고서 해석 방법",
+        "지반조사 보고서 해석 계산 방법",
+        "지반조사 보고서 해석 결과 해석",
+        "지반조사 보고서 해석 관련 기준",
+        "지반조사 보고서 해석 현장 적용 방법",
+        "지반조사 보고서 해석 부적합 원인과 대책"
+      ]
+    },
+    {
+      "topic": "지반조사 보고서 해석 관련 기준",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "reason_code": "semantic_ambiguity",
+      "confidence": "low",
+      "validation_score": 22,
+      "content_type_original": "기준정리",
+      "content_type_suggested": "결과해석",
+      "search_intent": "기준 확인",
+      "related_existing_posts": [],
+      "merge_candidates": [],
+      "related_topics": [
+        "지반조사 보고서 해석 이란?",
+        "지반조사 보고서 해석 방법",
+        "지반조사 보고서 해석 계산 방법",
+        "지반조사 보고서 해석 결과 해석",
+        "지반조사 보고서 해석 현장 적용 방법",
+        "지반조사 보고서 해석 부적합 원인과 대책"
+      ]
+    }
+  ],
+  "content_type_reclassification": [
+    {
+      "topic": "함수비 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "단위중량 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "비중계 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "수축한계 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "실내 다짐시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "CBR 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "고무풍선법 밀도 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "일축압축시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "직접전단시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "삼축압축시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "베인전단시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "표준 압밀시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "급속 압밀시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "정수두 투수시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "변수두 투수시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "현장 다짐도 평가 계산 방법",
+      "original": "계산방법",
+      "suggested": "평가방법",
+      "decision": "review"
+    },
+    {
+      "topic": "지반조사 보고서 해석 방법",
+      "original": "시험방법",
+      "suggested": "결과해석",
+      "decision": "review"
+    },
+    {
+      "topic": "지반조사 보고서 해석 계산 방법",
+      "original": "계산방법",
+      "suggested": "결과해석",
+      "decision": "review"
+    },
+    {
+      "topic": "지반조사 보고서 해석 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "결과해석",
+      "decision": "review"
+    },
+    {
+      "topic": "지반조사 보고서 해석 부적합 원인과 대책",
+      "original": "문제해결",
+      "suggested": "결과해석",
+      "decision": "review"
+    },
+    {
+      "topic": "비중 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "체분석 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "액성한계 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "소성한계 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "들밀도 시험 현장 적용 방법",
+      "original": "현장가이드",
+      "suggested": "현장실무",
+      "decision": "review"
+    },
+    {
+      "topic": "현장 다짐도 평가 결과 해석",
+      "original": "결과해석",
+      "suggested": "평가방법",
+      "decision": "review"
+    },
+    {
+      "topic": "시험 성적서 판독 방법",
+      "original": "시험방법",
+      "suggested": "결과해석",
+      "decision": "review"
+    },
+    {
+      "topic": "시험 성적서 판독 계산 방법",
+      "original": "계산방법",
+      "suggested": "결과해석",
+      "decision": "review"
+    },
+    {
+      "topic": "지반조사 보고서 해석 이란?",
+      "original": "개념설명",
+      "suggested": "결과해석",
+      "decision": "review"
+    },
+    {
+      "topic": "지반조사 보고서 해석 관련 기준",
+      "original": "기준정리",
+      "suggested": "결과해석",
+      "decision": "review"
+    }
+  ],
+  "confidence_distribution": {
+    "high": {
+      "count": 106,
+      "percentage": 67.09
+    },
+    "low": {
+      "count": 51,
+      "percentage": 32.28
+    },
+    "medium": {
+      "count": 1,
+      "percentage": 0.63
+    }
+  },
+  "low_confidence_topics": [
+    {
+      "topic": "함수비 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "단위중량 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "비중계 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "수축한계 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "실내 다짐시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "CBR 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "고무풍선법 밀도 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "일축압축시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "직접전단시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "삼축압축시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "베인전단시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "표준 압밀시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "급속 압밀시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "정수두 투수시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "변수두 투수시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "현장 다짐도 평가 계산 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "지반조사 보고서 해석 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "지반조사 보고서 해석 계산 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "지반조사 보고서 해석 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "지반조사 보고서 해석 부적합 원인과 대책",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 25,
+      "confidence": "low"
+    },
+    {
+      "topic": "함수비 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "비중 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "단위중량 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "체분석 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "비중계 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "액성한계 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "소성한계 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "수축한계 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "실내 다짐시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "CBR 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "들밀도 시험 현장 적용 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "고무풍선법 밀도 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "일축압축시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "직접전단시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "삼축압축시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "베인전단시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "표준 압밀시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "급속 압밀시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "정수두 투수시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "변수두 투수시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "현장 다짐도 평가 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "지반조사 보고서 해석 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "시험 성적서 판독 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "시험 성적서 판독 계산 방법",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 24,
+      "confidence": "low"
+    },
+    {
+      "topic": "비중 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 23,
+      "confidence": "low"
+    },
+    {
+      "topic": "체분석 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 23,
+      "confidence": "low"
+    },
+    {
+      "topic": "액성한계 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 23,
+      "confidence": "low"
+    },
+    {
+      "topic": "소성한계 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 23,
+      "confidence": "low"
+    },
+    {
+      "topic": "들밀도 시험 결과 해석",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 23,
+      "confidence": "low"
+    },
+    {
+      "topic": "지반조사 보고서 해석 이란?",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 22,
+      "confidence": "low"
+    },
+    {
+      "topic": "지반조사 보고서 해석 관련 기준",
+      "decision": "review",
+      "reason": "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함.",
+      "validation_score": 22,
+      "confidence": "low"
+    }
+  ],
+  "similarity_group_distribution": {
+    "single_topic_groups": 148,
+    "two_topic_groups": 0,
+    "three_or_more_topic_groups": 2
+  },
+  "multi_topic_groups": [
+    {
+      "group": "현장 다짐도 평가_평가방법_현장 적용",
+      "topics": [
+        "현장 다짐도 평가 방법",
+        "현장 다짐도 평가 현장 적용 방법",
+        "현장 다짐도 평가 부적합 원인과 대책",
+        "현장 다짐도 평가 이란?",
+        "현장 다짐도 평가 관련 기준"
+      ]
+    },
+    {
+      "group": "시험_결과해석_결과해석",
+      "topics": [
+        "시험 성적서 판독 결과 해석",
+        "시험 성적서 판독 현장 적용 방법",
+        "시험 성적서 판독 부적합 원인과 대책",
+        "시험 성적서 판독 이란?",
+        "시험 성적서 판독 관련 기준"
+      ]
+    }
+  ],
+  "anomalies": {
+    "high_score_merge": [
+      "현장 다짐도 평가 방법",
+      "시험 성적서 판독 결과 해석"
+    ]
+  },
+  "representative_cases": {
+    "keep_high_score": [
+      "함수비 시험 방법",
+      "함수비 시험 계산 방법",
+      "함수비 시험 부적합 원인과 대책"
+    ],
+    "keep_low_score": [
+      "비중 시험 이란?",
+      "체분석 시험 이란?",
+      "액성한계 시험 이란?"
+    ],
+    "merge_groups": [
+      "현장 다짐도 평가 방법",
+      "현장 다짐도 평가 현장 적용 방법",
+      "현장 다짐도 평가 부적합 원인과 대책"
+    ],
+    "review_existing_overlap": [
+      "들밀도 시험 방법"
+    ],
+    "review_content_reclass": [],
+    "review_semantic": [
+      "함수비 시험 현장 적용 방법",
+      "단위중량 시험 현장 적용 방법"
+    ],
+    "review_low_confidence": []
+  }
+}

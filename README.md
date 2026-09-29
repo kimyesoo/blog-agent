@@ -26,10 +26,13 @@
 │   └── candidates.json          # Topic Agent가 생성한 추천 주제 목록
 ├── topic_research_agent.py      # Topic Research Agent 스크립트
 ├── topic_validation_agent.py    # Topic Validation Agent 스크립트
+├── topic_validation_report.py   # Topic Validation Agent 결과 분석 리포트 생성 스크립트
 └── topic_research/
     ├── topic_candidates.json      # Topic Research Agent가 생성한 확장 콘텐츠 후보 목록
     ├── validated_topics.json      # Topic Validation Agent가 검증 및 정리한 최종 후보 목록
-    └── validation_summary.json    # Topic Validation Agent의 최종 처리 통계 요약
+    ├── validation_summary.json    # Topic Validation Agent의 최종 처리 통계 요약
+    ├── validation_report.json     # Validation 데이터 분석 상세 결과
+    └── validation_report.md       # Validation 데이터 분석 사람이 읽기 쉬운 요약 리포트
 ```
 
 ## 4. 실행 방법
@@ -38,15 +41,20 @@
   * Topic Agent 실행: `python3 topic_agent.py`
   * Topic Research Agent 실행: `python3 topic_research_agent.py` (또는 `python3 topic_research_agent.py "분야명"`)
   * Topic Validation Agent 실행: `python3 topic_validation_agent.py`
+  * Topic Validation Report 생성: `python3 topic_validation_report.py`
   * Research Agent 실행: `python3 research_agent.py`
 * **입력 파일**:
   * `content_db/posts.json` (Topic Agent, Topic Research Agent, Topic Validation Agent용)
   * `topic_candidates/candidates.json` (Research Agent용)
   * `topic_research/topic_candidates.json` (Topic Validation Agent용)
+  * `topic_research/validated_topics.json` (Topic Validation Report용)
+  * `topic_research/validation_summary.json` (Topic Validation Report용)
 * **출력 파일**:
   * `topic_candidates/candidates.json` (Topic Agent 출력)
   * `topic_research/topic_candidates.json` (Topic Research Agent 출력)
   * `topic_research/validated_topics.json` (Topic Validation Agent 출력)
+  * `topic_research/validation_report.json` (Topic Validation Report 상세 출력)
+  * `topic_research/validation_report.md` (Topic Validation Report 마크다운 출력)
   * `research/*.md` (Research Agent 출력)
 
 ## 5. 현재 데이터 구조
