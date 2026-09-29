@@ -9,7 +9,7 @@
 * **Content Database**: 이전에 발행된 블로그 게시물(또는 작성된 문서)의 주제 목록을 저장하고 관리하는 데이터베이스(JSON 형태)입니다.
 * **Topic Agent**: 기존 콘텐츠 데이터를 기반으로 관련 주제를 추천하는 기능입니다.
 * **Topic Research Agent**: 특정 분야(예: 토질시험)의 콘텐츠 후보군을 조사/확장하여 체계적인 콘텐츠 구조를 생성하는 기능입니다.
-* **Topic Validation Agent (V1.1)**: Topic Research Agent가 생성한 후보 주제를 검증합니다. V1.1에서는 콘텐츠의 목적(`search_intent`, `content_type`)을 활용하여 논리적 유사성 그룹화를 수행하며, 독립적인 콘텐츠 가치, 제목 명확성, 실무 가치를 기반으로 고도화된 keep/merge/reject 판정을 내립니다.
+* **Topic Validation Agent (V1.2)**: Topic Research Agent가 생성한 후보 주제를 검증합니다. V1.2에서는 KEEP / MERGE / REJECT / REVIEW 4단계 판정을 지원하며, `search_intent` 및 `content_type` 적합성 검증, `confidence` 수준 평가, 독립된 `merge_candidates`와 `related_topics` 분리 등 높은 정확도의 로컬 판정 로직을 적용합니다.
 * **Research Agent**: Topic Agent가 추천한 주제 중 하나를 선택하여 정해진 목차(시험 목적, 시험 원리 등 8개 항목)에 따라 기본 리서치 마크다운 템플릿 문서를 자동 생성하는 에이전트입니다.
 
 ## 3. 폴더 구조
@@ -27,8 +27,9 @@
 ├── topic_research_agent.py      # Topic Research Agent 스크립트
 ├── topic_validation_agent.py    # Topic Validation Agent 스크립트
 └── topic_research/
-    ├── topic_candidates.json    # Topic Research Agent가 생성한 확장 콘텐츠 후보 목록
-    └── validated_topics.json    # Topic Validation Agent가 검증 및 정리한 최종 후보 목록
+    ├── topic_candidates.json      # Topic Research Agent가 생성한 확장 콘텐츠 후보 목록
+    ├── validated_topics.json      # Topic Validation Agent가 검증 및 정리한 최종 후보 목록
+    └── validation_summary.json    # Topic Validation Agent의 최종 처리 통계 요약
 ```
 
 ## 4. 실행 방법

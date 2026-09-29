@@ -19,257 +19,354 @@ def load_existing_posts(filepath="content_db/posts.json"):
     return [post.get("title", "") for post in posts if isinstance(post, dict)]
 
 def normalize_title(title):
-    """Removes spaces and special characters for comparison."""
     return re.sub(r'[^가-힣a-zA-Z0-9]', '', title)
 
-def check_duplicate(norm_topic, existing_titles):
-    norm_existing = [normalize_title(t) for t in existing_titles]
-    return norm_topic in norm_existing
-
 def extract_core_concept(topic):
-    """Extracts the core concept from a topic."""
     words = topic.split()
     if "시험" in topic:
         idx = topic.find("시험") + 2
         return topic[:idx].strip()
+    elif "조사" in topic or "평가" in topic:
+        idx = max(topic.find("조사"), topic.find("평가")) + 2
+        return topic[:idx].strip()
     return words[0] if words else ""
 
-def get_similarity_group_key(candidate):
-    """
-    Groups candidates by Core Concept + Content Type / Intent.
-    Instead of just '함수비 시험', it becomes '함수비 시험_개념설명'.
-    """
-    core = extract_core_concept(candidate["topic"])
-    content_type = candidate.get("content_type", "")
+def validate_content_type(topic, current_ct):
+    """V1.2 Content Type Validation"""
+    suggested = current_ct
 
-    # We can treat similar intents as the same group to encourage merging
-    if content_type in ["개념설명"]:
-        return f"{core}_개념"
-    elif content_type in ["시험방법"]:
-        return f"{core}_방법"
-    elif content_type in ["계산방법"]:
-        return f"{core}_계산"
-    elif content_type in ["결과해석"]:
-        return f"{core}_결과"
-    elif content_type in ["현장가이드", "문제해결", "실무"]:
-        return f"{core}_실무"
-    else:
-        return f"{core}_기타"
+    # basic heuristic mapping
+    if "다짐도 평가" in topic or "평가 방법" in topic:
+        suggested = "평가방법"
+    elif "보고서 해석" in topic or "성적서 판독" in topic:
+        suggested = "결과해석"
+    elif "부적합" in topic or "원인" in topic or "대책" in topic:
+        suggested = "문제해결"
+    elif "계산" in topic:
+        suggested = "계산방법"
+    elif "결과 해석" in topic:
+        suggested = "결과해석"
+    elif "현장 적용" in topic or "현장 실무" in topic:
+        suggested = "현장실무"
+    elif "이란" in topic or "개요" in topic:
+        suggested = "개념설명"
 
-def group_similar_topics(candidates):
-    groups = defaultdict(list)
-    for idx, candidate in enumerate(candidates):
-        key = get_similarity_group_key(candidate)
-        groups[key].append(idx)
-    return groups
+    if current_ct == "시험방법" and not ("시험방법" in topic or "시험 방법" in topic):
+        # Could be an over-classification, but only change if we didn't already
+        if suggested == current_ct:
+            suggested = "기타"
 
-def evaluate_standalone_value(candidate):
-    content_type = candidate.get("content_type", "")
-    topic = candidate.get("topic", "")
+    valid = (suggested == current_ct)
+    return valid, suggested
 
-    if content_type in ["시험방법", "계산방법", "결과해석", "현장가이드"]:
+def validate_search_intent(topic, current_intent):
+    """V1.2 Search Intent Validation"""
+    suggested = current_intent
+
+    if "방법" in topic and "계산" not in topic and "현장" not in topic:
+        suggested = "시험방법 확인"
+    elif "계산" in topic:
+        suggested = "계산방법 확인"
+    elif "결과 해석" in topic or "판독" in topic:
+        suggested = "결과해석"
+    elif "현장" in topic or "적용" in topic:
+        suggested = "현장 적용"
+    elif "부적합" in topic or "대책" in topic or "원인" in topic:
+        suggested = "문제 해결"
+    elif "이란" in topic or "개요" in topic or "개념" in topic:
+        suggested = "정보 탐색"
+
+    valid = (suggested == current_intent)
+    return valid, suggested
+
+def evaluate_standalone_value(topic, content_type):
+    # 5: High independence, 4: likely, 3: medium, 2: low indep, 1: none
+    if content_type in ["시험방법", "계산방법", "결과해석", "문제해결", "평가방법", "현장가이드", "현장실무"]:
         return "high", 5
     elif content_type in ["개념설명", "기준정리"]:
-        return "medium", 3
-    elif "요약" in topic or "관련" in topic or "개요" in topic:
-        return "low", 1
+        if "이란" in topic or "개요" in topic:
+            return "medium", 3
+        else:
+            return "high", 4
+    elif "요약" in topic or "관련 정보" in topic:
+        return "low", 2
     else:
         return "low", 1
 
-def evaluate_clarity(candidate):
-    topic = candidate.get("topic", "")
-    if "방법" in topic or "계산" in topic or "결과" in topic or "대책" in topic:
+def evaluate_clarity(topic):
+    if "방법" in topic or "계산" in topic or "해석" in topic or "대책" in topic or "원인" in topic or "판독" in topic:
         return "high", 5
-    elif "이란" in topic or "개념" in topic or "기준" in topic:
+    elif "이란" in topic or "기준" in topic or "평가" in topic:
+        return "high", 4
+    elif "실무" in topic or "개념" in topic:
         return "medium", 3
+    elif "요약" in topic or "관련" in topic:
+        return "low", 2
     else:
         return "low", 1
 
-def evaluate_practical_value(candidate):
-    pv = candidate.get("practical_value", "medium")
-    if pv == "높음":
+def evaluate_practical_value(pv_str):
+    if pv_str == "높음":
         return "high", 5
-    elif pv == "중간":
+    elif pv_str == "중간":
         return "medium", 3
     else:
         return "low", 1
 
-def evaluate_topic_specificity(candidate):
-    topic = candidate.get("topic", "")
-    if "방법" in topic or "계산" in topic or "원인" in topic:
-        return 5
-    elif "해석" in topic or "기준" in topic:
-        return 4
-    elif "이란" in topic:
-        return 3
+def evaluate_topic_specificity(topic):
+    if "방법" in topic or "계산" in topic or "대책" in topic or "판독" in topic:
+        return "high", 5
+    elif "해석" in topic or "기준" in topic or "평가" in topic:
+        return "high", 4
+    elif "이란" in topic or "개념" in topic:
+        return "medium", 3
+    elif "실무" in topic:
+        return "medium", 2
     else:
-        return 2
+        return "low", 1
 
-def evaluate_content_gap(candidate, existing_titles):
-    norm_topic = normalize_title(candidate["topic"])
-    core = extract_core_concept(candidate["topic"])
-    norm_core = normalize_title(core)
-
+def evaluate_content_gap(norm_topic, norm_core, existing_titles, content_type):
     for ext in existing_titles:
         norm_ext = normalize_title(ext)
         if norm_topic == norm_ext:
-            return 1 # Duplicate
+            return "low", 0 # Exact duplicate
 
-        # If it's the exact same core concept, we consider how different the content type is
-        # If the existing post is just the core concept (e.g., "들밀도 시험")
-        # and this is "들밀도 시험 방법", it's basically the same thing.
-        if norm_core == norm_ext and candidate.get("content_type") == "시험방법":
-            return 2 # High chance of overlap with general post
+        # Existing post is generic (e.g. 들밀도 시험) but we have specific method
+        if norm_core == norm_ext and content_type == "시험방법":
+            return "medium", 2 # Overlap possible, requires REVIEW
 
-    # Related but different content type
     related = any(norm_core in normalize_title(t) or normalize_title(t) in norm_core for t in existing_titles)
     if related:
-        return 4
-    return 5
+        return "high", 4 # Safe extension
+    return "high", 5 # New topic entirely
 
 def process_candidates(candidates, existing_titles):
     validated_results = []
-    stats = {"keep": 0, "merge": 0, "reject": 0}
+    stats = {"keep": 0, "merge": 0, "reject": 0, "review": 0}
 
-    groups = group_similar_topics(candidates)
+    # 1. First pass: augment candidates with validation metrics
+    augmented = []
+    groups = defaultdict(list)
 
-    for group_key, indices in groups.items():
-        group_candidates = [candidates[i] for i in indices]
+    for c in candidates:
+        topic = c["topic"]
+        core = extract_core_concept(topic)
+        current_ct = c.get("content_type", "")
+        current_intent = c.get("search_intent", "")
 
-        valid_items_in_group = []
+        # Content Type / Intent Validation
+        ct_valid, ct_suggested = validate_content_type(topic, current_ct)
+        si_valid, si_suggested = validate_search_intent(topic, current_intent)
 
-        # Evaluate all items in this group
-        for c in group_candidates:
-            norm_topic = normalize_title(c["topic"])
-            is_dup = check_duplicate(norm_topic, existing_titles)
+        c["_temp_ct"] = ct_suggested
+        c["_temp_intent"] = si_suggested
+        c["_temp_core"] = core
 
-            sv_str, sv_score = evaluate_standalone_value(c)
-            cl_str, cl_score = evaluate_clarity(c)
-            pv_str, pv_score = evaluate_practical_value(c)
-            ts_score = evaluate_topic_specificity(c)
-            cg_score = evaluate_content_gap(c, existing_titles)
+        sv_str, sv_score = evaluate_standalone_value(topic, ct_suggested)
+        cl_str, cl_score = evaluate_clarity(topic)
+        pv_str, pv_score = evaluate_practical_value(c.get("practical_value", ""))
+        ts_str, ts_score = evaluate_topic_specificity(topic)
+        cg_str, cg_score = evaluate_content_gap(normalize_title(topic), normalize_title(core), existing_titles, ct_suggested)
 
-            # Additional heuristic: If existing post is "들밀도 시험" and this is "들밀도 시험 방법", it's a reject
-            if cg_score <= 2 and not is_dup:
-                 is_dup = True # Treat as logical duplicate
+        total_score = sv_score + cl_score + pv_score + ts_score + cg_score
 
-            total_score = sv_score + cl_score + pv_score + ts_score + cg_score
+        # Include search_intent in the similarity group key to prevent aggressive merging
+        # of topics with different intents
+        group_key_intent = si_suggested if si_suggested else current_intent
 
-            result = {
-                "topic": c["topic"],
-                "topic_cluster": c.get("topic_cluster", ""),
-                "category": c.get("category", ""),
-                "search_intent": c.get("search_intent", ""),
-                "content_type": c.get("content_type", ""),
-                "validation": {
-                    "decision": "",
-                    "duplicate": is_dup,
-                    "similarity_group": group_key,
-                    "standalone_value": sv_str,
-                    "clarity": cl_str,
-                    "practical_value": pv_str
-                },
-                "validation_score": total_score,
-                "score_detail": {
-                    "standalone_value": sv_score,
-                    "clarity": cl_score,
-                    "practical_value": pv_score,
-                    "topic_specificity": ts_score,
-                    "content_gap": cg_score
-                },
-                "related_existing_posts": c.get("related_existing_posts", []),
-                "merge_candidates": [],
-                "suggested_topic": c["topic"],
-                "reason": ""
-            }
+        result = {
+            "topic": topic,
+            "topic_cluster": c.get("topic_cluster", ""),
+            "category": c.get("category", ""),
+            "search_intent": current_intent,
+            "content_type": current_ct,
+            "validation": {
+                "decision": "",
+                "duplicate": cg_score == 0,
+                "similarity_group": f"{core}_{ct_suggested}_{group_key_intent}",
+                "standalone_value": sv_str,
+                "clarity": cl_str,
+                "practical_value": pv_str,
+                "topic_specificity": ts_str,
+                "content_gap": cg_str,
+                "content_type_valid": ct_valid,
+                "content_type_suggested": ct_suggested if not ct_valid else None,
+                "search_intent_valid": si_valid,
+                "search_intent_suggested": si_suggested if not si_valid else None,
+                "confidence": "medium" # Will adjust below
+            },
+            "validation_score": total_score,
+            "score_detail": {
+                "standalone_value": sv_score,
+                "clarity": cl_score,
+                "practical_value": pv_score,
+                "topic_specificity": ts_score,
+                "content_gap": cg_score
+            },
+            "related_existing_posts": c.get("related_existing_posts", []),
+            "merge_candidates": [],
+            "related_topics": [],
+            "suggested_topic": topic,
+            "reason": ""
+        }
+        augmented.append(result)
 
-            if is_dup:
-                result["validation"]["decision"] = "reject"
-                result["reason"] = "기존 게시물과 내용 범위가 사실상 동일하여 별도 게시물로 작성할 필요성이 낮음."
-                stats["reject"] += 1
-                validated_results.append(result)
-            else:
-                valid_items_in_group.append(result)
+        # Group by similarity key
+        group_key = result["validation"]["similarity_group"]
+        groups[group_key].append(result)
 
-        # Now handle the non-rejected items in this similarity group
-        if not valid_items_in_group:
-            continue
+    # 2. Second pass: Decision Logic (KEEP, MERGE, REJECT, REVIEW)
+    for group_key, items in groups.items():
+        # Identify related topics across the core concept (for related_topics population)
+        core_concept = items[0]["validation"]["similarity_group"].split("_")[0]
+        all_core_topics = [a["topic"] for a in augmented if a["validation"]["similarity_group"].startswith(core_concept)]
 
-        # If there are multiple items with the same intent/content type for the same core test, merge them.
-        if len(valid_items_in_group) > 1:
-            # Sort by score to find the best representative
-            valid_items_in_group.sort(key=lambda x: x["validation_score"], reverse=True)
-            best_rep = valid_items_in_group[0]
+        for item in items:
+            item["related_topics"] = [t for t in all_core_topics if t != item["topic"]]
 
-            merged_names = [item["topic"] for item in valid_items_in_group]
-
-            best_rep["validation"]["decision"] = "merge"
-            best_rep["merge_candidates"] = merged_names
-
-            # Create a suggested topic based on the group key
-            core_name = group_key.split('_')[0]
-            intent_name = group_key.split('_')[1] if '_' in group_key else ""
-
-            if intent_name == "개념":
-                best_rep["suggested_topic"] = f"{core_name}의 개념과 개요"
-            elif intent_name == "방법":
-                best_rep["suggested_topic"] = f"{core_name} 수행 방법 가이드"
-            elif intent_name == "결과":
-                best_rep["suggested_topic"] = f"{core_name} 결과 해석 및 정리"
-            else:
-                best_rep["suggested_topic"] = f"{core_name} 통합 가이드"
-
-            best_rep["reason"] = f"'{merged_names[0]}' 등 동일 목적(content_type)의 유사 후보들과 겹치므로 하나의 콘텐츠로 통합함."
-
-            stats["merge"] += len(valid_items_in_group)
-            validated_results.append(best_rep)
-        else:
-            item = valid_items_in_group[0]
-            # Even if it's the only one, check if it's too weak
-            if item["validation_score"] < 15 or item["validation"]["standalone_value"] == "low":
+            # REJECT conditions
+            if item["validation"]["duplicate"]:
                 item["validation"]["decision"] = "reject"
-                item["reason"] = "독립적인 콘텐츠로서의 가치(명확성/실무가치)가 부족하여 반려함."
+                item["validation"]["confidence"] = "high"
+                item["reason"] = "기존 게시물과 명확하게 중복되는 주제임."
                 stats["reject"] += 1
+                continue
+
+            # REVIEW conditions
+            if item["score_detail"]["content_gap"] == 2:
+                # Existing generic post exists, this is a method post. Don't reject, but REVIEW
+                item["validation"]["decision"] = "review"
+                item["validation"]["confidence"] = "medium"
+                item["reason"] = "기존에 포괄적인 주제의 게시물이 존재하여, 본 내용의 중복 여부를 원문 확인 후 판단해야 함."
+                stats["review"] += 1
+                continue
+
+            if not item["validation"]["content_type_valid"] or not item["validation"]["search_intent_valid"]:
+                # Misclassified or ambiguous intent -> REVIEW
+                # BUT if it's part of a mergeable cluster, we might merge it. Let's defer to merge logic if len > 1.
+                if len(items) == 1:
+                    item["validation"]["decision"] = "review"
+                    item["validation"]["confidence"] = "low"
+                    item["reason"] = "콘텐츠 유형이나 검색 의도가 모호하거나 재분류가 필요함."
+                    stats["review"] += 1
+                    continue
+
+        # MERGE conditions
+        # Filter items that are not already rejected/reviewed
+        valid_items = [i for i in items if i["validation"]["decision"] == ""]
+
+        if len(valid_items) > 1:
+            # We have multiple items with the exact same core concept and content type/intent.
+            # Example: "함수비 시험 이란?" and "함수비 시험 개요"
+
+            # Sort to find the best representative
+            valid_items.sort(key=lambda x: x["validation_score"], reverse=True)
+            rep = valid_items[0]
+
+            # Exclude self from merge_candidates
+            merged_names = [x["topic"] for x in valid_items[1:]]
+            rep["validation"]["decision"] = "merge"
+            rep["validation"]["confidence"] = "high"
+            rep["merge_candidates"] = merged_names
+
+            # Filter out merged items from related_topics
+            rep["related_topics"] = [t for t in rep["related_topics"] if t not in merged_names]
+
+            intent = rep["validation"].get("search_intent_suggested") or rep["search_intent"]
+
+            if intent == "정보 탐색":
+                rep["suggested_topic"] = f"{core_concept}의 개념과 개요"
+            elif intent == "시험방법 확인":
+                rep["suggested_topic"] = f"{core_concept} 방법 및 절차"
             else:
-                item["validation"]["decision"] = "keep"
-                item["reason"] = "독립적인 정보 목적을 가지며 기존 게시물과 중복되지 않는 가치 있는 주제임."
-                stats["keep"] += 1
+                rep["suggested_topic"] = f"{core_concept} 통합 정리"
+
+            rep["reason"] = "동일한 정보 목적을 가진 매우 유사한 주제들이 존재하여 통합하는 것이 합리적임."
+
+            stats["merge"] += len(valid_items)
+
+            # We only append the representative to our final valid list
+            validated_results.append(rep)
+        elif len(valid_items) == 1:
+            # KEEP
+            item = valid_items[0]
+            item["validation"]["decision"] = "keep"
+            item["validation"]["confidence"] = "high"
+            item["reason"] = "독립적인 정보 목적을 가지며 차별성 있는 콘텐츠로 작성할 가치가 높음."
+            stats["keep"] += 1
             validated_results.append(item)
+
+        # Append rejected/reviewed items to the final output as well (they are still part of the pool)
+        for item in items:
+            if item["validation"]["decision"] in ["reject", "review"]:
+                validated_results.append(item)
+
+        # Also, if multiple valid items were found but not merged because the condition (len(valid_items) > 1)
+        # somehow bypassed (which it shouldn't), we ensure all original items are accounted for.
+        # However, for merged items, the non-representative ones need to be appended with a "merged_into" status
+        # to maintain the 158 output count if the prompt implied 158 should be outputted.
+        # Based on constraints: `validated_results` should contain exactly all processed topics.
+        if len(valid_items) > 1:
+            for item in valid_items[1:]:
+                item["validation"]["decision"] = "merge_child"
+                item["validation"]["confidence"] = "high"
+                item["reason"] = f"'{rep['topic']}' (으)로 통합됨."
+                validated_results.append(item)
 
     validated_results.sort(key=lambda x: x["validation_score"], reverse=True)
     return validated_results, stats, groups
 
-def save_results(results, output_dir="topic_research", filename="validated_topics.json"):
+def save_results(results, stats, output_dir="topic_research"):
     os.makedirs(output_dir, exist_ok=True)
-    filepath = os.path.join(output_dir, filename)
-    with open(filepath, "w", encoding="utf-8") as f:
+
+    val_path = os.path.join(output_dir, "validated_topics.json")
+    with open(val_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    return filepath
+
+    sum_path = os.path.join(output_dir, "validation_summary.json")
+    with open(sum_path, "w", encoding="utf-8") as f:
+        json.dump(stats, f, ensure_ascii=False, indent=2)
+
+    return val_path, sum_path
 
 def main():
-    print("Topic Validation Agent V1.1")
+    print("Topic Validation Agent V1.2")
     print("=========================\n")
 
     candidates = load_candidates()
     if not candidates:
         return
 
-    print(f"Input candidates: {len(candidates)}")
-
     existing_titles = load_existing_posts()
 
     validated_results, stats, groups = process_candidates(candidates, existing_titles)
 
-    print(f"\nSimilarity groups: {len(groups)}")
-    print("\nValidation complete.\n")
+    # Calculate group count (unique core concepts)
+    unique_cores = set([g.split("_")[0] for g in groups.keys()])
+
+    print(f"Input candidates: {len(candidates)}")
+    print(f"Similarity groups: {len(groups)} (Core concepts: {len(unique_cores)})\n")
+
+    print("Validation complete.\n")
     print(f"KEEP: {stats['keep']}")
     print(f"MERGE: {stats['merge']}")
-    print(f"REJECT: {stats['reject']}\n")
-    print(f"Validated topics: {len(validated_results)}\n")
+    print(f"REJECT: {stats['reject']}")
+    print(f"REVIEW: {stats['review']}\n")
 
-    saved_path = save_results(validated_results)
-    print("Output:")
-    print(saved_path)
+    print(f"Validated topics generated: {len(validated_results)}\n")
+
+    val_path, sum_path = save_results(validated_results, {
+        "input_count": len(candidates),
+        "keep_count": stats["keep"],
+        "merge_count": stats["merge"],
+        "reject_count": stats["reject"],
+        "review_count": stats["review"],
+        "similarity_group_count": len(groups)
+    })
+
+    print("Outputs:")
+    print("-", val_path)
+    print("-", sum_path)
 
 if __name__ == "__main__":
     main()
