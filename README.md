@@ -10,7 +10,7 @@
 * **Topic Agent**: 기존 콘텐츠 데이터를 기반으로 관련 주제를 추천하는 기능입니다.
 * **Topic Research Agent**: 특정 분야(예: 토질시험)의 콘텐츠 후보군을 조사/확장하여 체계적인 콘텐츠 구조를 생성하는 기능입니다.
 * **Topic Validation Agent (V1.2.1)**: Topic Research Agent가 생성한 후보 주제를 검증합니다. V1.2.1에서는 KEEP / MERGE / REJECT / REVIEW 4단계 판정을 지원하며, `search_intent` 및 `content_type` 적합성 검증, `confidence` 수준 평가, 독립된 `merge_candidates`와 `related_topics` 분리 등 높은 정확도의 로컬 판정 로직을 적용합니다. 더불어 다중 `reason_codes` 로직과 엄격한 본문 중복 체크(content_gap)를 통해 기계적인 병합 방지 및 이상 패턴 분석이 강화되었습니다.
-* **Topic Search Research Agent V1**: Validation이 완료된 topic 후보에 대해 실제 웹 검색 결과를 조사합니다. `TAVILY_API_KEY` 환경 변수를 활용하여 Tavily Search API로 실제 웹 결과(SERP, 상위 콘텐츠 구조 등)를 수집하며, API 키가 없을 시 안전하게 dummy fallback으로 동작합니다. 검색량/경쟁도는 임의로 추정하지 않기 위해 `null`로 처리합니다.
+* **Topic Search Research Agent V1.1**: Validation이 완료된 topic 후보에 대해 실제 웹 검색 결과를 조사합니다. V1.1에서는 검색 결과를 구조화하여 관찰·분석하는 단계로 확장되었습니다. Tavily API의 SERP를 통해 휴리스틱하게 `observed_search_intent`를 파악하고, 상위 콘텐츠의 타입(블로그, 커뮤니티, 정부문서 등) 분포를 추출하며, `observed_related_queries`와 콘텐츠 공백(`content_gap`)을 분석합니다. 검색량/경쟁도는 실제 데이터 소스 부재 시 지속적으로 `null` 처리하여 AI의 임의 추정을 배제합니다.
 * **Research Agent**: Topic Agent가 추천한 주제 중 하나를 선택하여 정해진 목차(시험 목적, 시험 원리 등 8개 항목)에 따라 기본 리서치 마크다운 템플릿 문서를 자동 생성하는 에이전트입니다.
 
 ## 3. 폴더 구조

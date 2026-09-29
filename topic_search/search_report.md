@@ -4,9 +4,9 @@ Search Provider: tavily
 
 ## 1. Summary
 
-- 조사 후보: 5
+- 조사 후보: 3
 - 성공: 0
-- 실패: 5
+- 실패: 3
 - Cache hit: 0
 
 ## 1.1 Provider Status
@@ -16,28 +16,81 @@ Search Provider: tavily
 - Search Test Success: False
 - Last Error: Unauthorized: missing or invalid API key.
 
-## 2. Search Intent
+## 2. 세부 결과
 
-- Validation intent와 실제 관찰 intent가 일치/불일치한 후보 (데이터 없음: 검색 실패)
+### 주제: 함수비 시험 방법
+- **Validation Intent**: 시험방법 확인
+- **Observed Intent**: None
+- **Intent Match**: N/A
 
-## 3. SERP Findings
+#### SERP
+- 검색 결과: 0
+- 고유 도메인: 0
 
-- 검색 결과가 확인된 후보: 0 건
+#### Top Content
 
-## 4. Content Gap
+#### Observed Related Queries
 
-- 검색 결과에서 확인된 콘텐츠 공백 (데이터 없음: 검색 실패)
+#### Content Gap
 
-## 5. Search Volume
+#### 기존 검색 데이터 (생성됨)
+- 함수비 시험
+- 함수비 시험 방법
+- 함수비 시험 실무
+- 함수비 시험 요약
 
-- 실제 검색량 데이터 제공 여부: 0 건 확인됨
+---
 
-## 6. Failed Research
+### 주제: 함수비 시험 계산 방법
+- **Validation Intent**: 계산방법 확인
+- **Observed Intent**: None
+- **Intent Match**: N/A
+
+#### SERP
+- 검색 결과: 0
+- 고유 도메인: 0
+
+#### Top Content
+
+#### Observed Related Queries
+
+#### Content Gap
+
+#### 기존 검색 데이터 (생성됨)
+- 함수비 시험
+- 함수비 시험 계산 방법
+- 함수비 시험 실무
+- 함수비 시험 요약
+
+---
+
+### 주제: 함수비 시험 현장 적용 방법
+- **Validation Intent**: 현장 적용
+- **Observed Intent**: None
+- **Intent Match**: N/A
+
+#### SERP
+- 검색 결과: 0
+- 고유 도메인: 0
+
+#### Top Content
+
+#### Observed Related Queries
+
+#### Content Gap
+
+#### 기존 검색 데이터 (생성됨)
+- 함수비 시험
+- 함수비 시험 현장 적용 방법
+- 함수비 시험 실무
+- 함수비 시험 요약
+
+---
+
+## 3. Failed Research
 
 - 검색 실패 후보:
 
   - 함수비 시험 방법 (Reason: authentication_error)
   - 함수비 시험 계산 방법 (Reason: authentication_error)
   - 함수비 시험 현장 적용 방법 (Reason: authentication_error)
-  - 함수비 시험 부적합 원인과 대책 (Reason: authentication_error)
-  - 단위중량 시험 방법 (Reason: authentication_error)

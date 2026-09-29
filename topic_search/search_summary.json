@@ -1,8 +1,8 @@
 {
-  "input_count": 5,
-  "researched_count": 5,
+  "input_count": 3,
+  "researched_count": 3,
   "success_count": 0,
-  "failed_count": 5,
+  "failed_count": 3,
   "cache_hit_count": 0,
   "provider": "tavily",
   "provider_status": {
@@ -15,5 +15,9 @@
   "search_volume_available_count": 0,
   "serp_found_count": 0,
   "intent_match_count": 0,
-  "intent_mismatch_count": 0
+  "intent_mismatch_count": 0,
+  "intent_unknown_count": 3,
+  "content_gap_available_count": 0,
+  "related_query_available_count": 0,
+  "top_content_analysis_count": 0
 }

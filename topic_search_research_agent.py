@@ -147,6 +147,72 @@ def get_provider(provider_name: str) -> SearchProvider:
         print(f"Warning: Provider '{provider_name}' not supported. Falling back to safe dummy mode.")
         return DummySearchProvider(last_error=f"Unsupported provider: {provider_name}")
 
+import collections
+
+def analyze_intent(text):
+    if not text:
+        return "기타"
+    text = text.replace(" ", "")
+    if "시험방법" in text or "측정방법" in text or "방법론" in text:
+        return "시험방법 확인"
+    elif "계산" in text or "공식" in text or "구하는" in text:
+        return "계산방법 확인"
+    elif "해석" in text or "결과" in text or "판독" in text:
+        return "결과해석"
+    elif "현장" in text or "실무" in text or "적용" in text:
+        return "현장적용"
+    elif "기준" in text or "규정" in text or "지침" in text or "시방서" in text:
+        return "기준/규정 확인"
+    elif "부적합" in text or "원인" in text or "대책" in text or "문제" in text:
+        return "문제해결"
+    elif "비교" in text or "차이" in text or "vs" in text.lower():
+        return "비교/차이점"
+    elif "사례" in text:
+        return "사례/실무"
+    elif "자료" in text or "문서" in text or "다운" in text:
+        return "자료/문서 찾기"
+    elif "이란" in text or "정의" in text or "개념" in text or "원리" in text:
+        return "개념/정의 확인"
+    return "기타"
+
+def analyze_content_type(domain, title, snippet):
+    domain = domain.lower()
+    text = (title + " " + snippet).lower()
+
+    if ".go.kr" in domain or ".or.kr" in domain:
+        return "government"
+    if "kci.go.kr" in domain or "riss.kr" in domain or "dbpia" in domain or "논문" in text:
+        return "academic"
+    if "blog.naver.com" in domain or "blog.daum.net" in domain:
+        return "blog"
+    if "tistory.com" in domain:
+        return "tistory"
+    if "cafe.naver.com" in domain or "cafe.daum.net" in domain or "dcinside" in domain:
+        return "community"
+    if "youtube.com" in domain or "youtu.be" in domain or "동영상" in text:
+        return "video"
+    if "pdf" in text or "다운로드" in text or ".pdf" in urlparse(domain).path:
+        return "document"
+    if ".co.kr" in domain or ".com" in domain:
+        return "commercial"
+    return "unknown"
+
+def analyze_title_pattern(title):
+    t = title.replace(" ", "")
+    if "시험방법" in t or "방법" in t:
+        return "시험방법"
+    if "계산" in t or "예제" in t:
+        return "계산방법"
+    if "결과" in t or "해석" in t:
+        return "결과해석"
+    if "원인" in t or "대책" in t or "부적합" in t:
+        return "문제해결"
+    if "현장" in t or "실무" in t:
+        return "현장실무"
+    if "기준" in t or "규정" in t:
+        return "기준/규정 확인"
+    return "정보탐색"
+
 def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir, delay, refresh, provider, dry_run=False):
     topic = item["topic"]
 
@@ -171,6 +237,14 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
     unique_domains = set()
     total_organic = 0
     top_content = []
+    domain_counts = collections.defaultdict(int)
+    content_type_counts = collections.defaultdict(int)
+    observed_related_queries = set()
+
+    # Text corpus to extract intent and topics
+    combined_titles = ""
+    combined_snippets = ""
+    serp_topics_freq = collections.defaultdict(int)
 
     for i, q in enumerate(variants):
         if i > 0:
@@ -197,7 +271,6 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
             }
 
         # Add basic ISO timestamp for when this was searched
-        # Keeping it simple per standard library specs
         from datetime import datetime, timezone
         q_data["searched_at"] = datetime.now(timezone.utc).isoformat()
 
@@ -206,21 +279,56 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
         if res["status"] == "success" and len(res.get("results", [])) > 0:
             serp_presence = True
             total_organic += len(res["results"])
-            for r in res["results"]:
-                if r.get("domain"):
-                    unique_domains.add(r["domain"])
 
-            # Populate top_content from the primary query
-            if i == 0:
-                for idx, r in enumerate(res["results"]):
+            for idx, r in enumerate(res["results"]):
+                domain = r.get("domain", "")
+                title = r.get("title", "")
+                snippet = r.get("snippet", "")
+
+                combined_titles += f" {title}"
+                combined_snippets += f" {snippet}"
+
+                if domain:
+                    unique_domains.add(domain)
+                    domain_counts[domain] += 1
+
+                # Heuristically guess observed_topics based on snippet for SERP analysis
+                s_lower = snippet.lower()
+                obs_topics = []
+                if "목적" in s_lower: obs_topics.append("시험 목적")
+                if "원리" in s_lower: obs_topics.append("시험 원리")
+                if "기구" in s_lower or "장비" in s_lower: obs_topics.append("시험 장비")
+                if "방법" in s_lower or "순서" in s_lower: obs_topics.append("시험 방법")
+                if "계산" in s_lower or "공식" in s_lower: obs_topics.append("계산 방법")
+                if "결과" in s_lower: obs_topics.append("결과 해석")
+
+                for ot in obs_topics:
+                    serp_topics_freq[ot] += 1
+
+                # Populate top_content from the top 5 results of the primary query
+                if i == 0 and idx < 5:
+                    ct = analyze_content_type(domain, title, snippet)
+                    content_type_counts[ct] += 1
+                    tp = analyze_title_pattern(title)
+
                     top_content.append({
                         "rank": r.get("rank", idx + 1),
-                        "title": r.get("title", ""),
+                        "title": title,
                         "url": r.get("url", ""),
-                        "domain": r.get("domain", ""),
-                        "content_type_observed": None, # Cannot determine without page extraction yet
-                        "likely_sections": []
+                        "domain": domain,
+                        "content_type": ct,
+                        "title_pattern": tp,
+                        "observed_topics": obs_topics
                     })
+
+            # Basic related query extraction from titles
+            for r in res["results"]:
+                t = r.get("title", "")
+                if t and "시험" in t and len(t) < 30 and t != topic:
+                    # Very simple heuristic to grab related looking titles as queries
+                    cleaned = t.split("|")[0].split("-")[0].strip()
+                    if cleaned and len(cleaned) > 5:
+                        observed_related_queries.add(cleaned)
 
     # As per prompt constraints, we must map existing post data if available
     core = item["validation"].get("similarity_group", "").split("_")[0]
@@ -237,27 +345,80 @@ def process_topic(item, original_candidates_dict, existing_posts_dict, cache_dir
     # Fetch related keywords from the original candidates if it exists
     gen_related_kws = original_candidates_dict.get(topic, [])
 
+    # Observe intent based on gathered text
+    obs_intent = None
+    if serp_presence:
+        obs_intent = analyze_intent(combined_titles + " " + combined_snippets)
+
+    val_intent = item.get("search_intent", "")
+
+    intent_analysis = None
+    if serp_presence:
+        match_val = (val_intent == obs_intent) if obs_intent != "기타" else None
+        reason_txt = f"상위 검색 결과에서 '{obs_intent}' 패턴이 다수 관찰됨" if obs_intent != "기타" else "관찰된 검색 의도가 불분명함"
+        intent_analysis = {
+            "validation_intent": val_intent,
+            "observed_intent": obs_intent,
+            "match": match_val,
+            "confidence": "medium", # Heuristic approach
+            "reason": reason_txt
+        }
+
+    content_gap = []
+    if serp_presence:
+        # Heuristic gap analysis without LLM
+        if "계산" not in combined_titles and "예제" not in combined_snippets:
+            content_gap.append({
+                "gap": "실제 계산 예제",
+                "evidence": "상위 결과의 snippet에서 계산 예제가 확인되지 않음",
+                "confidence": "medium"
+            })
+        if "현장" not in combined_titles and "실무" not in combined_titles:
+            content_gap.append({
+                "gap": "현장 적용 및 실무 팁",
+                "evidence": "검색 결과 제목에서 현장 실무 관련 내용이 확인되지 않음",
+                "confidence": "medium"
+            })
+
+    serp_content_structure = {}
+    if serp_presence and serp_topics_freq:
+        common_topics = [k for k, v in sorted(serp_topics_freq.items(), key=lambda x: x[1], reverse=True) if v > 1]
+        serp_content_structure = {
+            "common_topics": common_topics,
+            "topic_frequency": dict(serp_topics_freq)
+        }
+
+    # Compile top domains properly
+    top_domains = []
+    for d, c in sorted(domain_counts.items(), key=lambda x: x[1], reverse=True)[:5]:
+        top_domains.append({"domain": d, "count": c})
+
     # Construct final object
     result = {
         "topic": topic,
         "topic_cluster": item.get("topic_cluster", ""),
         "validation_decision": item["validation"]["decision"],
-        "validation_search_intent": item.get("search_intent", ""),
-        "observed_search_intent": None,  # Null because search failed
+        "validation_search_intent": val_intent,
+        "observed_search_intent": obs_intent,
+        "intent_analysis": intent_analysis,
 
         "queries": queries_data,
 
         "serp": {
             "serp_presence": serp_presence,
             "organic_result_count": total_organic,
-            "unique_domains": len(unique_domains)
+            "unique_domains": len(unique_domains),
+            "top_domains": top_domains,
+            "content_type_distribution": dict(content_type_counts)
         },
 
+        "serp_content_structure": serp_content_structure,
+
         "generated_related_keywords": gen_related_kws,
-        "observed_related_queries": [],
+        "observed_related_queries": list(observed_related_queries)[:5],
 
         "top_content": top_content,
-        "content_gap": [],
+        "content_gap": content_gap,
 
         "search_volume": None,
         "search_volume_source": None,
@@ -295,18 +456,49 @@ def generate_report(results, summary, output_md):
         f"- Client Initialized: {summary.get('provider_status', {}).get('client_initialized', False)}",
         f"- Search Test Success: {summary.get('provider_status', {}).get('search_test_success', False)}",
         f"- Last Error: {summary.get('provider_status', {}).get('last_error', '')}\n",
-        "## 2. Search Intent\n",
-        "- Validation intent와 실제 관찰 intent가 일치/불일치한 후보 (데이터 없음: 검색 실패)\n",
-        "## 3. SERP Findings\n",
-        f"- 검색 결과가 확인된 후보: {summary['serp_found_count']} 건\n",
-        "## 4. Content Gap\n",
-        "- 검색 결과에서 확인된 콘텐츠 공백 (데이터 없음: 검색 실패)\n",
-        "## 5. Search Volume\n",
-        f"- 실제 검색량 데이터 제공 여부: {summary['search_volume_available_count']} 건 확인됨\n",
-        "## 6. Failed Research\n",
-        "- 검색 실패 후보:\n"
     ]
 
+    lines.append("## 2. 세부 결과\n")
+    for r in results:
+        lines.append(f"### 주제: {r['topic']}")
+        lines.append(f"- **Validation Intent**: {r.get('validation_search_intent')}")
+        lines.append(f"- **Observed Intent**: {r.get('observed_search_intent')}")
+
+        ia = r.get("intent_analysis")
+        if ia:
+            lines.append(f"- **Intent Match**: {'YES' if ia.get('match') else 'NO'}")
+        else:
+            lines.append(f"- **Intent Match**: N/A")
+
+        s = r.get("serp", {})
+        lines.append(f"\n#### SERP")
+        lines.append(f"- 검색 결과: {s.get('organic_result_count', 0)}")
+        lines.append(f"- 고유 도메인: {s.get('unique_domains', 0)}")
+
+        lines.append(f"\n#### Top Content")
+        topc = r.get("top_content", [])
+        for tc in topc:
+            lines.append(f"{tc.get('rank')}. {tc.get('title')} (Type: {tc.get('content_type')}, Pattern: {tc.get('title_pattern')})")
+
+        lines.append(f"\n#### Observed Related Queries")
+        orq = r.get("observed_related_queries", [])
+        for q in orq:
+            lines.append(f"- {q}")
+
+        lines.append(f"\n#### Content Gap")
+        cg = r.get("content_gap", [])
+        for gap in cg:
+            lines.append(f"- {gap.get('gap')} ({gap.get('evidence')})")
+
+        lines.append(f"\n#### 기존 검색 데이터 (생성됨)")
+        gk = r.get("generated_related_keywords", [])
+        for k in gk:
+            lines.append(f"- {k}")
+
+        lines.append("\n---\n")
+
+    lines.append("## 3. Failed Research\n")
+    lines.append("- 검색 실패 후보:\n")
     for r in results:
         if r["research_status"] == "failed":
             errs = [e.get("code", "unknown") for e in r["errors"]]
@@ -469,6 +661,11 @@ def main():
     # We can approximate this if the result doesn't have an execution log or just rely on file checks.
     # We will let cache_hit_count be 0 for simplicity if not tracked internally.
 
+    intent_unk = len(results) - (intent_match + intent_mismatch)
+    gap_count = sum([1 for r in results if r.get("content_gap")])
+    rq_count = sum([1 for r in results if r.get("observed_related_queries")])
+    tc_count = sum([1 for r in results if r.get("top_content")])
+
     summary = {
         "input_count": len(targets),
         "researched_count": len(results),
@@ -480,7 +677,11 @@ def main():
         "search_volume_available_count": vol_c,
         "serp_found_count": serp_c,
         "intent_match_count": intent_match,
-        "intent_mismatch_count": intent_mismatch
+        "intent_mismatch_count": intent_mismatch,
+        "intent_unknown_count": intent_unk,
+        "content_gap_available_count": gap_count,
+        "related_query_available_count": rq_count,
+        "top_content_analysis_count": tc_count
     }
 
     save_json(summary, sum_path)
