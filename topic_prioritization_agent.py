@@ -1,3 +1,4 @@
+
 import json
 import os
 import argparse
@@ -34,69 +35,64 @@ class TopicPrioritizationAgent:
 
         return max(0, min(100, score))
 
-    def calculate_content_gap_score(self, search_result):
+    def calculate_content_gap_score(self, search_result, validated_topic):
+        has_existing = bool(validated_topic.get("related_existing_posts")) or bool(search_result.get("existing_post"))
+
+        # Base score if no existing post is present
+        base_score = 0 if has_existing else 60
+
         content_gap = search_result.get("content_gap", [])
-        top_content = search_result.get("top_content", [])
-
-        observed_topics_set = set()
-        for content in top_content:
-            topics = content.get("observed_topics", [])
-            for t in topics:
-                observed_topics_set.add(t)
-
         gap_count = len(content_gap)
-        observed_count = len(observed_topics_set)
 
         if gap_count >= 3:
-            score = 100
+            base_score = max(base_score, 100)
         elif gap_count == 2:
-            score = 75
+            base_score = max(base_score, 80)
         elif gap_count == 1:
-            score = 50
-        else:
-            score = 10
+            base_score = max(base_score, 70)
 
-        # Boost slightly if very few topics are observed
-        if observed_count <= 2 and gap_count > 0:
-            score = min(100, score + 20)
+        return base_score
 
-        return score
+    def calculate_intent_clarity_score(self, topic_title, search_result):
+        clear_intent_keywords = ["방법", "계산", "공식", "기준", "절차", "해석", "원인", "대책", "비교"]
+        base_score = 40
 
-    def calculate_intent_clarity_score(self, search_result):
+        for kw in clear_intent_keywords:
+            if kw in topic_title:
+                base_score = 90
+                break
+
         intent_analysis = search_result.get("intent_analysis") or {}
-        is_match = intent_analysis.get("match", False)
+        if intent_analysis.get("match", False):
+            base_score = max(base_score, 100)
 
-        # We rely on intent_analysis matching as dominant intent
-        if is_match:
-            return 100
-        else:
-            return 40
+        return base_score
 
     def calculate_competition_score(self, search_result):
-        serp = search_result.get("serp", {})
-        organic_count = serp.get("organic_result_count", 0)
-        unique_domains = serp.get("unique_domains", 0)
+        top_content = search_result.get("top_content", [])
 
-        # Lower competition -> Higher score
-        # Since organic_count is usually capped per request (e.g. 5 or so if mock, but real SERP has more),
-        # If unique_domains is high, competition is high -> lower score.
+        if not top_content:
+            return 60 # Default moderate opportunity if no SERP data
 
-        if unique_domains == 0:
-            return 0 # No data
+        competitor_count = 0
 
-        if unique_domains >= 10:
-            score = 20
-        elif unique_domains >= 5:
-            score = 50
-        elif unique_domains >= 2:
-            score = 80
+        for content in top_content:
+            ctype = content.get("content_type", "")
+            # Assume blogs, cafes, communities are primary SEO competitors
+            if ctype in ["blog", "tistory", "community"]:
+                competitor_count += 1
+
+        # Lower SEO blog competition means higher opportunity score
+        if competitor_count == 0:
+            return 100
+        elif competitor_count <= 2:
+            return 80
+        elif competitor_count <= 4:
+            return 50
         else:
-            score = 100
-
-        return score
+            return 20
 
     def calculate_penalty(self, search_result, validated_topic):
-        # existing_post exists if related_existing_posts has items or search_result has existing_post
         related_posts = validated_topic.get("related_existing_posts", [])
         if related_posts or search_result.get("existing_post"):
             return 30
@@ -110,7 +106,9 @@ class TopicPrioritizationAgent:
             reasons.append("단순 정보성 주제")
 
         if scores["content_gap_score"] >= 70:
-            reasons.append("SERP 공백 존재")
+            reasons.append("SERP 공백 확인 (기회)")
+        elif scores["content_gap_score"] >= 50:
+            reasons.append("기존 내부 문서 부재 (기본 점수)")
 
         if scores["intent_clarity_score"] >= 80:
             reasons.append("검색 의도 명확")
@@ -118,9 +116,9 @@ class TopicPrioritizationAgent:
             reasons.append("검색 의도 불분명/경쟁")
 
         if scores["competition_score"] >= 80:
-            reasons.append("경쟁 강도 낮음 (기회)")
+            reasons.append("일반 블로그/커뮤니티 경쟁도 낮음")
         elif scores["competition_score"] <= 40:
-            reasons.append("경쟁 강도 높음")
+            reasons.append("일반 블로그/커뮤니티 경쟁도 높음")
 
         if scores["existing_content_penalty"] > 0:
             reasons.append("유사 기존 콘텐츠 존재 (페널티 적용)")
@@ -146,25 +144,22 @@ class TopicPrioritizationAgent:
             topic_title = sr.get("topic")
             vt = validated_topics.get(topic_title, {})
 
-            # If search failed, we might still want to score practical value, but everything else is 0.
-            is_failed = sr.get("research_status") == "failed"
-
             pv_score = self.calculate_practical_value_score(topic_title)
-            cg_score = self.calculate_content_gap_score(sr) if not is_failed else 0
-            ic_score = self.calculate_intent_clarity_score(sr) if not is_failed else 0
-            cp_score = self.calculate_competition_score(sr) if not is_failed else 0
+            cg_score = self.calculate_content_gap_score(sr, vt)
+            ic_score = self.calculate_intent_clarity_score(topic_title, sr)
+            cp_score = self.calculate_competition_score(sr)
             penalty = self.calculate_penalty(sr, vt)
 
             final_score = (pv_score * 0.40) + (cg_score * 0.25) + (ic_score * 0.15) + (cp_score * 0.20) - penalty
             final_score = max(0, round(final_score))
 
-            if final_score >= 90:
+            if final_score >= 80:
                 classification = "Critical"
-            elif final_score >= 80:
+            elif final_score >= 65:
                 classification = "High"
-            elif final_score >= 60:
+            elif final_score >= 50:
                 classification = "Medium"
-            elif final_score >= 40:
+            elif final_score >= 35:
                 classification = "Low"
             else:
                 classification = "Ignore"

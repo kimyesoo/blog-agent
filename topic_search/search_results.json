@@ -128,67 +128,25 @@
     ]
   },
   {
-    "topic": "함수비 시험 현장 적용 방법",
-    "topic_cluster": "기본물성시험",
-    "validation_decision": "keep",
-    "validation_search_intent": "현장 적용",
-    "observed_search_intent": null,
-    "intent_analysis": null,
-    "queries": [
-      {
-        "query": "함수비 시험 현장 적용 방법",
-        "query_type": "primary",
-        "status": "search_failed",
-        "results": [],
-        "error": {
-          "code": "authentication_error",
-          "exception": "InvalidAPIKeyError",
-          "message": "Unauthorized: missing or invalid API key."
-        },
-        "searched_at": "2026-09-29T21:45:55.615869+00:00"
-      },
-      {
-        "query": "함수비 시험 현장 적용",
-        "query_type": "variant",
-        "status": "search_failed",
-        "results": [],
-        "error": {
-          "code": "authentication_error",
-          "exception": "InvalidAPIKeyError",
-          "message": "Unauthorized: missing or invalid API key."
-        },
-        "searched_at": "2026-09-29T21:45:56.145076+00:00"
-      }
-    ],
-    "serp": {
-      "serp_presence": false,
-      "organic_result_count": 0,
-      "unique_domains": 0,
-      "top_domains": [],
-      "content_type_distribution": {}
-    },
-    "serp_content_structure": {},
-    "generated_related_keywords": [
-      "함수비 시험",
-      "함수비 시험 현장 적용 방법",
-      "함수비 시험 실무",
-      "함수비 시험 요약"
-    ],
-    "observed_related_queries": [],
-    "top_content": [],
-    "content_gap": [],
-    "search_volume": null,
-    "search_volume_source": null,
-    "competition": null,
-    "competition_source": null,
-    "existing_post": null,
+    "topic": "현장 다짐도 평가 방법",
     "research_status": "failed",
-    "errors": [
-      {
-        "code": "authentication_error",
-        "exception": "InvalidAPIKeyError",
-        "message": "Unauthorized: missing or invalid API key."
-      }
-    ]
+    "content_gap": [],
+    "intent_analysis": null,
+    "top_content": [],
+    "serp": {
+      "organic_result_count": 0,
+      "unique_domains": 0
+    }
+  },
+  {
+    "topic": "CBR 시험 방법",
+    "research_status": "failed",
+    "content_gap": [],
+    "intent_analysis": null,
+    "top_content": [],
+    "serp": {
+      "organic_result_count": 0,
+      "unique_domains": 0
+    }
   }
 ]
