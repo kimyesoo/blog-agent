@@ -1,0 +1,52 @@
+[
+  {
+    "topic": "함수비 시험 계산 방법",
+    "priority_score": 32,
+    "classification": "Ignore",
+    "score_breakdown": {
+      "practical_value_score": 80,
+      "content_gap_score": 0,
+      "intent_clarity_score": 0,
+      "competition_score": 0,
+      "existing_content_penalty": 0
+    },
+    "reasons": [
+      "실무 활용도가 높음",
+      "검색 의도 불분명/경쟁",
+      "경쟁 강도 높음"
+    ]
+  },
+  {
+    "topic": "함수비 시험 현장 적용 방법",
+    "priority_score": 32,
+    "classification": "Ignore",
+    "score_breakdown": {
+      "practical_value_score": 80,
+      "content_gap_score": 0,
+      "intent_clarity_score": 0,
+      "competition_score": 0,
+      "existing_content_penalty": 0
+    },
+    "reasons": [
+      "실무 활용도가 높음",
+      "검색 의도 불분명/경쟁",
+      "경쟁 강도 높음"
+    ]
+  },
+  {
+    "topic": "함수비 시험 방법",
+    "priority_score": 20,
+    "classification": "Ignore",
+    "score_breakdown": {
+      "practical_value_score": 50,
+      "content_gap_score": 0,
+      "intent_clarity_score": 0,
+      "competition_score": 0,
+      "existing_content_penalty": 0
+    },
+    "reasons": [
+      "검색 의도 불분명/경쟁",
+      "경쟁 강도 높음"
+    ]
+  }
+]
