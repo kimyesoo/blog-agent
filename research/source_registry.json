@@ -1,17 +1,17 @@
 {
   "kcsc.re.kr": {
     "organization": "국가건설기준센터",
-    "source_type": "official",
+    "source_type": "technical_standard",
     "authority_level": "very_high"
   },
   "law.go.kr": {
     "organization": "국가법령정보센터",
-    "source_type": "official",
+    "source_type": "legal",
     "authority_level": "very_high"
   },
   "codil.or.kr": {
     "organization": "건설기술정보시스템",
-    "source_type": "official",
+    "source_type": "official_guideline",
     "authority_level": "high"
   }
 }

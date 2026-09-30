@@ -13,14 +13,13 @@ class SearchProvider:
 class MockSearchProvider(SearchProvider):
     def search(self, query, limit=10):
         results = []
-        # Legal Queries Simulation
-        if "법령" in query or "규정" in query or "법률" in query or "산업안전보건법" in query:
-            # We simulate that not ALL queries have laws.
-            # If the query is about specific test principles, don't return laws to test "none" relevance.
-            if "원리" not in query and "계산" not in query:
+
+        # Legal
+        if "법령" in query or "규정" in query or "법률" in query or "산업안전" in query or "계약" in query:
+            if "원리" not in query and "시험" not in query:
                 results.append({
-                    "title": f"산업안전보건법 시행규칙 - {query}",
-                    "url": "https://www.law.go.kr/법령/산업안전보건법",
+                    "title": f"국가법령정보센터 - {query} 관련 법령",
+                    "url": "https://www.law.go.kr/법령/test",
                     "domain": "law.go.kr",
                     "snippet": f"{query}에 관한 조항입니다.",
                     "is_pdf": False,
@@ -28,18 +27,18 @@ class MockSearchProvider(SearchProvider):
                     "status": "active"
                 })
 
-        # Technical Standard Simulation
-        if "기준" in query or "KCS" in query or "KDS" in query:
+        # Technical Standard
+        if "기준" in query or "KCS" in query or "KDS" in query or "설계" in query or "시공" in query:
             results.append({
-                "title": f"국가건설기준센터 - {query} 관련 기준",
+                "title": f"국가건설기준센터 - {query} 공식 기준",
                 "url": "https://www.kcsc.re.kr/some_standard.pdf",
                 "domain": "kcsc.re.kr",
-                "snippet": f"{query}에 대한 공식 국가건설기준(KCS) 설명입니다.",
+                "snippet": f"{query}에 대한 국가건설기준(KCS/KDS).",
                 "is_pdf": True
             })
 
-        # Official Guidelines Simulation
-        if "대책" in query or "지침" in query:
+        # Official Guidelines / Public Guidance
+        if "대책" in query or "지침" in query or "매뉴얼" in query:
             results.append({
                 "title": f"{query} 현장 실무 지침서",
                 "url": "https://www.codil.or.kr/report_123.pdf",
@@ -48,13 +47,13 @@ class MockSearchProvider(SearchProvider):
                 "is_pdf": True
             })
 
-        # Generic Blogs
+        # Field Practice (Blogs, Industry)
         for i in range(2):
             results.append({
-                "title": f"[토목 실무] {query} 완벽 정리",
+                "title": f"[토목 실무] {query} 현장 적용 노하우",
                 "url": f"https://civileng7.tistory.com/post{i}",
                 "domain": "tistory.com",
-                "snippet": f"블로그에서 정리한 {query} 관련 내용입니다.",
+                "snippet": f"현장에서 직접 겪은 {query} 사례 및 실무 팁.",
                 "is_pdf": False
             })
 
@@ -89,10 +88,10 @@ class SourceClassifier:
                 return "academic", "medium", "University/Research"
 
         if domain.endswith("tistory.com") or domain.endswith("naver.com"):
-            return "blog", "low", "Personal Blog"
+            return "field_practice", "medium", "Field Blog"
 
         if is_pdf:
-            return "industry", "medium", "Industry Document"
+            return "field_practice", "medium", "Industry Document"
 
         return "unknown", "unknown", "unknown"
 
@@ -120,6 +119,28 @@ class QueryIntentClassifier:
     def classify_query(self, original_topic_intent):
         return self.mapping.get(original_topic_intent, "informational")
 
+class ArchetypeClassifier:
+    def classify(self, topic_data):
+        main_cat = topic_data.get("topic_cluster", "")
+        intent = topic_data.get("search_intent", "")
+
+        # 1. Regulatory
+        if main_cat in ["건설안전", "건설공무", "건설기준 및 법규"] or intent in ["기준/규정"]:
+            if intent not in ["시공 방법", "장비/자재"]:
+                return "regulatory", {"law": 70, "technical_standard": 20, "public_guidance": 0, "field_practice": 10}
+
+        # 4. Knowledge & Productivity
+        if main_cat == "건설공무" and intent in ["개념 이해", "검토", "계산/산정"]:
+            return "knowledge_productivity", {"law": 0, "technical_standard": 10, "public_guidance": 0, "field_practice": 90}
+
+        # 3. Field Practice
+        if main_cat in ["토공", "지반 및 토질", "측량", "건설기계 및 장비", "적산 및 공사비"] and intent in ["시험/측정", "시공 방법", "문제 해결", "원인과 대책", "장비/자재", "사례", "계산/산정"]:
+            return "field_practice", {"law": 10, "technical_standard": 20, "public_guidance": 0, "field_practice": 70}
+
+        # 2. Technical Standard (Default for structural/heavy domains)
+        return "technical_standard", {"law": 20, "technical_standard": 50, "public_guidance": 0, "field_practice": 30}
+
+
 # --- AGENT ---
 class ResearchSerpAgent:
     def __init__(self, provider_name="mock"):
@@ -128,6 +149,7 @@ class ResearchSerpAgent:
 
         self.classifier = SourceClassifier()
         self.intent_classifier = QueryIntentClassifier()
+        self.archetype_classifier = ArchetypeClassifier()
         self.provider_name = provider_name
 
         if provider_name == "mock":
@@ -135,35 +157,33 @@ class ResearchSerpAgent:
         else:
             self.provider = MockSearchProvider()
 
-    def generate_queries(self, topic_data):
+    def generate_queries(self, topic_data, archetype):
         core = topic_data.get("technical_core", "")
         intent = topic_data.get("search_intent", "")
 
-        general_queries = []
-        legal_queries = []
-        standard_queries = []
+        queries = []
 
-        # General Queries
+        # Base query
         if intent == "시공 방법":
-            general_queries.extend([f"{core} 시공", f"{core} 시공순서"])
+            queries.extend([f"{core} 시공", f"{core} 시공 실무"])
         elif intent == "계산/산정":
-            general_queries.extend([f"{core} 계산", f"{core} 수량산출"])
+            queries.extend([f"{core} 계산", f"{core} 수량산출"])
         elif intent in ["문제 해결", "원인과 대책"]:
-            general_queries.extend([f"{core} 문제점", f"{core} 대책"])
+            queries.extend([f"{core} 문제점", f"{core} 대책", f"{core} 현장 하자"])
         else:
-            general_queries.append(f"{core} {intent}")
+            queries.append(f"{core} {intent}")
 
-        # Legal Queries
-        legal_queries.extend([f"{core} 관련 법령", f"{core} 안전 기준", f"산업안전보건법 {core}"])
+        # Archetype specific queries
+        if archetype == "regulatory":
+            queries.extend([f"{core} 관련 법령", f"{core} 규정", f"산업안전보건법 {core}"])
+        elif archetype == "technical_standard":
+            queries.extend([f"KDS {core}", f"KCS {core}", f"{core} 설계기준"])
+        elif archetype == "field_practice":
+            queries.extend([f"{core} 현장 노하우", f"{core} 실무 사례", f"{core} 장비조합"])
+        elif archetype == "knowledge_productivity":
+            queries.extend([f"{core} 실무 양식", f"{core} 업무 팁", f"{core} 작성법"])
 
-        # Standard Queries
-        standard_queries.extend([f"KDS {core}", f"KCS {core}", f"{core} 설계기준"])
-
-        return {
-            "general": list(set(general_queries))[:2],
-            "legal": list(set(legal_queries))[:2],
-            "standard": list(set(standard_queries))[:2]
-        }
+        return list(set(queries))[:4] # Return a concise, focused list
 
     def search_with_cache(self, query):
         cache_key = hashlib.md5(query.encode('utf-8')).hexdigest()
@@ -182,8 +202,10 @@ class ResearchSerpAgent:
             print(f"Search failed for {query}: {e}")
             return []
 
-    def evaluate_legal_relevance(self, legal_evidence, topic_data):
-        # Fallback relevance logic based on findings
+    def evaluate_legal_relevance(self, legal_evidence, topic_data, archetype):
+        if archetype in ["field_practice", "knowledge_productivity"]:
+            return "none", "해당 실무/지식 주제는 직접적인 법령보다 현장 경험 및 기술 지침이 우선됨"
+
         if not legal_evidence:
             return "none", "해당 주제를 직접 규정하는 법령을 확인하지 못함"
 
@@ -212,22 +234,25 @@ class ResearchSerpAgent:
 
         for t in topics:
             topic_title = t["topic"]
-            query_groups = self.generate_queries(t)
-            all_queries_flat = query_groups["general"] + query_groups["legal"] + query_groups["standard"]
+
+            # Determine Archetype
+            archetype, weights = self.archetype_classifier.classify(t)
+
+            queries = self.generate_queries(t, archetype)
 
             topic_serp = []
-            source_dist = {"legal": 0, "technical_standard": 0, "official_guideline": 0, "academic": 0, "industry": 0, "blog": 0, "unknown": 0}
+            source_dist = {"legal": 0, "technical_standard": 0, "official_guideline": 0, "academic": 0, "field_practice": 0, "unknown": 0}
             intent_dist = {}
             domains_seen = set()
 
             legal_basis = []
             technical_standards = []
             official_guidelines = []
-            industry_sources = []
+            field_practices = []
 
             mapped_intent = self.intent_classifier.classify_query(t.get("search_intent", ""))
 
-            for q in all_queries_flat:
+            for q in queries:
                 res = self.search_with_cache(q)
 
                 for r in res:
@@ -255,8 +280,8 @@ class ResearchSerpAgent:
                         technical_standards.append(evidence_item)
                     elif stype == "official_guideline" and evidence_item not in official_guidelines:
                         official_guidelines.append(evidence_item)
-                    elif stype in ["industry", "blog"] and len(industry_sources) < 3 and evidence_item not in industry_sources:
-                        industry_sources.append(evidence_item)
+                    elif stype == "field_practice" and len(field_practices) < 3 and evidence_item not in field_practices:
+                        field_practices.append(evidence_item)
 
                     r["query_used"] = q
                     r["query_intent"] = mapped_intent
@@ -279,26 +304,27 @@ class ResearchSerpAgent:
 
             content_gap = "high" if overlap == "none" else ("partial" if overlap == "possible" else "none")
 
-            # Legal Relevance Calculation
-            leg_rel, leg_reason = self.evaluate_legal_relevance(legal_basis, t)
+            leg_rel, leg_reason = self.evaluate_legal_relevance(legal_basis, t, archetype)
 
-            # Conflict Mocking
             conflict_detected = False
-            if source_dist["legal"] > 0 and source_dist["blog"] > 0:
-                # In real scenario, evaluate text. Mocking false here unless strict condition meets.
-                conflict_detected = False
-
             legal_status = "complete" if source_dist["legal"] > 0 or leg_rel == "none" else "insufficient"
 
             readiness = "low"
-            if (source_dist["legal"] > 0 or source_dist["technical_standard"] > 0) and source_dist["blog"] > 0:
+            # High readiness if it has data matching its archetype priorities
+            if archetype == "regulatory" and source_dist["legal"] > 0:
                 readiness = "high"
-            elif source_dist["official_guideline"] > 0 or source_dist["industry"] > 0:
+            elif archetype == "technical_standard" and source_dist["technical_standard"] > 0:
+                readiness = "high"
+            elif archetype in ["field_practice", "knowledge_productivity"] and source_dist["field_practice"] > 0:
+                readiness = "high"
+            elif len(topic_serp) > 0:
                 readiness = "medium"
 
             summary = {
                 "topic": topic_title,
-                "query_count": len(all_queries_flat),
+                "content_archetype": archetype,
+                "evidence_weight": weights,
+                "query_count": len(queries),
                 "result_count": len(topic_serp),
                 "search_intent_distribution": intent_dist,
                 "source_distribution": source_dist,
@@ -317,14 +343,14 @@ class ResearchSerpAgent:
                     "legal_basis": legal_basis,
                     "technical_standards": technical_standards,
                     "official_guidelines": official_guidelines,
-                    "industry_sources": industry_sources
+                    "field_practices": field_practices
                 }
             }
 
             all_summaries.append(summary)
             all_results.append({
                 "topic": topic_title,
-                "queries": all_queries_flat,
+                "queries": queries,
                 "serp_results": topic_serp
             })
 
@@ -351,6 +377,15 @@ if __name__ == '__main__':
     parser.add_argument('--input', type=str, default='topic_research/v2_2_test_candidates.json')
     parser.add_argument('--provider', type=str, default='mock')
     args = parser.parse_args()
+
+    # Generate default source registry
+    registry = {
+        "kcsc.re.kr": {"organization": "국가건설기준센터", "source_type": "technical_standard", "authority_level": "very_high"},
+        "law.go.kr": {"organization": "국가법령정보센터", "source_type": "legal", "authority_level": "very_high"},
+        "codil.or.kr": {"organization": "건설기술정보시스템", "source_type": "official_guideline", "authority_level": "high"}
+    }
+    with open('research/source_registry.json', 'w') as f:
+        json.dump(registry, f, ensure_ascii=False, indent=2)
 
     agent = ResearchSerpAgent(provider_name=args.provider)
     agent.run(input_file=args.input)
