@@ -14,29 +14,30 @@ class MockSearchProvider(SearchProvider):
     def search(self, query, limit=10):
         results = []
 
-        # Tier A: Law / Tech Standards (Highest Trust)
-        if "법령" in query or "규정" in query or "법률" in query or "산업안전" in query or "계약" in query or "기준" in query or "KCS" in query or "KDS" in query:
+        # Tier A: Law
+        if "법령" in query or "규정" in query or "법률" in query or "산업안전" in query or "계약" in query:
             if "원리" not in query and "시험" not in query:
-                if "법" in query or "규정" in query:
-                    results.append({
-                        "title": f"국가법령정보센터 - {query} 관련 법령",
-                        "url": "https://www.law.go.kr/법령/test",
-                        "domain": "law.go.kr",
-                        "snippet": f"{query}에 관한 공식 법령 조항.",
-                        "is_pdf": False,
-                        "effective_date": "2023-01-01",
-                        "status": "active"
-                    })
-                else:
-                    results.append({
-                        "title": f"국가건설기준센터 - {query} 공식 기준",
-                        "url": "https://www.kcsc.re.kr/some_standard.pdf",
-                        "domain": "kcsc.re.kr",
-                        "snippet": f"{query}에 대한 공식 건설기준(KCS/KDS).",
-                        "is_pdf": True
-                    })
+                results.append({
+                    "title": f"국가법령정보센터 - {query} 관련 법령",
+                    "url": "https://www.law.go.kr/법령/test",
+                    "domain": "law.go.kr",
+                    "snippet": f"{query}에 관한 공식 법령 조항.",
+                    "is_pdf": False,
+                    "effective_date": "2023-01-01",
+                    "status": "active"
+                })
 
-        # Tier B: Public Technical Guidelines (LH, K-water, etc)
+        # Tier A: Technical Standard
+        if "기준" in query or "KCS" in query or "KDS" in query or "설계" in query or "시공" in query:
+            results.append({
+                "title": f"국가건설기준센터 - {query} 공식 기준",
+                "url": "https://www.kcsc.re.kr/some_standard.pdf",
+                "domain": "kcsc.re.kr",
+                "snippet": f"{query}에 대한 국가건설기준(KCS/KDS).",
+                "is_pdf": True
+            })
+
+        # Tier B: Public Technical Guidelines
         if "지침" in query or "매뉴얼" in query or "대책" in query:
             results.append({
                 "title": f"공공기관 - {query} 현장 실무 지침서",
@@ -46,7 +47,7 @@ class MockSearchProvider(SearchProvider):
                 "is_pdf": True
             })
 
-        # Tier C: Industry Pro (Technical blogs, seminars)
+        # Tier C: Industry Pro
         if "문제점" in query or "시공" in query or "장비" in query or "사례" in query or "계산" in query or "시험" in query or "해결책" in query or "노하우" in query:
             results.append({
                 "title": f"[토목기술사] {query} 현장 적용 노하우 및 해결책",
@@ -56,7 +57,7 @@ class MockSearchProvider(SearchProvider):
                 "is_pdf": False
             })
 
-        # Tier D: General Community (Generic blogs)
+        # Tier D: General Community
         if not results:
             results.append({
                 "title": f"[일반 블로그] {query} 완벽 정리",
@@ -83,10 +84,8 @@ class SourceClassifier:
         self.tier_a_domains = ["law.go.kr", "kcsc.re.kr", "moleg.go.kr"]
         self.tier_b_domains = ["go.kr", "or.kr", "re.kr", "lh.or.kr"]
         self.tier_c_domains = ["civileng7.tistory.com", "ac.kr"]
-        # Everything else is Tier D
 
     def classify(self, domain, is_pdf):
-        # Determine exact source type based on registry
         source_type = "unknown"
         if domain in self.registry:
             source_type = self.registry[domain].get("source_type", "unknown")
@@ -100,9 +99,8 @@ class SourceClassifier:
                 source_type = "general_community"
 
         if is_pdf and source_type == "general_community":
-            source_type = "industry_pro" # PDFs likely have higher weight than generic blog
+            source_type = "industry_pro"
 
-        # Determine Tier
         if domain in self.tier_a_domains or source_type in ["legal", "technical_standard"]:
             tier = "Tier A"
         elif any(domain.endswith(s) for s in self.tier_b_domains) or source_type == "official_guideline":
@@ -176,11 +174,7 @@ class ResearchSerpAgent:
         self.archetype_classifier = ArchetypeClassifier(profile_name=profile)
         self.provider_name = provider_name
         self.profile = profile
-
-        if provider_name == "mock":
-            self.provider = MockSearchProvider()
-        else:
-            self.provider = MockSearchProvider()
+        self.provider = MockSearchProvider()
 
     def generate_queries(self, topic_data, archetype):
         core = topic_data.get("technical_core", "")
@@ -188,23 +182,18 @@ class ResearchSerpAgent:
 
         queries = []
 
-        # Primary queries aligned with "Practical Value First"
-        if intent == "시공 방법":
-            queries.extend([f"{core} 시공 노하우", f"{core} 시공순서 및 문제점"])
-        elif intent == "계산/산정":
-            queries.extend([f"{core} 산정 시 주의사항", f"{core} 수량산출 예시"])
-        elif intent in ["문제 해결", "원인과 대책"]:
-            queries.extend([f"{core} 시공 문제점", f"{core} 하자 원인 및 대책"])
-        else:
-            queries.append(f"{core} {intent}")
-
-        # Contextual expansions based on archetype weights
+        # Profile heavily influences the queries we try
         if archetype == "regulatory":
-            queries.extend([f"{core} 관련 법령", f"산업안전보건법 {core} 적용"])
+            queries.extend([f"{core} 관련 법령", f"산업안전보건법 {core} 적용", f"{core} 규정", f"{core} 지침"])
         elif archetype == "technical_standard":
-            queries.extend([f"KDS {core}", f"{core} 설계기준", f"{core} 시공 사례"])
-        elif archetype in ["field_problem_solving", "construction_methods"]:
-            queries.extend([f"{core} 현장 해결책", f"{core} 실무 사례", f"{core} 팁"])
+            queries.extend([f"KDS {core}", f"{core} 설계기준", f"{core} 설계 검토사항"])
+        elif archetype == "construction_methods":
+            queries.extend([f"{core} 시공순서", f"{core} 공법 비교", f"{core} 장비 선정", f"{core} 품질 문제"])
+        elif archetype == "field_problem_solving":
+            queries.extend([f"{core} 시공 현장 문제", f"{core} 실무 사례 해결", f"{core} 노하우", f"{core} 자주하는 실수"])
+
+        if not queries:
+            queries.append(f"{core} {intent}")
 
         return list(set(queries))[:4]
 
@@ -225,6 +214,63 @@ class ResearchSerpAgent:
             print(f"Search failed for {query}: {e}")
             return []
 
+    def evaluate_readiness_dynamically(self, tier_dist, weights):
+        # We calculate readiness purely based on whether the data we found matches what the active profile weighs heaviest.
+        score = 0
+
+        # Normalize weights conceptually:
+        # law maps to Tier A (Legal)
+        # technical_standard maps to Tier A (KCS/KDS)
+        # public_guidance maps to Tier B
+        # field_practice maps to Tier C and D
+
+        if tier_dist["Tier A"] > 0:
+            score += weights.get("law", 0) + weights.get("technical_standard", 0)
+        if tier_dist["Tier B"] > 0:
+            score += weights.get("public_guidance", 0)
+        if tier_dist["Tier C"] > 0 or tier_dist["Tier D"] > 0:
+            score += weights.get("field_practice", 0) + weights.get("problem_solving", 0)
+
+        if score >= 60:
+            return "high"
+        elif score >= 30:
+            return "medium"
+        else:
+            return "low"
+
+    def rank_sources_dynamically(self, all_evidence, weights):
+        # Dynamically ranks source priority based strictly on profile weights.
+        # all_evidence is a list of all gathered source dicts.
+
+        w_law = weights.get("law", 0)
+        w_tech = weights.get("technical_standard", 0)
+        w_pub = weights.get("public_guidance", 0)
+        w_field = weights.get("field_practice", 0) + weights.get("problem_solving", 0)
+
+        ranked = []
+        for e in all_evidence:
+            stype = e.get("source_type")
+            score = 0
+            if stype == "legal": score = w_law
+            elif stype == "technical_standard": score = w_tech
+            elif stype == "official_guideline": score = w_pub
+            elif stype in ["industry_pro", "general_community"]: score = w_field
+
+            # Slightly boost Tier C over Tier D within field practice
+            if e.get("authority_tier") == "Tier C":
+                score += 5
+
+            e["weight_score"] = score
+            ranked.append(e)
+
+        ranked.sort(key=lambda x: x["weight_score"], reverse=True)
+
+        # Strip internal score before outputting final array
+        for r in ranked:
+            del r["weight_score"]
+
+        return ranked
+
     def run(self, input_file, output_summary='research/research_summary.json', output_results='research/search_results.json'):
         if not os.path.exists(input_file):
             print(f"Error: {input_file} not found.")
@@ -236,17 +282,9 @@ class ResearchSerpAgent:
         all_results = []
         all_summaries = []
 
-        existing_posts = []
-        if os.path.exists("content_db/posts.json"):
-            with open("content_db/posts.json", "r") as f:
-                existing_posts = json.load(f)
-
         for t in topics:
             topic_title = t["topic"]
-
-            # Determine Archetype and Dynamic Weights
             archetype, weights = self.archetype_classifier.classify(t)
-
             queries = self.generate_queries(t, archetype)
 
             topic_serp = []
@@ -255,16 +293,11 @@ class ResearchSerpAgent:
             intent_dist = {}
             domains_seen = set()
 
-            legal_basis = []
-            technical_standards = []
-            official_guidelines = []
-            field_practices = []
-
+            raw_evidence = []
             mapped_intent = self.intent_classifier.classify_query(t.get("search_intent", ""))
 
             for q in queries:
                 res = self.search_with_cache(q)
-
                 for r in res:
                     domain = r["domain"]
                     stype, tier, org = self.classifier.classify(domain, r.get("is_pdf", False))
@@ -288,14 +321,8 @@ class ResearchSerpAgent:
                         evidence_item["effective_date"] = r.get("effective_date", "unknown")
                         evidence_item["status"] = r.get("status", "unknown")
 
-                    if tier == "Tier A" and stype == "legal" and evidence_item not in legal_basis:
-                        legal_basis.append(evidence_item)
-                    elif tier == "Tier A" and stype == "technical_standard" and evidence_item not in technical_standards:
-                        technical_standards.append(evidence_item)
-                    elif tier == "Tier B" and evidence_item not in official_guidelines:
-                        official_guidelines.append(evidence_item)
-                    elif tier in ["Tier C", "Tier D"] and evidence_item not in field_practices and len(field_practices) < 5:
-                        field_practices.append(evidence_item)
+                    if evidence_item not in raw_evidence:
+                        raw_evidence.append(evidence_item)
 
                     r["query_used"] = q
                     r["query_intent"] = mapped_intent
@@ -307,39 +334,11 @@ class ResearchSerpAgent:
 
                     topic_serp.append(r)
 
-            # Gap analysis
-            overlap = "none"
-            for ep in existing_posts:
-                ep_title = ep.get("title", "")
-                if topic_title == ep_title:
-                    overlap = "high"
-                    break
-                elif t.get("technical_core", "") in ep_title:
-                    overlap = "possible"
+            readiness = self.evaluate_readiness_dynamically(tier_dist, weights)
+            ranked_evidence = self.rank_sources_dynamically(raw_evidence, weights)
 
-            content_gap = "high" if overlap == "none" else ("partial" if overlap == "possible" else "none")
-
-            # Legal Relevance Calculation (Does it inherently require legal backing?)
-            leg_rel = "none"
-            if archetype == "regulatory":
-                leg_rel = "direct" if tier_dist["Tier A"] > 0 else "indirect"
-            elif archetype == "technical_standard":
-                leg_rel = "indirect"
-
-            # Research Readiness logic
-            readiness = "low"
-            if archetype in ["field_problem_solving", "construction_methods"]:
-                # High readiness if we have Tier C (Industry Pros) backing it up, law is irrelevant.
-                if tier_dist["Tier C"] > 0:
-                    readiness = "high"
-                elif tier_dist["Tier D"] > 0:
-                    readiness = "medium"
-            else:
-                # For Technical or Regulatory, Tier A/B is necessary for high readiness
-                if tier_dist["Tier A"] > 0:
-                    readiness = "high"
-                elif tier_dist["Tier B"] > 0 or tier_dist["Tier C"] > 0:
-                    readiness = "medium"
+            # The top source type reveals what the profile prioritizes practically
+            top_source_priority = ranked_evidence[0]["source_type"] if ranked_evidence else "unknown"
 
             summary = {
                 "topic": topic_title,
@@ -352,18 +351,10 @@ class ResearchSerpAgent:
                 "source_distribution": source_dist,
                 "tier_distribution": tier_dist,
                 "unique_domains": len(domains_seen),
-                "existing_content_overlap": overlap,
-                "content_gap": content_gap,
                 "research_readiness": readiness,
-                "legal_coverage_report": {
-                    "legal_relevance": leg_rel,
-                    "legal_research_status": "complete" if tier_dist["Tier A"] > 0 else "insufficient"
-                },
+                "top_source_priority": top_source_priority,
                 "evidence_hierarchy": {
-                    "tier_a_standards_and_law": legal_basis + technical_standards,
-                    "tier_b_public_guidance": official_guidelines,
-                    "tier_c_industry_pro": [fp for fp in field_practices if fp.get("authority_tier") == "Tier C"],
-                    "tier_d_community": [fp for fp in field_practices if fp.get("authority_tier") == "Tier D"]
+                    "ranked_sources": ranked_evidence[:5] # Top 5 prioritized
                 }
             }
 
@@ -380,24 +371,23 @@ class ResearchSerpAgent:
         with open(output_results, 'w') as f:
             json.dump(all_results, f, ensure_ascii=False, indent=2)
 
-        all_queries = []
-        for r in all_results:
-            all_queries.append({
-                "topic": r["topic"],
-                "queries": r["queries"]
-            })
-
-        with open('research/research_queries.json', 'w') as f:
-            json.dump(all_queries, f, ensure_ascii=False, indent=2)
-
         print(f"Research SERP processing complete for {len(topics)} topics using profile: {self.profile}.")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Research SERP Agent")
     parser.add_argument('--input', type=str, default='topic_research/v2_2_test_candidates.json')
-    parser.add_argument('--provider', type=str, default='mock')
     parser.add_argument('--profile', type=str, default='practical_blog')
+    parser.add_argument('--output', type=str, default='research/research_summary.json')
     args = parser.parse_args()
 
-    agent = ResearchSerpAgent(provider_name=args.provider, profile=args.profile)
-    agent.run(input_file=args.input)
+    # Generate default source registry
+    registry = {
+        "kcsc.re.kr": {"organization": "국가건설기준센터", "source_type": "technical_standard", "authority_level": "very_high"},
+        "law.go.kr": {"organization": "국가법령정보센터", "source_type": "legal", "authority_level": "very_high"},
+        "codil.or.kr": {"organization": "건설기술정보시스템", "source_type": "official_guideline", "authority_level": "high"}
+    }
+    with open('research/source_registry.json', 'w') as f:
+        json.dump(registry, f, ensure_ascii=False, indent=2)
+
+    agent = ResearchSerpAgent(profile=args.profile)
+    agent.run(input_file=args.input, output_summary=args.output)
