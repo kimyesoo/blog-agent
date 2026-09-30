@@ -380,14 +380,29 @@ if __name__ == '__main__':
     parser.add_argument('--output', type=str, default='research/research_summary.json')
     args = parser.parse_args()
 
-    # Generate default source registry
-    registry = {
-        "kcsc.re.kr": {"organization": "국가건설기준센터", "source_type": "technical_standard", "authority_level": "very_high"},
-        "law.go.kr": {"organization": "국가법령정보센터", "source_type": "legal", "authority_level": "very_high"},
-        "codil.or.kr": {"organization": "건설기술정보시스템", "source_type": "official_guideline", "authority_level": "high"}
-    }
-    with open('research/source_registry.json', 'w') as f:
-        json.dump(registry, f, ensure_ascii=False, indent=2)
+    # Generate default source registry if it doesn't exist
+    if not os.path.exists('research/source_registry.json'):
+        registry = {
+            "kcsc.re.kr": {"organization": "국가건설기준센터", "source_type": "technical_standard", "authority_level": "very_high"},
+            "law.go.kr": {"organization": "국가법령정보센터", "source_type": "legal", "authority_level": "very_high"},
+            "codil.or.kr": {"organization": "건설기술정보시스템", "source_type": "official_guideline", "authority_level": "high"},
+            "civileng7.tistory.com": {
+                "organization": "개인(토목기술사)",
+                "source_type": "industry_pro",
+                "authority_level": "medium",
+                "practical_value": "high",
+                "recommended_archetypes": ["field_problem_solving", "construction_methods"]
+            },
+            "2030-view.tistory.com": {
+                "organization": "개인(건설공무)",
+                "source_type": "industry_pro",
+                "authority_level": "medium",
+                "practical_value": "high",
+                "recommended_archetypes": ["regulatory", "field_problem_solving"]
+            }
+        }
+        with open('research/source_registry.json', 'w') as f:
+            json.dump(registry, f, ensure_ascii=False, indent=2)
 
     agent = ResearchSerpAgent(profile=args.profile)
     agent.run(input_file=args.input, output_summary=args.output)
