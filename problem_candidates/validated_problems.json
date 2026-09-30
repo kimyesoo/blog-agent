@@ -183,7 +183,7 @@
     "recurrence_signal": 50,
     "evidence_confidence": "medium",
     "problem_decision": "needs_review",
-    "decision_reason": "유사한 현장 상황이나 세부 맥락(현장조건 vs 변경) 검토 요망"
+    "decision_reason": "유사한 현장 상황이나 세부 맥락 검토 요망 (Topic 다양성 확보)"
   },
   {
     "problem_id": "P-0008",
@@ -201,8 +201,8 @@
     "searchability": 60,
     "recurrence_signal": 50,
     "evidence_confidence": "low",
-    "problem_decision": "keep",
-    "decision_reason": "실무적 문제 해결 가치가 높고 명확한 현장 상황임."
+    "problem_decision": "needs_review",
+    "decision_reason": "AI 추론 문제이므로 실제 현장 사례 확인 요망."
   },
   {
     "problem_id": "P-0009",
@@ -298,7 +298,7 @@
     "recurrence_signal": 50,
     "evidence_confidence": "low",
     "problem_decision": "needs_review",
-    "decision_reason": "실무 문제성은 있으나 구체성이나 검색성이 다소 부족하여 검토 요망."
+    "decision_reason": "AI 추론 문제이므로 실제 현장 사례 확인 요망."
   },
   {
     "problem_id": "P-0013",
@@ -329,8 +329,8 @@
     "searchability": 55,
     "recurrence_signal": 60,
     "evidence_confidence": "high",
-    "problem_decision": "needs_review",
-    "decision_reason": "실무 문제성은 있으나 구체성이나 검색성이 다소 부족하여 검토 요망."
+    "problem_decision": "keep",
+    "decision_reason": "점수가 다소 낮으나 명확한 출처와 근거를 가진 현장 문제임."
   },
   {
     "problem_id": "P-0014",
@@ -348,8 +348,8 @@
     "searchability": 60,
     "recurrence_signal": 50,
     "evidence_confidence": "low",
-    "problem_decision": "keep",
-    "decision_reason": "실무적 문제 해결 가치가 높고 명확한 현장 상황임."
+    "problem_decision": "needs_review",
+    "decision_reason": "AI 추론 문제이므로 실제 현장 사례 확인 요망."
   },
   {
     "problem_id": "P-0015",
@@ -445,8 +445,8 @@
     "searchability": 55,
     "recurrence_signal": 50,
     "evidence_confidence": "medium",
-    "problem_decision": "merge",
-    "decision_reason": "기존 문제와 유사한 현장 상황 (중복)"
+    "problem_decision": "needs_review",
+    "decision_reason": "유사한 현장 상황이나 세부 맥락 검토 요망 (Topic 다양성 확보)"
   },
   {
     "problem_id": "P-0019",
@@ -477,8 +477,8 @@
     "searchability": 55,
     "recurrence_signal": 60,
     "evidence_confidence": "high",
-    "problem_decision": "needs_review",
-    "decision_reason": "실무 문제성은 있으나 구체성이나 검색성이 다소 부족하여 검토 요망."
+    "problem_decision": "keep",
+    "decision_reason": "점수가 다소 낮으나 명확한 출처와 근거를 가진 현장 문제임."
   },
   {
     "problem_id": "P-0020",
@@ -496,7 +496,7 @@
     "searchability": 60,
     "recurrence_signal": 50,
     "evidence_confidence": "low",
-    "problem_decision": "keep",
-    "decision_reason": "실무적 문제 해결 가치가 높고 명확한 현장 상황임."
+    "problem_decision": "needs_review",
+    "decision_reason": "AI 추론 문제이므로 실제 현장 사례 확인 요망."
   }
 ]

@@ -77,35 +77,49 @@ class ProblemValidationAgent:
         for p in problems:
             p = self.score_problem(p)
             title = p["problem"]
+            origin = p.get("problem_origin", "")
+            conf = p.get("evidence_confidence", "low")
 
-            # Identify core canonical concept
-            # We treat P-0002 and P-0007 as similar based on subcategory "사토장" and type "contract_problem"
+            # Identify core canonical concept for duplication check
             core_concept = p["subcategory"] + "_" + p.get("problem_type", "")
 
-            # Duplicate handling: If we've seen this concept, and it's practically valuable
-            if p["practical_value"] < 45 or p.get("problem_origin") == "taxonomy_fallback":
+            # Base filters
+            if p["practical_value"] < 45 or origin == "taxonomy_fallback" or p.get("problem_type") == "theoretical":
                 p["problem_decision"] = "reject"
                 p["decision_reason"] = "지나치게 학술적이거나 실무 문제성이 부족함."
+            elif origin == "ai_inferred":
+                # Crucial Fix: Prevent ai_inferred from automatically becoming keep
+                p["problem_decision"] = "needs_review"
+                p["decision_reason"] = "AI 추론 문제이므로 실제 현장 사례 확인 요망."
+                seen_core_concepts[core_concept] = len(validated)
             elif core_concept in seen_core_concepts:
+                # Duplication Check
                 existing_idx = seen_core_concepts[core_concept]
                 existing_p = validated[existing_idx]
 
-                # Check semantic similarity (Mocking the AI check for P-0002 and P-0007)
-                if "운반거리" in title and "운반거리" in existing_p["problem"]:
-                    # Treat as duplicate
-                    if title == "설계와 실제 사토 운반거리가 달라진 경우":
+                # Semantic similarity check (Mocking AI check for similar nuances)
+                if ("운반거리" in title and "운반거리" in existing_p["problem"]) or \
+                   ("암반" in title and "암반" in existing_p["problem"]):
+                    if title != existing_p["problem"]:
+                        # Topic 단계에서 다르게 파생 가능하므로 무조건 merge하지 않고 needs_review
                         p["problem_decision"] = "needs_review"
-                        p["decision_reason"] = "유사한 현장 상황이나 세부 맥락(현장조건 vs 변경) 검토 요망"
+                        p["decision_reason"] = "유사한 현장 상황이나 세부 맥락 검토 요망 (Topic 다양성 확보)"
                     else:
                         p["problem_decision"] = "merge"
-                        p["decision_reason"] = "기존 문제와 유사한 현장 상황 (중복)"
+                        p["decision_reason"] = "기존 문제와 동일한 현장 상황 (중복)"
                 else:
                     p["problem_decision"] = "merge"
                     p["decision_reason"] = "기존 문제와 유사한 현장 상황 (중복)"
             else:
+                # Decision logic for source_derived
                 if p["practical_value"] >= 60:
                     p["problem_decision"] = "keep"
                     p["decision_reason"] = "실무적 문제 해결 가치가 높고 명확한 현장 상황임."
+                    seen_core_concepts[core_concept] = len(validated)
+                elif p["practical_value"] >= 50 and conf == "high":
+                    # Crucial Fix: Prevent over-penalizing high confidence source derived problems
+                    p["problem_decision"] = "keep"
+                    p["decision_reason"] = "점수가 다소 낮으나 명확한 출처와 근거를 가진 현장 문제임."
                     seen_core_concepts[core_concept] = len(validated)
                 else:
                     p["problem_decision"] = "needs_review"
@@ -131,7 +145,7 @@ class ProblemValidationAgent:
 
         print(f"Problem Validation complete. Validated {len(validated)} problems.")
         for v in validated:
-            print(f"- [{v['problem_decision'].upper()}] {v['problem']} (PV: {v['practical_value']}, CONF: {v['evidence_confidence']})")
+            print(f"- [{v['problem_decision'].upper()}] {v['problem']} (ORIGIN: {v['problem_origin']}, CONF: {v['evidence_confidence']}, PV: {v['practical_value']})")
 
 if __name__ == "__main__":
     agent = ProblemValidationAgent()
