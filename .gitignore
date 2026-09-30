@@ -2,3 +2,4 @@
 topic_search/cache/
 __pycache__/
 *.pyc
+research/cache/
