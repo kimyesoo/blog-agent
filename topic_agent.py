@@ -43,6 +43,41 @@ def main():
 
     candidates_dict = {}
 
+    # Process validated problems first
+    validated_problems_path = os.path.join("problem_candidates", "validated_problems.json")
+    if os.path.exists(validated_problems_path):
+        with open(validated_problems_path, "r", encoding="utf-8") as f:
+            problems = json.load(f)
+
+        for p in problems:
+            if p.get("problem_decision") == "keep":
+                # Convert problem to a topic candidate (Problem != Topic)
+                # Apply heuristic templates based on problem type to create search-friendly topics
+                raw_problem = p.get("problem")
+                ptype = p.get("problem_type", "")
+
+                # Strip trailing situations for cleaner base topic
+                base = raw_problem.replace("하는 경우", "").replace("하는 상황", "").replace("된 경우", "").strip()
+
+                if ptype == "quality_problem":
+                    topic_title = f"{base} 시 원인 분석 및 현장 조치방법"
+                elif ptype == "contract_problem":
+                    topic_title = f"{base} 시 설계변경 및 행정 처리 절차"
+                elif ptype == "administrative_problem":
+                    topic_title = f"{base} 대응 및 필수 서류 가이드"
+                else:
+                    topic_title = f"{base} 실무 해결 가이드"
+
+                if topic_title not in existing_titles:
+                    candidates_dict[topic_title] = {
+                        "topic": topic_title,
+                        "score": p.get("practical_value", 50),
+                        "reason": p.get("decision_reason", "검증된 현장 실무 문제"),
+                        "related_posts": [],
+                        "topic_source": "validated_problem"
+                    }
+
+    # Fallback to taxonomy/TOPIC_MAP
     for post in posts:
         title = post.get("title")
         views = post.get("views", 0)
@@ -57,7 +92,8 @@ def main():
                         "topic": related_topic,
                         "score": 0,
                         "reason": f"기존 인기글 '{title}' 등과 연관성이 높아 조회수가 기대됩니다.",
-                        "related_posts": []
+                        "related_posts": [],
+                        "topic_source": "taxonomy_fallback"
                     }
 
                 candidates_dict[related_topic]["score"] += views
