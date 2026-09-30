@@ -2,24 +2,30 @@
 
 이 문서는 Research Agent 단계에서 수집되는 데이터와 분석 기준을 정의합니다.
 
-## 1. Source Classification (자료 출처 분류)
-자료의 권위(Authority)를 동일 선상에 두지 않고 다음 4가지로 계층화합니다:
-- **Official (very_high/high)**: 국가건설기준(KCS/KDS), 법령, 조달청, 국토부 지침 등
-- **Academic (medium)**: 국책연구기관, 대학 논문, 연구보고서
-- **Industry (medium)**: PDF 매뉴얼, 건설업계 실무 자료
-- **Blog/Community (low)**: 티스토리, 네이버 블로그 등 개인 경험 자료
+## 1. 최우선 원칙: 법령 중심 Research
+블로그 검색결과보다 **법적·기술적 근거 체계를 우선적으로 확인**합니다. 법령을 글의 마지막 참고자료로 붙이는 것이 아니라 Research의 출발점 중 하나로 사용합니다.
+- 관련 법령 유무 조사 -> KDS/KCS 확인 -> 공공기관 자료 -> 일반 검색 순으로 진행합니다.
 
-## 2. Research Readiness
-`Research Readiness`는 해당 토픽이 '작성하기 좋은 상태인가'를 나타냅니다. 검색량이나 SEO 트래픽 점수가 아닙니다.
-- **HIGH**: 실제 검색 결과가 존재하며, 공식 자료(Official)와 실무 자료(Blog)가 모두 확보되어 팩트체크가 용이한 상태.
-- **MEDIUM**: 검색 결과는 존재하나 공식 기술 자료가 다소 부족한 상태.
-- **LOW**: 검색 결과 자체가 부족하거나, 구체적인 실무 의도가 파악되지 않아 리서치가 어려운 상태.
+## 2. Evidence Hierarchy (자료 출처 분류)
+자료의 권위를 하나의 점수로 뭉뚱그리지 않고 다음 계층으로 엄격히 분리하여 저장합니다.
+1. **Legal Basis**: 현재 시행 법령 (법률, 시행령, 시행규칙, 고시)
+2. **Technical Standards**: 공식 기술기준 (KDS, KCS 등)
+3. **Official Guidelines**: 국토부, 조달청 등 공공기관 공식 지침/매뉴얼
+4. **Academic/Research**: 국책연구기관, 학술 자료
+5. **Industry**: 업계 실무 전문 자료
+6. **Blog/Community**: 개인 경험 및 블로그
 
-## 3. Query Generation Strategy
-V2.2에서 도출된 `Technical Core`와 `Search Intent`를 활용하여 검색어를 다각화합니다.
-- 예: `토공장비` + `문제 해결` -> ["토공장비 문제점", "토공장비 시공 문제", "토공장비 대책"]
-이 전략을 통해 하나의 제목으로 검색하는 것보다 입체적인 자료 수집이 가능해집니다.
+## 3. Legal Relevance (법적 관련성)
+모든 토픽이 법령을 강제로 가지지 않습니다.
+- `direct`: 법령이 해당 업무를 직접 규정.
+- `indirect`: 법령과 관련되나 세부 기술사항은 KDS/KCS에 존재.
+- `contextual`: 법적 배경은 있으나 기술적 내용이 핵심.
+- `none`: 직접적인 법적 근거가 없음 (명확히 '없음'으로 기록).
+- `unknown`: 확인 불가.
 
-## 4. Caching & Rate Limiting
-- 동일 쿼리에 대한 반복적인 API 호출 방지를 위해 MD5 해싱 기반의 로컬 캐시(`research/cache/*.json`)를 사용합니다.
-- `.gitignore`에 처리되어 원격 저장소에 캐시가 적재되는 것을 방지합니다.
+## 4. Query Generation Strategy
+- **General Queries**: 일반적인 실무 검색어 ("토공장비 문제점")
+- **Legal Queries**: 법령/기준 전용 검색어 ("토공장비 관련 법령", "산업안전보건법 흙막이")
+
+## 5. Conflict Resolution
+법령과 일반 검색 결과(블로그 등)의 내용이 충돌할 경우 `legal_conflict_detected = true`로 마킹하여, 후속 Fact Check Agent가 이를 해결하도록 위임합니다.

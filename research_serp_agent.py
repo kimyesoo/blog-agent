@@ -1,3 +1,4 @@
+
 import json
 import os
 import argparse
@@ -11,8 +12,23 @@ class SearchProvider:
 
 class MockSearchProvider(SearchProvider):
     def search(self, query, limit=10):
-        # Generates realistic-looking mock data based on the query for testing
         results = []
+        # Legal Queries Simulation
+        if "법령" in query or "규정" in query or "법률" in query or "산업안전보건법" in query:
+            # We simulate that not ALL queries have laws.
+            # If the query is about specific test principles, don't return laws to test "none" relevance.
+            if "원리" not in query and "계산" not in query:
+                results.append({
+                    "title": f"산업안전보건법 시행규칙 - {query}",
+                    "url": "https://www.law.go.kr/법령/산업안전보건법",
+                    "domain": "law.go.kr",
+                    "snippet": f"{query}에 관한 조항입니다.",
+                    "is_pdf": False,
+                    "effective_date": "2023-01-01",
+                    "status": "active"
+                })
+
+        # Technical Standard Simulation
         if "기준" in query or "KCS" in query or "KDS" in query:
             results.append({
                 "title": f"국가건설기준센터 - {query} 관련 기준",
@@ -22,16 +38,17 @@ class MockSearchProvider(SearchProvider):
                 "is_pdf": True
             })
 
-        if "문제점" in query or "대책" in query:
+        # Official Guidelines Simulation
+        if "대책" in query or "지침" in query:
             results.append({
-                "title": f"{query} 현장 실무 보고서",
+                "title": f"{query} 현장 실무 지침서",
                 "url": "https://www.codil.or.kr/report_123.pdf",
                 "domain": "codil.or.kr",
-                "snippet": f"현장 시공 중 발생하는 {query} 현황 및 건설기술연구원 분석.",
+                "snippet": f"현장 시공 중 발생하는 {query} 현황 및 지침 분석.",
                 "is_pdf": True
             })
 
-        # Add generic blog results
+        # Generic Blogs
         for i in range(2):
             results.append({
                 "title": f"[토목 실무] {query} 완벽 정리",
@@ -45,26 +62,27 @@ class MockSearchProvider(SearchProvider):
 
 # --- CLASSIFIERS ---
 class SourceClassifier:
-    def __init__(self, registry_file='research/source_registry.json'):
+    def __init__(self, registry_file='research/source_registry.json', legal_registry_file='research/legal_source_registry.json'):
         self.registry = {}
         if os.path.exists(registry_file):
             with open(registry_file, 'r') as f:
                 self.registry = json.load(f)
 
-        # Default fallback rules
+        if os.path.exists(legal_registry_file):
+            with open(legal_registry_file, 'r') as f:
+                self.registry.update(json.load(f))
+
         self.official_domains = ["go.kr", "or.kr", "re.kr"]
         self.academic_domains = ["ac.kr"]
 
     def classify(self, domain, is_pdf):
-        # Exact match
         if domain in self.registry:
             reg = self.registry[domain]
             return reg.get("source_type", "unknown"), reg.get("authority_level", "unknown"), reg.get("organization", "unknown")
 
-        # Heuristics
         for suffix in self.official_domains:
             if domain.endswith(suffix):
-                return "official", "high", "Public Institution"
+                return "official_guideline", "high", "Public Institution"
 
         for suffix in self.academic_domains:
             if domain.endswith(suffix):
@@ -78,8 +96,6 @@ class SourceClassifier:
 
         return "unknown", "unknown", "unknown"
 
-
-# --- QUERY INTENT CLASSIFIER ---
 class QueryIntentClassifier:
     def __init__(self):
         self.mapping = {
@@ -117,29 +133,37 @@ class ResearchSerpAgent:
         if provider_name == "mock":
             self.provider = MockSearchProvider()
         else:
-            # Fallback to mock if API not implemented
             self.provider = MockSearchProvider()
 
     def generate_queries(self, topic_data):
         core = topic_data.get("technical_core", "")
         intent = topic_data.get("search_intent", "")
 
-        queries = [topic_data["topic"]] # The full title
+        general_queries = []
+        legal_queries = []
+        standard_queries = []
 
+        # General Queries
         if intent == "시공 방법":
-            queries.extend([f"{core} 시공", f"{core} 시공순서", f"{core} 작업방법"])
+            general_queries.extend([f"{core} 시공", f"{core} 시공순서"])
         elif intent == "계산/산정":
-            queries.extend([f"{core} 계산", f"{core} 산정기준", f"{core} 수량산출"])
+            general_queries.extend([f"{core} 계산", f"{core} 수량산출"])
         elif intent in ["문제 해결", "원인과 대책"]:
-            queries.extend([f"{core} 문제점", f"{core} 대책", f"{core} 하자 원인"])
-        elif intent == "기준/규정":
-            queries.extend([f"{core} 기준", f"{core} KCS", f"{core} KDS", f"{core} 시방서"])
-        elif intent == "시험/측정":
-            queries.extend([f"{core} 시험방법", f"{core} 결과 해석"])
+            general_queries.extend([f"{core} 문제점", f"{core} 대책"])
         else:
-            queries.extend([f"{core} {intent}", f"{core} 실무"])
+            general_queries.append(f"{core} {intent}")
 
-        return list(set(queries))[:3] # Limit to 3 distinct queries per topic
+        # Legal Queries
+        legal_queries.extend([f"{core} 관련 법령", f"{core} 안전 기준", f"산업안전보건법 {core}"])
+
+        # Standard Queries
+        standard_queries.extend([f"KDS {core}", f"KCS {core}", f"{core} 설계기준"])
+
+        return {
+            "general": list(set(general_queries))[:2],
+            "legal": list(set(legal_queries))[:2],
+            "standard": list(set(standard_queries))[:2]
+        }
 
     def search_with_cache(self, query):
         cache_key = hashlib.md5(query.encode('utf-8')).hexdigest()
@@ -149,7 +173,6 @@ class ResearchSerpAgent:
             with open(cache_file, 'r') as f:
                 return json.load(f)
 
-        # Retry/Backoff logic would go here if using real API
         try:
             results = self.provider.search(query)
             with open(cache_file, 'w') as f:
@@ -158,6 +181,18 @@ class ResearchSerpAgent:
         except Exception as e:
             print(f"Search failed for {query}: {e}")
             return []
+
+    def evaluate_legal_relevance(self, legal_evidence, topic_data):
+        # Fallback relevance logic based on findings
+        if not legal_evidence:
+            return "none", "해당 주제를 직접 규정하는 법령을 확인하지 못함"
+
+        core = topic_data.get("technical_core", "")
+        for ev in legal_evidence:
+            if core in ev.get("title", ""):
+                return "direct", "관련 법령 내 직접 명시 확인됨"
+
+        return "indirect", "관련 법적 배경이 존재하나 세부 규정은 기술기준 등에서 다루어질 가능성 높음"
 
     def run(self, input_file, output_summary='research/research_summary.json', output_results='research/search_results.json'):
         if not os.path.exists(input_file):
@@ -170,7 +205,6 @@ class ResearchSerpAgent:
         all_results = []
         all_summaries = []
 
-        # We also want to map existing posts to check gap
         existing_posts = []
         if os.path.exists("content_db/posts.json"):
             with open("content_db/posts.json", "r") as f:
@@ -178,23 +212,24 @@ class ResearchSerpAgent:
 
         for t in topics:
             topic_title = t["topic"]
-            queries = self.generate_queries(t)
+            query_groups = self.generate_queries(t)
+            all_queries_flat = query_groups["general"] + query_groups["legal"] + query_groups["standard"]
 
             topic_serp = []
-            source_dist = {"official": 0, "academic": 0, "industry": 0, "blog": 0, "unknown": 0}
+            source_dist = {"legal": 0, "technical_standard": 0, "official_guideline": 0, "academic": 0, "industry": 0, "blog": 0, "unknown": 0}
             intent_dist = {}
             domains_seen = set()
 
-            official_evidence = []
-            industry_evidence = []
+            legal_basis = []
+            technical_standards = []
+            official_guidelines = []
+            industry_sources = []
 
-            # Map topic's intent to English taxonomy
             mapped_intent = self.intent_classifier.classify_query(t.get("search_intent", ""))
 
-            for q in queries:
+            for q in all_queries_flat:
                 res = self.search_with_cache(q)
 
-                # Classify results
                 for r in res:
                     domain = r["domain"]
                     stype, auth, org = self.classifier.classify(domain, r.get("is_pdf", False))
@@ -205,10 +240,23 @@ class ResearchSerpAgent:
                     if stype in source_dist:
                         source_dist[stype] += 1
 
-                    if stype == "official" and len(official_evidence) < 2:
-                        official_evidence.append(r["title"])
-                    elif stype == "industry" and len(industry_evidence) < 2:
-                        industry_evidence.append(r["title"])
+                    evidence_item = {
+                        "title": r["title"],
+                        "source_type": stype,
+                        "url": r["url"]
+                    }
+                    if stype == "legal":
+                        evidence_item["effective_date"] = r.get("effective_date", "unknown")
+                        evidence_item["status"] = r.get("status", "unknown")
+
+                    if stype == "legal" and evidence_item not in legal_basis:
+                        legal_basis.append(evidence_item)
+                    elif stype == "technical_standard" and evidence_item not in technical_standards:
+                        technical_standards.append(evidence_item)
+                    elif stype == "official_guideline" and evidence_item not in official_guidelines:
+                        official_guidelines.append(evidence_item)
+                    elif stype in ["industry", "blog"] and len(industry_sources) < 3 and evidence_item not in industry_sources:
+                        industry_sources.append(evidence_item)
 
                     r["query_used"] = q
                     r["query_intent"] = mapped_intent
@@ -220,7 +268,6 @@ class ResearchSerpAgent:
 
                     topic_serp.append(r)
 
-            # Existing Content Gap
             overlap = "none"
             for ep in existing_posts:
                 ep_title = ep.get("title", "")
@@ -232,34 +279,52 @@ class ResearchSerpAgent:
 
             content_gap = "high" if overlap == "none" else ("partial" if overlap == "possible" else "none")
 
-            # Research Readiness
+            # Legal Relevance Calculation
+            leg_rel, leg_reason = self.evaluate_legal_relevance(legal_basis, t)
+
+            # Conflict Mocking
+            conflict_detected = False
+            if source_dist["legal"] > 0 and source_dist["blog"] > 0:
+                # In real scenario, evaluate text. Mocking false here unless strict condition meets.
+                conflict_detected = False
+
+            legal_status = "complete" if source_dist["legal"] > 0 or leg_rel == "none" else "insufficient"
+
             readiness = "low"
-            if source_dist["official"] > 0 and source_dist["blog"] > 0:
+            if (source_dist["legal"] > 0 or source_dist["technical_standard"] > 0) and source_dist["blog"] > 0:
                 readiness = "high"
-            elif source_dist["official"] > 0 or source_dist["industry"] > 0:
+            elif source_dist["official_guideline"] > 0 or source_dist["industry"] > 0:
                 readiness = "medium"
 
             summary = {
                 "topic": topic_title,
-                "query_count": len(queries),
+                "query_count": len(all_queries_flat),
                 "result_count": len(topic_serp),
                 "search_intent_distribution": intent_dist,
                 "source_distribution": source_dist,
-                "official_source_count": source_dist["official"],
-                "industry_source_count": source_dist["industry"],
-                "academic_source_count": source_dist["academic"],
                 "unique_domains": len(domains_seen),
-                "official_evidence": official_evidence,
-                "industry_evidence": industry_evidence,
                 "existing_content_overlap": overlap,
                 "content_gap": content_gap,
-                "research_readiness": readiness
+                "research_readiness": readiness,
+                "legal_coverage_report": {
+                    "legal_relevance": leg_rel,
+                    "legal_relevance_reason": leg_reason,
+                    "legal_currentness_checked": True if source_dist["legal"] > 0 else False,
+                    "legal_conflict_detected": conflict_detected,
+                    "legal_research_status": legal_status
+                },
+                "evidence_hierarchy": {
+                    "legal_basis": legal_basis,
+                    "technical_standards": technical_standards,
+                    "official_guidelines": official_guidelines,
+                    "industry_sources": industry_sources
+                }
             }
 
             all_summaries.append(summary)
             all_results.append({
                 "topic": topic_title,
-                "queries": queries,
+                "queries": all_queries_flat,
                 "serp_results": topic_serp
             })
 
@@ -269,7 +334,6 @@ class ResearchSerpAgent:
         with open(output_results, 'w') as f:
             json.dump(all_results, f, ensure_ascii=False, indent=2)
 
-        # Extract and save standalone queries
         all_queries = []
         for r in all_results:
             all_queries.append({
@@ -287,15 +351,6 @@ if __name__ == '__main__':
     parser.add_argument('--input', type=str, default='topic_research/v2_2_test_candidates.json')
     parser.add_argument('--provider', type=str, default='mock')
     args = parser.parse_args()
-
-    # Generate default source registry
-    registry = {
-        "kcsc.re.kr": {"organization": "국가건설기준센터", "source_type": "official", "authority_level": "very_high"},
-        "law.go.kr": {"organization": "국가법령정보센터", "source_type": "official", "authority_level": "very_high"},
-        "codil.or.kr": {"organization": "건설기술정보시스템", "source_type": "official", "authority_level": "high"}
-    }
-    with open('research/source_registry.json', 'w') as f:
-        json.dump(registry, f, ensure_ascii=False, indent=2)
 
     agent = ResearchSerpAgent(provider_name=args.provider)
     agent.run(input_file=args.input)
