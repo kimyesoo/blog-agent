@@ -5,8 +5,7 @@
     "reason": "기존 인기글 '들밀도 시험' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "들밀도 시험"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "현장 다짐도 평가 방법",
@@ -14,8 +13,7 @@
     "reason": "기존 인기글 '들밀도 시험' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "들밀도 시험"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "고무풍선법 밀도 시험",
@@ -23,8 +21,7 @@
     "reason": "기존 인기글 '들밀도 시험' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "들밀도 시험"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "비중계 시험방법",
@@ -32,8 +29,7 @@
     "reason": "기존 인기글 '체분석 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "체분석 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "조립률 계산법",
@@ -41,8 +37,7 @@
     "reason": "기존 인기글 '체분석 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "체분석 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "체가름 시험 결과 그래프 해석",
@@ -50,8 +45,7 @@
     "reason": "기존 인기글 '체분석 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "체분석 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "굵은 골재의 비중 시험",
@@ -59,8 +53,7 @@
     "reason": "기존 인기글 '모래의 비중 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "모래의 비중 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "비중 병 보정 방법",
@@ -68,8 +61,7 @@
     "reason": "기존 인기글 '모래의 비중 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "모래의 비중 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "흙의 공극비 계산",
@@ -77,8 +69,7 @@
     "reason": "기존 인기글 '모래의 비중 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "모래의 비중 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "소성지수(PI)의 의미",
@@ -86,8 +77,7 @@
     "reason": "기존 인기글 '액성한계 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "액성한계 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "Casagrande 방법과 Fall Cone 방법 비교",
@@ -95,8 +85,7 @@
     "reason": "기존 인기글 '액성한계 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "액성한계 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "통일분류법(USCS)의 액성한계 활용",
@@ -104,8 +93,7 @@
     "reason": "기존 인기글 '액성한계 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "액성한계 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "수축한계 시험방법",
@@ -113,8 +101,7 @@
     "reason": "기존 인기글 '소성한계 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "소성한계 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "점토 광물이 소성한계에 미치는 영향",
@@ -122,8 +109,7 @@
     "reason": "기존 인기글 '소성한계 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "소성한계 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
+    ]
   },
   {
     "topic": "터터버그 한계 종합 분석",
@@ -131,35 +117,6 @@
     "reason": "기존 인기글 '소성한계 시험방법' 등과 연관성이 높아 조회수가 기대됩니다.",
     "related_posts": [
       "소성한계 시험방법"
-    ],
-    "topic_source": "taxonomy_fallback"
-  },
-  {
-    "topic": "현장 다짐도가 기준에 미달 시 원인 분석 및 현장 조치방법",
-    "score": 65,
-    "reason": "핵심 현장 품질 문제",
-    "related_posts": [],
-    "topic_source": "validated_problem"
-  },
-  {
-    "topic": "사토장 변경으로 운반거리가 증가 시 설계변경 및 행정 처리 절차",
-    "score": 65,
-    "reason": "실무적 문제 해결 가치가 높고 명확한 현장 상황임.",
-    "related_posts": [],
-    "topic_source": "validated_problem"
-  },
-  {
-    "topic": "감리단에서 추가 서류를 요구 대응 및 필수 서류 가이드",
-    "score": 65,
-    "reason": "실무적 행정 대응 상황임.",
-    "related_posts": [],
-    "topic_source": "validated_problem"
-  },
-  {
-    "topic": "설계와 실제 사토 운반거리가 달라진 경우 시 설계변경 및 행정 처리 절차",
-    "score": 55,
-    "reason": "실무적 문제 해결 가치가 높고 명확한 현장 상황임.",
-    "related_posts": [],
-    "topic_source": "validated_problem"
+    ]
   }
 ]

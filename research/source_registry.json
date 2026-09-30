@@ -1,37 +1,17 @@
 {
   "kcsc.re.kr": {
     "organization": "국가건설기준센터",
-    "source_type": "technical_standard",
+    "source_type": "official",
     "authority_level": "very_high"
   },
   "law.go.kr": {
     "organization": "국가법령정보센터",
-    "source_type": "legal",
+    "source_type": "official",
     "authority_level": "very_high"
   },
   "codil.or.kr": {
     "organization": "건설기술정보시스템",
-    "source_type": "official_guideline",
+    "source_type": "official",
     "authority_level": "high"
-  },
-  "civileng7.tistory.com": {
-    "organization": "개인(토목기술사)",
-    "source_type": "industry_pro",
-    "authority_level": "medium",
-    "practical_value": "high",
-    "recommended_archetypes": [
-      "field_problem_solving",
-      "construction_methods"
-    ]
-  },
-  "2030-view.tistory.com": {
-    "organization": "개인(건설공무)",
-    "source_type": "industry_pro",
-    "authority_level": "medium",
-    "practical_value": "high",
-    "recommended_archetypes": [
-      "regulatory",
-      "field_problem_solving"
-    ]
   }
 }
