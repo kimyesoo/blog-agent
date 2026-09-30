@@ -28,7 +28,7 @@ class MockSearchProvider(SearchProvider):
                 })
 
         # Technical Standard
-        if "기준" in query or "KCS" in query or "KDS" in query or "설계" in query or "시공" in query:
+        if "기준" in query or "KCS" in query or "KDS" in query or "설계" in query:
             results.append({
                 "title": f"국가건설기준센터 - {query} 공식 기준",
                 "url": "https://www.kcsc.re.kr/some_standard.pdf",
@@ -38,7 +38,7 @@ class MockSearchProvider(SearchProvider):
             })
 
         # Official Guidelines / Public Guidance
-        if "대책" in query or "지침" in query or "매뉴얼" in query:
+        if "지침" in query or "매뉴얼" in query:
             results.append({
                 "title": f"{query} 현장 실무 지침서",
                 "url": "https://www.codil.or.kr/report_123.pdf",
@@ -47,13 +47,24 @@ class MockSearchProvider(SearchProvider):
                 "is_pdf": True
             })
 
-        # Field Practice (Blogs, Industry)
-        for i in range(2):
+        # Field Practice (Blogs, Industry) - Emphasizing problem solving and practical experience
+        if "문제점" in query or "대책" in query or "시공" in query or "장비" in query or "사례" in query or "계산" in query or "시험" in query:
+            for i in range(2):
+                results.append({
+                    "title": f"[토목 실무] {query} 현장 적용 노하우 및 해결책",
+                    "url": f"https://civileng7.tistory.com/post{i}",
+                    "domain": "tistory.com",
+                    "snippet": f"현장에서 직접 겪은 {query} 사례 및 실무 팁, 해결책.",
+                    "is_pdf": False
+                })
+
+        # Catch-all generic blogs if empty
+        if not results:
             results.append({
-                "title": f"[토목 실무] {query} 현장 적용 노하우",
-                "url": f"https://civileng7.tistory.com/post{i}",
+                "title": f"[토목 실무] {query} 완벽 정리",
+                "url": f"https://civileng7.tistory.com/generic",
                 "domain": "tistory.com",
-                "snippet": f"현장에서 직접 겪은 {query} 사례 및 실무 팁.",
+                "snippet": f"실무자를 위한 {query} 개념 이해.",
                 "is_pdf": False
             })
 
@@ -126,19 +137,19 @@ class ArchetypeClassifier:
 
         # 1. Regulatory
         if main_cat in ["건설안전", "건설공무", "건설기준 및 법규"] or intent in ["기준/규정"]:
-            if intent not in ["시공 방법", "장비/자재"]:
-                return "regulatory", {"law": 70, "technical_standard": 20, "public_guidance": 0, "field_practice": 10}
+            if intent not in ["시공 방법", "장비/자재", "문제 해결"]:
+                return "regulatory", {"law": 50, "public_guidance": 25, "technical_standard": 15, "field_practice": 10}
 
-        # 4. Knowledge & Productivity
-        if main_cat == "건설공무" and intent in ["개념 이해", "검토", "계산/산정"]:
-            return "knowledge_productivity", {"law": 0, "technical_standard": 10, "public_guidance": 0, "field_practice": 90}
+        # 2. Construction Methods & Execution
+        if intent in ["시공 방법", "비교", "장비/자재", "품질관리", "문제 해결", "원인과 대책"]:
+            return "construction_methods", {"field_practice": 45, "technical_standard": 35, "public_guidance": 15, "law": 5}
 
-        # 3. Field Practice
-        if main_cat in ["토공", "지반 및 토질", "측량", "건설기계 및 장비", "적산 및 공사비"] and intent in ["시험/측정", "시공 방법", "문제 해결", "원인과 대책", "장비/자재", "사례", "계산/산정"]:
-            return "field_practice", {"law": 10, "technical_standard": 20, "public_guidance": 0, "field_practice": 70}
+        # 3. Technical Standard
+        if main_cat in ["구조물", "교량", "도로", "터널"] and intent in ["설계", "검토"]:
+            return "technical_standard", {"technical_standard": 50, "field_practice": 30, "public_guidance": 10, "law": 10}
 
-        # 2. Technical Standard (Default for structural/heavy domains)
-        return "technical_standard", {"law": 20, "technical_standard": 50, "public_guidance": 0, "field_practice": 30}
+        # 4. Field Problem Solving (Default for physical operations, testing, field work)
+        return "field_problem_solving", {"field_practice": 50, "technical_standard": 30, "public_guidance": 15, "law": 5}
 
 
 # --- AGENT ---
@@ -163,27 +174,21 @@ class ResearchSerpAgent:
 
         queries = []
 
-        # Base query
-        if intent == "시공 방법":
-            queries.extend([f"{core} 시공", f"{core} 시공 실무"])
-        elif intent == "계산/산정":
-            queries.extend([f"{core} 계산", f"{core} 수량산출"])
-        elif intent in ["문제 해결", "원인과 대책"]:
-            queries.extend([f"{core} 문제점", f"{core} 대책", f"{core} 현장 하자"])
-        else:
+        # Archetype specific queries ensuring "Practical Value First"
+        if archetype == "regulatory":
+            queries.extend([f"{core} 관련 법령", f"산업안전보건법 {core}", f"{core} 규정", f"{core} 지침"])
+        elif archetype == "technical_standard":
+            queries.extend([f"KDS {core}", f"{core} 설계기준", f"{core} 검토사항", f"{core} 시공 사례"])
+        elif archetype == "construction_methods":
+            queries.extend([f"{core} 시공순서", f"{core} 공법 비교", f"{core} 장비 선정", f"{core} 현장 문제 해결", f"{core} 품질 문제"])
+        elif archetype == "field_problem_solving":
+            queries.extend([f"{core} 원인", f"{core} 해결책", f"{core} 현장 적용", f"{core} 시험방법", f"{core} 자주하는 실수"])
+
+        # Fallback to core intents if specific ones fail to trigger
+        if not queries:
             queries.append(f"{core} {intent}")
 
-        # Archetype specific queries
-        if archetype == "regulatory":
-            queries.extend([f"{core} 관련 법령", f"{core} 규정", f"산업안전보건법 {core}"])
-        elif archetype == "technical_standard":
-            queries.extend([f"KDS {core}", f"KCS {core}", f"{core} 설계기준"])
-        elif archetype == "field_practice":
-            queries.extend([f"{core} 현장 노하우", f"{core} 실무 사례", f"{core} 장비조합"])
-        elif archetype == "knowledge_productivity":
-            queries.extend([f"{core} 실무 양식", f"{core} 업무 팁", f"{core} 작성법"])
-
-        return list(set(queries))[:4] # Return a concise, focused list
+        return list(set(queries))[:4] # Focus on 4 distinct queries
 
     def search_with_cache(self, query):
         cache_key = hashlib.md5(query.encode('utf-8')).hexdigest()
@@ -203,8 +208,9 @@ class ResearchSerpAgent:
             return []
 
     def evaluate_legal_relevance(self, legal_evidence, topic_data, archetype):
-        if archetype in ["field_practice", "knowledge_productivity"]:
-            return "none", "해당 실무/지식 주제는 직접적인 법령보다 현장 경험 및 기술 지침이 우선됨"
+        # Stop forcing laws onto purely physical construction topics
+        if archetype in ["field_problem_solving", "construction_methods"]:
+            return "none", "해당 실무 주제는 직접적인 법령보다 현장 경험 및 기술 지침이 우선됨"
 
         if not legal_evidence:
             return "none", "해당 주제를 직접 규정하는 법령을 확인하지 못함"
@@ -235,7 +241,7 @@ class ResearchSerpAgent:
         for t in topics:
             topic_title = t["topic"]
 
-            # Determine Archetype
+            # Determine Archetype based on Practical Value First policy
             archetype, weights = self.archetype_classifier.classify(t)
 
             queries = self.generate_queries(t, archetype)
@@ -280,7 +286,8 @@ class ResearchSerpAgent:
                         technical_standards.append(evidence_item)
                     elif stype == "official_guideline" and evidence_item not in official_guidelines:
                         official_guidelines.append(evidence_item)
-                    elif stype == "field_practice" and len(field_practices) < 3 and evidence_item not in field_practices:
+                    elif stype == "field_practice" and len(field_practices) < 5 and evidence_item not in field_practices:
+                        # Cap field practice logs to 5 so we don't bloat JSON with generic blogs unnecessarily
                         field_practices.append(evidence_item)
 
                     r["query_used"] = q
@@ -309,14 +316,19 @@ class ResearchSerpAgent:
             conflict_detected = False
             legal_status = "complete" if source_dist["legal"] > 0 or leg_rel == "none" else "insufficient"
 
+            # Revised Research Readiness mapping Practical Priorities
             readiness = "low"
-            # High readiness if it has data matching its archetype priorities
+
             if archetype == "regulatory" and source_dist["legal"] > 0:
                 readiness = "high"
             elif archetype == "technical_standard" and source_dist["technical_standard"] > 0:
                 readiness = "high"
-            elif archetype in ["field_practice", "knowledge_productivity"] and source_dist["field_practice"] > 0:
-                readiness = "high"
+            elif archetype in ["field_problem_solving", "construction_methods"]:
+                # Require field practice (blogs, industry manuals) explicitly for high readiness.
+                if source_dist["field_practice"] >= 2:
+                    readiness = "high"
+                elif source_dist["field_practice"] > 0:
+                    readiness = "medium"
             elif len(topic_serp) > 0:
                 readiness = "medium"
 
