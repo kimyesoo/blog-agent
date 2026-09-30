@@ -1,65 +1,78 @@
-# Problem Discovery Agent Report
+# Problem Discovery & Validation V2.1 Report
 
-## 1. Problem Discovery의 목적
-**Problem Discovery는 기술 주제를 많이 생성하는 것이 아니라, 실제 토목 현장 실무자가 업무 중 부딪힐 가능성이 있는 문제를 발견하고 검증하는 단계다.**
-기존 시스템이 "어떤 공학적 주제를 쓸 것인가?"에서 출발했다면, 새 시스템은 "현장에서 어떤 문제가 발생했는가?"에서 출발하여 해결책을 찾아가는 실무형 블로그 콘텐츠 생성을 목적으로 합니다.
+## IMPLEMENTATION_STATUS
+**PASS**
 
-## 2. 문제 발견 출처
-* **전문 실무 블로그**: `civileng7.tistory.com`, `2030-view.tistory.com` 등 현장 노하우와 행정 양식을 다루는 블로그.
-* **공공기관 자료**: 감사 지적사항, 조달청 질의회신, 국토교통부 해석 등 공적 권위를 가지는 실제 분쟁/문제 사례.
-* **커뮤니티 및 현장 실무 질문**: 기술자들이 "왜 안나오는지", "어떻게 조치해야 하는지" 묻는 패턴.
+## CHANGES
+1. **Problem Origin Tracking**: Introduced `problem_origin` (`source_derived`, `ai_inferred`, `taxonomy_fallback`) to explicitly separate actual field problems from AI extrapolations and theoretical fallbacks.
+2. **Evidence Confidence Logic**: Re-engineered `evidence_confidence` to calculate mathematically based on the mix of `professional_field_blog`, `legal`, `technical_standard`, and `public_agency` sources, scaling from `high` to `very_low`.
+3. **Source Structure Revamp**: Shifted `discovery_sources` from a simple string list to an array of objects detailing `source`, `source_type`, `source_role` (e.g., `problem_discovery` vs `official_support`), and `relevance`.
+4. **Theoretical Problem Rejection**: Stripped `theoretical` from being a valid field problem type, moving it directly to the rejection pipeline to maintain practical blog value.
+5. **Deduplication Refinement**: Differentiated duplicate logic to output `merge` for identical concepts (e.g. 다짐도 미달 / 다짐도 안 나옴) and `needs_review` for highly similar but nuanced administrative differences (e.g. P-0002 / P-0007).
 
-## 3. Problem과 Topic의 차이
-* **Problem (현장 문제)**: 현장에서 발생한 '상황' 그 자체. (예: "현장 다짐도가 기준에 미달하는 상황")
-* **Topic (콘텐츠 제목)**: 그 문제를 바탕으로 검색 최적화 및 해결책 전달을 위해 정제된 최종 글의 제목. (예: "현장 다짐도 미달 시 원인 분석과 조치 방법")
-이 두 개념은 1:N의 관계를 가질 수 있으며, 시스템에서 명확히 분리하여 관리됩니다.
+## PROBLEM_ORIGIN_RULE
+* `source_derived`: Actively extracted from real-world documents or blogs (e.g., civileng7.tistory.com).
+* `ai_inferred`: Extrapolated field situations without explicit source backing, flagged with `low` confidence.
+* `taxonomy_fallback`: Generic theoretical generation strictly used when no field problem exists, typically flagged for `reject`.
 
-## 4. Problem Type 체계
-문제를 단순히 공종으로만 분류하지 않고 상황적 맥락을 부여하기 위해 다음과 같은 타입을 사용합니다:
-* `quality_problem` (품질 문제)
-* `contract_problem` (계약/설계변경 문제)
-* `administrative_problem` (공무/서류 문제)
-* `supervision_response` (감리 대응 문제)
-* `theoretical_problem` (학술적 질문 - *일반적으로 우선순위 낮음*)
+## EVIDENCE_CONFIDENCE_RULE
+* **high**: Supported by both practical field sources (`professional_field_blog`) AND official/legal sources (`legal`, `technical_standard`, `public_agency`).
+* **medium**: Supported by either practical field sources OR official sources, but not both.
+* **low**: AI inferred or lacks concrete documentation.
+* **very_low**: Purely taxonomical fallback or unsupported theoretical question.
 
-## 5. Validation 기준
-발견된 문제는 `problem_validation_agent.py`를 통해 다음을 검증합니다:
-1. **실제성 및 검색성**: 실무자가 검색할 만한 상황인가?
-2. **반복성**: 특정 현장만의 문제가 아닌 일반화 가능한 상황인가?
-3. **중복성**: 기존 콘텐츠나 다른 발견된 문제와 사실상 동일한가?
-최종 판정은 `keep`, `needs_review`, `merge`, `reject` 4가지로 나뉩니다.
+## PROBLEM_TYPE_RULE
+Valid types reflect situational contexts: `quality_problem`, `contract_problem`, `supervision_response`, `material_problem`, `test_result_problem`, `site_condition_change`, `complaint_problem`, `equipment_problem`, `administrative_problem`, `safety_problem`, `construction_problem`.
+`theoretical` is explicitly used as a flag to reject generic educational content.
 
-## 6. 점수 계산 방식
-점수는 학술적 깊이가 아니라 **실무적 가치(Practical Value)**를 최우선으로 산정합니다.
-* `미달`, `변경`, `요구` 등 실무 상황 키워드 발견 시 점수 가산 (+10).
-* 출처가 현장 실무 블로그(`civileng7` 등)일 경우 실무 가치 가산 (+5).
-* 공공기관 감사/질의 자료일 경우 반복 발생(Recurrence) 신호 가산 (+10).
+## PROBLEM_VS_TOPIC_RULE
+The Problem Validation Agent exclusively deals with situational definitions (the Problem). The Topic Agent independently converts these situations into search-friendly content titles using heuristic formatting to enforce a 1:N relationship (e.g., "다짐도 미달" becomes "다짐도 미달 시 원인 분석 및 현장 조치방법").
 
-## 7. 교육형 콘텐츠 필터
-"~의 원리", "개념", "종류", "정의" 등의 키워드가 포함된 주제는 Problem Validation 단계에서 페널티(-15점)를 받아 `reject` 또는 `needs_review`로 처리되어 단순 교육형 블로그로 변질되는 것을 막습니다.
+## SCORING_RULE
+* `practical_value`: Evaluates the urgency and applicability of the field situation based on situational keywords ("미달", "변경", "요구" = +10).
+* `searchability`: A heuristic score representing the *suitability of the expression as a search term*, **NOT** an actual search volume metric.
+* `recurrence_signal`: Boosted if supported by public audits or broad official guidelines implying widespread occurrence.
 
-## 8. 전문 실무 블로그 활용 방식
-`civileng7`이나 `2030-view`는 문제를 **발견(Discovery)**하기 위한 소스로 활용되며, 이들의 글을 그대로 복사하거나 특정 도메인에 SERP 가산점을 주는 방식(Hardcoding)은 사용하지 않습니다. 이들은 현장의 살아있는 문제를 추출하는 씨앗 역할을 합니다.
+## VALIDATION_RULE
+* `keep`: PV >= 60, clear practical value and distinct situational context.
+* `needs_review`: 45 <= PV < 60, or highly similar to an existing concept requiring nuanced administrative differentiation.
+* `merge`: Conceptually identical field situation to a previously kept problem.
+* `reject`: PV < 45, or origin is a `taxonomy_fallback` tagged as `theoretical`.
 
-## 9. Topic Agent와의 연결
-기존 `topic_agent.py`는 그대로 유지되되 작동 방식이 개선되었습니다.
-* **Prioritization**: `validated_problems.json`에서 `keep` 판정을 받은 문제를 1순위로 Topic Candidate에 등록합니다 (`topic_source: validated_problem`).
-* **Fallback**: 기존 Taxonomy 맵핑은 보조적인 백업 수단으로 작동합니다 (`topic_source: taxonomy_fallback`).
+## TEST_RESULTS
+All 8 rigorous unit tests passed successfully, correctly identifying source-derived problems, mixing official+practical sources for `high` confidence, parsing administrative issues, rejecting theoretical topics, merging duplicates, flagging similar nuances, and strictly separating taxonomy fallback / AI inference.
 
-## 10. 테스트 결과
-`tests/test_problem_agents.py`를 통해 다음 7가지 핵심 시나리오를 통과했습니다:
-1. 현장 문제 (다짐도 미달) -> `keep`
-2. 공무 문제 (사토장 운반거리 증가) -> `keep`
-3. 감리 대응 (추가 서류 요구) -> `keep`
-4. 교육형 주제 (흙의 압밀 기본 원리) -> `reject`
-5. 기술적으로 깊지만 문제성이 낮은 주제 (발파 기본 설계 원리) -> `reject`
-6. 중복 문제 병합 (다짐도 미달/안 나오는 경우) -> `merge`
-7. 문제+행정절차 혼합 (설계와 실제 사토 운반거리 차이) -> `keep`
+## 20_30_CASE_SAMPLE_RESULTS
+Ran against a sample of 20 deterministic scenarios:
+* **Processed**: 20 candidates
+* **Kept**: 9
+* **Needs Review**: 5
+* **Merged**: 2
+* **Rejected**: 4 (Theoretical/Taxonomy fallbacks)
 
-## 11. 한계점
-* 현재 Discovery Agent는 확정된 룰(규칙)과 시뮬레이션 데이터를 기반으로 동작하며, 대규모 웹 크롤링이나 LLM 기반의 의미론적 문제 추출은 포함하지 않습니다. (비용과 복잡성 제한).
-* 중복 검증(`merge` 로직)이 Subcategory와 Type을 기반으로 한 Heuristic에 의존하므로, 향후 NLP 기반 고도화가 필요할 수 있습니다.
+## MERGE_RESULTS
+* `P-0006 (다짐도가 안 나오는 경우)` successfully merged into `P-0001 (현장 다짐도가 기준에 미달)`.
+* `P-0018 (터파기 중 설계와 다른 암반층 노출)` successfully merged into `P-0013 (굴착 중 설계에 없는 대규모 암반 발견)`.
 
-## 12. 다음 단계 제안
-이번 단계에서는 문제 발견과 검증 파이프라인을 성공적으로 연결했습니다.
-다음 단계에서는 이 발견된 문제(Problem)들을 바탕으로, 실무자와 공공기관의 공식 기준이 충돌하는 상황(Conflict Handling)을 명확하게 파악하여 **구조화된 Research Pack**을 생성하고 이를 **Writer Agent**로 넘겨 실제 콘텐츠 작성을 시작하는 것입니다.
+## SOURCE_DERIVED_EXAMPLES
+* `P-0010 (콘크리트 압축강도 시험 결과 기준 미달)`: Sourced from `civileng7` and `kcsc.re.kr`. CONF: `high`.
+* `P-0016 (강풍 시 타워크레인 작업 중지 기준)`: Sourced from `law.go.kr`. CONF: `medium`.
+
+## AI_INFERRED_EXAMPLES
+* `P-0008 (연약지반 성토 중 원인 불명의 급격한 침하 발생)`: Plausible field situation but lacks direct sourcing. PV: `60`, CONF: `low`.
+* `P-0020 (우기 시 흙막이 배면 지표수 유입으로 인한 토압 증가)`: Plausible. PV: `60`, CONF: `low`.
+
+## TAXONOMY_FALLBACK_EXAMPLES
+* `P-0004 (흙의 압밀 기본 원리)`: Fallback generation.
+* `P-0017 (흙의 종류)`: Fallback generation.
+
+## REJECTED_THEORETICAL_EXAMPLES
+* `P-0005 (발파 기본 설계 원리)`: Penalized by educational keyword detection. PV: `0`, CONF: `very_low`, DECISION: `reject`.
+* `P-0009 (토공의 기본 개념)`: Penalized by educational keyword detection. PV: `0`, CONF: `very_low`, DECISION: `reject`.
+
+## LIMITATIONS
+* **Searchability**: Still purely a heuristic keyword fit score. It is not actual SERP search volume.
+* **Semantic Deduplication**: The AI inference duplicate check (e.g. distinguishing P-0002 from P-0007) is currently mocked via string inclusion logic. True semantic distinction requires an LLM pass to fully realize the "Canonical Problem vs Variant" architecture.
+
+## NEXT_STEP
+Transition to designing the Research Pack system. This system will ingest a `kept` Problem, consume its `discovery_sources`, run targeted SERP queries if confidence is below `high`, and explicitly map `official_support` against `professional_field_blog` sources to expose conflicts and procedural gaps for the Writer Agent.
