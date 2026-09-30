@@ -1,0 +1,4642 @@
+[
+  {
+    "topic": "발파 기본 설계 원리 및 검토사항",
+    "topic_cluster": "토공",
+    "category": "발파",
+    "search_intent": "설계",
+    "content_type": "설계 검토",
+    "technical_core": "발파",
+    "related_keywords": [
+      "토공",
+      "발파"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "발파 업무에 대한 설계 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "토공장비 시공 중 주요 문제점과 대책",
+    "topic_cluster": "토공",
+    "category": "토공장비",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "토공장비",
+    "related_keywords": [
+      "토공",
+      "토공장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "토공장비 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "사면 시공 시험 및 측정 방법",
+    "topic_cluster": "토공",
+    "category": "사면 시공",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "사면 시공",
+    "related_keywords": [
+      "토공",
+      "사면 시공"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "사면 시공 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "굴착 시공 중 주요 문제점과 대책",
+    "topic_cluster": "토공",
+    "category": "굴착",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "굴착",
+    "related_keywords": [
+      "토공",
+      "굴착"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "굴착 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "다짐 시설물 보수보강 가이드",
+    "topic_cluster": "토공",
+    "category": "다짐",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "다짐",
+    "related_keywords": [
+      "토공",
+      "다짐"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "다짐 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "사토장 실무 현장 적용 가이드",
+    "topic_cluster": "토공",
+    "category": "사토장",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "사토장",
+    "related_keywords": [
+      "토공",
+      "사토장"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "사토장 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "흙막이 시설물 보수보강 가이드",
+    "topic_cluster": "토공",
+    "category": "흙막이",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "흙막이",
+    "related_keywords": [
+      "토공",
+      "흙막이"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "흙막이 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "잔토처리 현장 시공 가이드",
+    "topic_cluster": "토공",
+    "category": "잔토처리",
+    "search_intent": "시공 방법",
+    "content_type": "시공 가이드",
+    "technical_core": "잔토처리",
+    "related_keywords": [
+      "토공",
+      "잔토처리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "잔토처리 업무에 대한 시공 방법 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "성토 시공 중 주요 문제점과 대책",
+    "topic_cluster": "토공",
+    "category": "성토",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "성토",
+    "related_keywords": [
+      "토공",
+      "성토"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "성토 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "발파 기초 개념과 실무 적용 이해",
+    "topic_cluster": "토공",
+    "category": "발파",
+    "search_intent": "개념 이해",
+    "content_type": "실무 가이드",
+    "technical_core": "발파",
+    "related_keywords": [
+      "토공",
+      "발파"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "발파 업무에 대한 개념 이해 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토공사의 계획, 시공, 장비 및 현장관리 분야",
+    "taxonomy_boundary": "실제 토공 시공과 물량, 장비, 현장관리 중심. 지반의 공학적 해석은 지반 및 토질로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "연약지반 시공 장비 조합 및 자재 기준",
+    "topic_cluster": "지반 및 토질",
+    "category": "연약지반",
+    "search_intent": "장비/자재",
+    "content_type": "실무 가이드",
+    "technical_core": "연약지반",
+    "related_keywords": [
+      "지반 및 토질",
+      "연약지반"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "연약지반 업무에 대한 장비/자재 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "지지력 기본 설계 원리 및 검토사항",
+    "topic_cluster": "지반 및 토질",
+    "category": "지지력",
+    "search_intent": "설계",
+    "content_type": "설계 검토",
+    "technical_core": "지지력",
+    "related_keywords": [
+      "지반 및 토질",
+      "지지력"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "지지력 업무에 대한 설계 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "토질시험 우수 적용 사례 분석",
+    "topic_cluster": "지반 및 토질",
+    "category": "토질시험",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "토질시험",
+    "related_keywords": [
+      "지반 및 토질",
+      "토질시험"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "토질시험 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "기초 공법 선정 시 비교 기준",
+    "topic_cluster": "지반 및 토질",
+    "category": "기초",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "기초",
+    "related_keywords": [
+      "지반 및 토질",
+      "기초"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "기초 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "흙의 성질 기초 개념과 실무 적용 이해",
+    "topic_cluster": "지반 및 토질",
+    "category": "흙의 성질",
+    "search_intent": "개념 이해",
+    "content_type": "실무 가이드",
+    "technical_core": "흙의 성질",
+    "related_keywords": [
+      "지반 및 토질",
+      "흙의 성질"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "흙의 성질 업무에 대한 개념 이해 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "지반개량 시험 및 측정 방법",
+    "topic_cluster": "지반 및 토질",
+    "category": "지반개량",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "지반개량",
+    "related_keywords": [
+      "지반 및 토질",
+      "지반개량"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "지반개량 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "지반조사 실무 현장 적용 가이드",
+    "topic_cluster": "지반 및 토질",
+    "category": "지반조사",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "지반조사",
+    "related_keywords": [
+      "지반 및 토질",
+      "지반조사"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "지반조사 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "사면안정 수량 산정 방법",
+    "topic_cluster": "지반 및 토질",
+    "category": "사면안정",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "사면안정",
+    "related_keywords": [
+      "지반 및 토질",
+      "사면안정"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "사면안정 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "침하 실무 현장 적용 가이드",
+    "topic_cluster": "지반 및 토질",
+    "category": "침하",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "침하",
+    "related_keywords": [
+      "지반 및 토질",
+      "침하"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "침하 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "지하수 시설물 보수보강 가이드",
+    "topic_cluster": "지반 및 토질",
+    "category": "지하수",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "지하수",
+    "related_keywords": [
+      "지반 및 토질",
+      "지하수"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "지하수 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "지반의 공학적 특성, 조사, 시험, 해석 및 설계 분야",
+    "taxonomy_boundary": "현상적/물리적 해석 중심. 단순 시공(굴착 등)은 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "배수지 수량 산정 방법",
+    "topic_cluster": "상하수도",
+    "category": "배수지",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "배수지",
+    "related_keywords": [
+      "상하수도",
+      "배수지"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "배수지 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "관로시험 시험 및 측정 방법",
+    "topic_cluster": "상하수도",
+    "category": "관로시험",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "관로시험",
+    "related_keywords": [
+      "상하수도",
+      "관로시험"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "관로시험 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "HIGH",
+      "intent_score": 100,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "하수처리장 핵심 품질관리 기준",
+    "topic_cluster": "상하수도",
+    "category": "하수처리장",
+    "search_intent": "품질관리",
+    "content_type": "실무 가이드",
+    "technical_core": "하수처리장",
+    "related_keywords": [
+      "상하수도",
+      "하수처리장"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "하수처리장 업무에 대한 품질관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "하수도 기초 개념과 실무 적용 이해",
+    "topic_cluster": "상하수도",
+    "category": "하수도",
+    "search_intent": "개념 이해",
+    "content_type": "실무 가이드",
+    "technical_core": "하수도",
+    "related_keywords": [
+      "상하수도",
+      "하수도"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "하수도 업무에 대한 개념 이해 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "관부설 주요 하자의 원인과 대책",
+    "topic_cluster": "상하수도",
+    "category": "관부설",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "관부설",
+    "related_keywords": [
+      "상하수도",
+      "관부설"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "관부설 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "펌프장 기본 설계 원리 및 검토사항",
+    "topic_cluster": "상하수도",
+    "category": "펌프장",
+    "search_intent": "설계",
+    "content_type": "설계 검토",
+    "technical_core": "펌프장",
+    "related_keywords": [
+      "상하수도",
+      "펌프장"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "펌프장 업무에 대한 설계 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "오수 실무 현장 적용 가이드",
+    "topic_cluster": "상하수도",
+    "category": "오수",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "오수",
+    "related_keywords": [
+      "상하수도",
+      "오수"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "오수 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "우수 우수 적용 사례 분석",
+    "topic_cluster": "상하수도",
+    "category": "우수",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "우수",
+    "related_keywords": [
+      "상하수도",
+      "우수"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "우수 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "상수도 적용 기준",
+    "topic_cluster": "상하수도",
+    "category": "상수도",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "상수도",
+    "related_keywords": [
+      "상하수도",
+      "상수도"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "상수도 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "맨홀 공법 선정 시 비교 기준",
+    "topic_cluster": "상하수도",
+    "category": "맨홀",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "맨홀",
+    "related_keywords": [
+      "상하수도",
+      "맨홀"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "맨홀 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "상수도, 하수도, 우수, 오수 및 수처리 시설 분야",
+    "taxonomy_boundary": "관로 및 수처리 특화. 일반적인 콘크리트 타설은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "도로 부속물 시험 및 측정 방법",
+    "topic_cluster": "도로",
+    "category": "도로 부속물",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "도로 부속물",
+    "related_keywords": [
+      "도로",
+      "도로 부속물"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "도로 부속물 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "기층_보조기층 시공 중 주요 문제점과 대책",
+    "topic_cluster": "도로",
+    "category": "기층_보조기층",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "기층_보조기층",
+    "related_keywords": [
+      "도로",
+      "기층_보조기층"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "기층_보조기층 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "포장 시설물 보수보강 가이드",
+    "topic_cluster": "도로",
+    "category": "포장",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "포장",
+    "related_keywords": [
+      "도로",
+      "포장"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "포장 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "배수 주요 하자의 원인과 대책",
+    "topic_cluster": "도로",
+    "category": "배수",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "배수",
+    "related_keywords": [
+      "도로",
+      "배수"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "배수 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "교통 우수 적용 사례 분석",
+    "topic_cluster": "도로",
+    "category": "교통",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "교통",
+    "related_keywords": [
+      "도로",
+      "교통"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "교통 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "콘크리트포장 시험 및 측정 방법",
+    "topic_cluster": "도로",
+    "category": "콘크리트포장",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "콘크리트포장",
+    "related_keywords": [
+      "도로",
+      "콘크리트포장"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "콘크리트포장 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "아스팔트 공법 선정 시 비교 기준",
+    "topic_cluster": "도로",
+    "category": "아스팔트",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "아스팔트",
+    "related_keywords": [
+      "도로",
+      "아스팔트"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "아스팔트 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "노선 시험 및 측정 방법",
+    "topic_cluster": "도로",
+    "category": "노선",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "노선",
+    "related_keywords": [
+      "도로",
+      "노선"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "노선 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "도로 부속물 공법 선정 시 비교 기준",
+    "topic_cluster": "도로",
+    "category": "도로 부속물",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "도로 부속물",
+    "related_keywords": [
+      "도로",
+      "도로 부속물"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "도로 부속물 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "기층_보조기층 수량 산정 방법",
+    "topic_cluster": "도로",
+    "category": "기층_보조기층",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "기층_보조기층",
+    "related_keywords": [
+      "도로",
+      "기층_보조기층"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "기층_보조기층 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "도로계획, 노선, 포장 및 교통안전 시설 분야",
+    "taxonomy_boundary": "도로 및 포장에 한정. 도로 하부의 토공사는 토공으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "PSC 현장 안전점검 체크리스트",
+    "topic_cluster": "구조물",
+    "category": "PSC",
+    "search_intent": "점검/검사",
+    "content_type": "체크리스트",
+    "technical_core": "PSC",
+    "related_keywords": [
+      "구조물",
+      "PSC"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "PSC 업무에 대한 점검/검사 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "박스구조물 시설물 보수보강 가이드",
+    "topic_cluster": "구조물",
+    "category": "박스구조물",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "박스구조물",
+    "related_keywords": [
+      "구조물",
+      "박스구조물"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "박스구조물 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "구조해석 시공 전 필수 설계 검토사항",
+    "topic_cluster": "구조물",
+    "category": "구조해석",
+    "search_intent": "검토",
+    "content_type": "실무 가이드",
+    "technical_core": "구조해석",
+    "related_keywords": [
+      "구조물",
+      "구조해석"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "구조해석 업무에 대한 검토 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "옹벽 공법 선정 시 비교 기준",
+    "topic_cluster": "구조물",
+    "category": "옹벽",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "옹벽",
+    "related_keywords": [
+      "구조물",
+      "옹벽"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "옹벽 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "구조시공 시험 및 측정 방법",
+    "topic_cluster": "구조물",
+    "category": "구조시공",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "구조시공",
+    "related_keywords": [
+      "구조물",
+      "구조시공"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "구조시공 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "철근콘크리트 주요 하자의 원인과 대책",
+    "topic_cluster": "구조물",
+    "category": "철근콘크리트",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "철근콘크리트",
+    "related_keywords": [
+      "구조물",
+      "철근콘크리트"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "철근콘크리트 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "구조기초 수량 산정 방법",
+    "topic_cluster": "구조물",
+    "category": "구조기초",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "구조기초",
+    "related_keywords": [
+      "구조물",
+      "구조기초"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "구조기초 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "거푸집_동바리 주요 하자의 원인과 대책",
+    "topic_cluster": "구조물",
+    "category": "거푸집_동바리",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "거푸집_동바리",
+    "related_keywords": [
+      "구조물",
+      "거푸집_동바리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "거푸집_동바리 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "암거 공법 선정 시 비교 기준",
+    "topic_cluster": "구조물",
+    "category": "암거",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "암거",
+    "related_keywords": [
+      "구조물",
+      "암거"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "암거 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "철골 시험 및 측정 방법",
+    "topic_cluster": "구조물",
+    "category": "철골",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "철골",
+    "related_keywords": [
+      "구조물",
+      "철골"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "철골 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 구조물의 해석, 설계 및 시공 분야",
+    "taxonomy_boundary": "거푸집, 철근, 콘크리트 등 일반 구조물 중심. 교량과 터널은 별도 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "교각 우수 적용 사례 분석",
+    "topic_cluster": "교량",
+    "category": "교각",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "교각",
+    "related_keywords": [
+      "교량",
+      "교각"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "교각 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "하부구조 시설물 보수보강 가이드",
+    "topic_cluster": "교량",
+    "category": "하부구조",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "하부구조",
+    "related_keywords": [
+      "교량",
+      "하부구조"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "하부구조 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "교량형식 현장 안전점검 체크리스트",
+    "topic_cluster": "교량",
+    "category": "교량형식",
+    "search_intent": "점검/검사",
+    "content_type": "체크리스트",
+    "technical_core": "교량형식",
+    "related_keywords": [
+      "교량",
+      "교량형식"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "교량형식 업무에 대한 점검/검사 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "거더 공법 선정 시 비교 기준",
+    "topic_cluster": "교량",
+    "category": "거더",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "거더",
+    "related_keywords": [
+      "교량",
+      "거더"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "거더 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "신축이음 시공 장비 조합 및 자재 기준",
+    "topic_cluster": "교량",
+    "category": "신축이음",
+    "search_intent": "장비/자재",
+    "content_type": "실무 가이드",
+    "technical_core": "신축이음",
+    "related_keywords": [
+      "교량",
+      "신축이음"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "신축이음 업무에 대한 장비/자재 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "교대 기본 설계 원리 및 검토사항",
+    "topic_cluster": "교량",
+    "category": "교대",
+    "search_intent": "설계",
+    "content_type": "설계 검토",
+    "technical_core": "교대",
+    "related_keywords": [
+      "교량",
+      "교대"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "교대 업무에 대한 설계 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "교량받침 시공 장비 조합 및 자재 기준",
+    "topic_cluster": "교량",
+    "category": "교량받침",
+    "search_intent": "장비/자재",
+    "content_type": "실무 가이드",
+    "technical_core": "교량받침",
+    "related_keywords": [
+      "교량",
+      "교량받침"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "교량받침 업무에 대한 장비/자재 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "상부구조 시험 및 측정 방법",
+    "topic_cluster": "교량",
+    "category": "상부구조",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "상부구조",
+    "related_keywords": [
+      "교량",
+      "상부구조"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "상부구조 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "교각 핵심 품질관리 기준",
+    "topic_cluster": "교량",
+    "category": "교각",
+    "search_intent": "품질관리",
+    "content_type": "실무 가이드",
+    "technical_core": "교각",
+    "related_keywords": [
+      "교량",
+      "교각"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "교각 업무에 대한 품질관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "하부구조 주요 하자의 원인과 대책",
+    "topic_cluster": "교량",
+    "category": "하부구조",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "하부구조",
+    "related_keywords": [
+      "교량",
+      "하부구조"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "하부구조 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "교량의 계획, 형식, 상·하부 구조 및 유지관리",
+    "taxonomy_boundary": "교량 특화 분야. 일반 철근콘크리트 이론은 구조물로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "터널계측 시공 중 주요 문제점과 대책",
+    "topic_cluster": "터널",
+    "category": "터널계측",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "터널계측",
+    "related_keywords": [
+      "터널",
+      "터널계측"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "터널계측 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "터널굴착 시공 중 주요 문제점과 대책",
+    "topic_cluster": "터널",
+    "category": "터널굴착",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "터널굴착",
+    "related_keywords": [
+      "터널",
+      "터널굴착"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "터널굴착 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "라이닝 시설물 보수보강 가이드",
+    "topic_cluster": "터널",
+    "category": "라이닝",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "라이닝",
+    "related_keywords": [
+      "터널",
+      "라이닝"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "라이닝 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "터널배수_방수 수량 산정 방법",
+    "topic_cluster": "터널",
+    "category": "터널배수_방수",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "터널배수_방수",
+    "related_keywords": [
+      "터널",
+      "터널배수_방수"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "터널배수_방수 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "터널발파 적용 기준",
+    "topic_cluster": "터널",
+    "category": "터널발파",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "터널발파",
+    "related_keywords": [
+      "터널",
+      "터널발파"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "터널발파 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "TBM 현장 안전점검 체크리스트",
+    "topic_cluster": "터널",
+    "category": "TBM",
+    "search_intent": "점검/검사",
+    "content_type": "체크리스트",
+    "technical_core": "TBM",
+    "related_keywords": [
+      "터널",
+      "TBM"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "TBM 업무에 대한 점검/검사 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "NATM 시설물 보수보강 가이드",
+    "topic_cluster": "터널",
+    "category": "NATM",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "NATM",
+    "related_keywords": [
+      "터널",
+      "NATM"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "NATM 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "지보_록볼트 시설물 보수보강 가이드",
+    "topic_cluster": "터널",
+    "category": "지보_록볼트",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "지보_록볼트",
+    "related_keywords": [
+      "터널",
+      "지보_록볼트"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "지보_록볼트 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "터널굴착 시설물 보수보강 가이드",
+    "topic_cluster": "터널",
+    "category": "터널굴착",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "터널굴착",
+    "related_keywords": [
+      "터널",
+      "터널굴착"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "터널굴착 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "라이닝 적용 기준",
+    "topic_cluster": "터널",
+    "category": "라이닝",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "라이닝",
+    "related_keywords": [
+      "터널",
+      "라이닝"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "라이닝 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "터널 굴착, 지보, 방수 및 계측 분야",
+    "taxonomy_boundary": "터널 특화 분야. 일반적인 토공 발파나 구조물 해석과 분리",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "노선측량 적용 기준",
+    "topic_cluster": "측량",
+    "category": "노선측량",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "노선측량",
+    "related_keywords": [
+      "측량",
+      "노선측량"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "노선측량 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "드론측량 시공 전 필수 설계 검토사항",
+    "topic_cluster": "측량",
+    "category": "드론측량",
+    "search_intent": "검토",
+    "content_type": "실무 가이드",
+    "technical_core": "드론측량",
+    "related_keywords": [
+      "측량",
+      "드론측량"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "드론측량 업무에 대한 검토 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "측량성과 적용 기준",
+    "topic_cluster": "측량",
+    "category": "측량성과",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "측량성과",
+    "related_keywords": [
+      "측량",
+      "측량성과"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "측량성과 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "토목측량 실무 현장 적용 가이드",
+    "topic_cluster": "측량",
+    "category": "토목측량",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "토목측량",
+    "related_keywords": [
+      "측량",
+      "토목측량"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "토목측량 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "측량장비 수량 산정 방법",
+    "topic_cluster": "측량",
+    "category": "측량장비",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "측량장비",
+    "related_keywords": [
+      "측량",
+      "측량장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "측량장비 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "수준측량 시공 중 주요 문제점과 대책",
+    "topic_cluster": "측량",
+    "category": "수준측량",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "수준측량",
+    "related_keywords": [
+      "측량",
+      "수준측량"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "수준측량 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "현황측량 시공 전 필수 설계 검토사항",
+    "topic_cluster": "측량",
+    "category": "현황측량",
+    "search_intent": "검토",
+    "content_type": "실무 가이드",
+    "technical_core": "현황측량",
+    "related_keywords": [
+      "측량",
+      "현황측량"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "현황측량 업무에 대한 검토 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "일반측량 적용 기준",
+    "topic_cluster": "측량",
+    "category": "일반측량",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "일반측량",
+    "related_keywords": [
+      "측량",
+      "일반측량"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "일반측량 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "GPS_GNSS 기초 개념과 실무 적용 이해",
+    "topic_cluster": "측량",
+    "category": "GPS_GNSS",
+    "search_intent": "개념 이해",
+    "content_type": "실무 가이드",
+    "technical_core": "GPS_GNSS",
+    "related_keywords": [
+      "측량",
+      "GPS_GNSS"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "GPS_GNSS 업무에 대한 개념 이해 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "노선측량 시설물 보수보강 가이드",
+    "topic_cluster": "측량",
+    "category": "노선측량",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "노선측량",
+    "related_keywords": [
+      "측량",
+      "노선측량"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "노선측량 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목 공사를 위한 일반/정밀 측량 및 지형도 작성",
+    "taxonomy_boundary": "현황 파악 및 좌표 산출에 한정",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "품질관리계획 시공 전 필수 설계 검토사항",
+    "topic_cluster": "품질관리",
+    "category": "품질관리계획",
+    "search_intent": "검토",
+    "content_type": "실무 가이드",
+    "technical_core": "품질관리계획",
+    "related_keywords": [
+      "품질관리",
+      "품질관리계획"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "품질관리계획 업무에 대한 검토 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "자재검사 적용 기준",
+    "topic_cluster": "품질관리",
+    "category": "자재검사",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "자재검사",
+    "related_keywords": [
+      "품질관리",
+      "자재검사"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "자재검사 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "HIGH",
+      "intent_score": 100,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "현장시험 시공 중 주요 문제점과 대책",
+    "topic_cluster": "품질관리",
+    "category": "현장시험",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "현장시험",
+    "related_keywords": [
+      "품질관리",
+      "현장시험"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "현장시험 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "품질관리서류 시설물 보수보강 가이드",
+    "topic_cluster": "품질관리",
+    "category": "품질관리서류",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "품질관리서류",
+    "related_keywords": [
+      "품질관리",
+      "품질관리서류"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "품질관리서류 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "품질시험 기본 설계 원리 및 검토사항",
+    "topic_cluster": "품질관리",
+    "category": "품질시험",
+    "search_intent": "설계",
+    "content_type": "설계 검토",
+    "technical_core": "품질시험",
+    "related_keywords": [
+      "품질관리",
+      "품질시험"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "품질시험 업무에 대한 설계 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "부적합관리 시험 및 측정 방법",
+    "topic_cluster": "품질관리",
+    "category": "부적합관리",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "부적합관리",
+    "related_keywords": [
+      "품질관리",
+      "부적합관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "부적합관리 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "품질관리 실무 현장 안전점검 체크리스트",
+    "topic_cluster": "품질관리",
+    "category": "품질관리 실무",
+    "search_intent": "점검/검사",
+    "content_type": "체크리스트",
+    "technical_core": "품질관리 실무",
+    "related_keywords": [
+      "품질관리",
+      "품질관리 실무"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "품질관리 실무 업무에 대한 점검/검사 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "HIGH",
+      "intent_score": 100,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "품질관리계획 현장 안전점검 체크리스트",
+    "topic_cluster": "품질관리",
+    "category": "품질관리계획",
+    "search_intent": "점검/검사",
+    "content_type": "체크리스트",
+    "technical_core": "품질관리계획",
+    "related_keywords": [
+      "품질관리",
+      "품질관리계획"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "품질관리계획 업무에 대한 점검/검사 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "HIGH",
+      "intent_score": 100,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "자재검사 시공 전 필수 설계 검토사항",
+    "topic_cluster": "품질관리",
+    "category": "자재검사",
+    "search_intent": "검토",
+    "content_type": "실무 가이드",
+    "technical_core": "자재검사",
+    "related_keywords": [
+      "품질관리",
+      "자재검사"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "자재검사 업무에 대한 검토 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "현장시험 시험 및 측정 방법",
+    "topic_cluster": "품질관리",
+    "category": "현장시험",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "현장시험",
+    "related_keywords": [
+      "품질관리",
+      "현장시험"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "현장시험 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설공사 품질시험, 자재검사 및 품질관리 서류",
+    "taxonomy_boundary": "시험 방법(결과, 해석 등 콘텐츠 유형)이 결합될 대상인 관리 체계 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "HIGH",
+      "intent_score": 100,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "안전관리계획 시공 중 주요 문제점과 대책",
+    "topic_cluster": "건설안전",
+    "category": "안전관리계획",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "안전관리계획",
+    "related_keywords": [
+      "건설안전",
+      "안전관리계획"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "안전관리계획 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "위험성평가 시험 및 측정 방법",
+    "topic_cluster": "건설안전",
+    "category": "위험성평가",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "위험성평가",
+    "related_keywords": [
+      "건설안전",
+      "위험성평가"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "위험성평가 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "굴착안전 핵심 품질관리 기준",
+    "topic_cluster": "건설안전",
+    "category": "굴착안전",
+    "search_intent": "품질관리",
+    "content_type": "실무 가이드",
+    "technical_core": "굴착안전",
+    "related_keywords": [
+      "건설안전",
+      "굴착안전"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "굴착안전 업무에 대한 품질관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "산업안전 수량 산정 방법",
+    "topic_cluster": "건설안전",
+    "category": "산업안전",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "산업안전",
+    "related_keywords": [
+      "건설안전",
+      "산업안전"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "산업안전 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "안전시설 시험 및 측정 방법",
+    "topic_cluster": "건설안전",
+    "category": "안전시설",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "안전시설",
+    "related_keywords": [
+      "건설안전",
+      "안전시설"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "안전시설 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "작업계획 시공 장비 조합 및 자재 기준",
+    "topic_cluster": "건설안전",
+    "category": "작업계획",
+    "search_intent": "장비/자재",
+    "content_type": "실무 가이드",
+    "technical_core": "작업계획",
+    "related_keywords": [
+      "건설안전",
+      "작업계획"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "작업계획 업무에 대한 장비/자재 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "안전관리비 공법 선정 시 비교 기준",
+    "topic_cluster": "건설안전",
+    "category": "안전관리비",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "안전관리비",
+    "related_keywords": [
+      "건설안전",
+      "안전관리비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "안전관리비 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "가설구조물안전 기본 설계 원리 및 검토사항",
+    "topic_cluster": "건설안전",
+    "category": "가설구조물안전",
+    "search_intent": "설계",
+    "content_type": "설계 검토",
+    "technical_core": "가설구조물안전",
+    "related_keywords": [
+      "건설안전",
+      "가설구조물안전"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "가설구조물안전 업무에 대한 설계 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "흙막이안전 시설물 보수보강 가이드",
+    "topic_cluster": "건설안전",
+    "category": "흙막이안전",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "흙막이안전",
+    "related_keywords": [
+      "건설안전",
+      "흙막이안전"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "흙막이안전 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "안전관리계획 수량 산정 방법",
+    "topic_cluster": "건설안전",
+    "category": "안전관리계획",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "안전관리계획",
+    "related_keywords": [
+      "건설안전",
+      "안전관리계획"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "안전관리계획 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "산업안전보건법 및 건설현장 안전관리",
+    "taxonomy_boundary": "위험성평가 및 안전 인프라 중심. 시공 방법 자체는 각 공종으로 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "공기조정 현장 안전점검 체크리스트",
+    "topic_cluster": "건설공무",
+    "category": "공기조정",
+    "search_intent": "점검/검사",
+    "content_type": "체크리스트",
+    "technical_core": "공기조정",
+    "related_keywords": [
+      "건설공무",
+      "공기조정"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "공기조정 업무에 대한 점검/검사 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "하도급관리 우수 적용 사례 분석",
+    "topic_cluster": "건설공무",
+    "category": "하도급관리",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "하도급관리",
+    "related_keywords": [
+      "건설공무",
+      "하도급관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "하도급관리 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "설계변경 현장 시공 가이드",
+    "topic_cluster": "건설공무",
+    "category": "설계변경",
+    "search_intent": "시공 방법",
+    "content_type": "시공 가이드",
+    "technical_core": "설계변경",
+    "related_keywords": [
+      "건설공무",
+      "설계변경"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "설계변경 업무에 대한 시공 방법 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "공사관리 실무 현장 적용 가이드",
+    "topic_cluster": "건설공무",
+    "category": "공사관리",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "공사관리",
+    "related_keywords": [
+      "건설공무",
+      "공사관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "공사관리 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "준공 실무 현장 적용 가이드",
+    "topic_cluster": "건설공무",
+    "category": "준공",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "준공",
+    "related_keywords": [
+      "건설공무",
+      "준공"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "준공 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "현장서류 시공 중 주요 문제점과 대책",
+    "topic_cluster": "건설공무",
+    "category": "현장서류",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "현장서류",
+    "related_keywords": [
+      "건설공무",
+      "현장서류"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "현장서류 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "물가변동 시설물 보수보강 가이드",
+    "topic_cluster": "건설공무",
+    "category": "물가변동",
+    "search_intent": "유지관리",
+    "content_type": "유지관리",
+    "technical_core": "물가변동",
+    "related_keywords": [
+      "건설공무",
+      "물가변동"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "물가변동 업무에 대한 유지관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "실정보고 주요 하자의 원인과 대책",
+    "topic_cluster": "건설공무",
+    "category": "실정보고",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "실정보고",
+    "related_keywords": [
+      "건설공무",
+      "실정보고"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "실정보고 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "계약업무 공법 선정 시 비교 기준",
+    "topic_cluster": "건설공무",
+    "category": "계약업무",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "계약업무",
+    "related_keywords": [
+      "건설공무",
+      "계약업무"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "계약업무 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "기성 우수 적용 사례 분석",
+    "topic_cluster": "건설공무",
+    "category": "기성",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "기성",
+    "related_keywords": [
+      "건설공무",
+      "기성"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "기성 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "계약, 설계변경, 기성, 물가변동 등 현장 행정업무",
+    "taxonomy_boundary": "행정 및 계약 중심. 직접적인 공사비 산출은 적산 및 공사비로 분류",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "표준시장단가 시공 전 필수 설계 검토사항",
+    "topic_cluster": "적산 및 공사비",
+    "category": "표준시장단가",
+    "search_intent": "검토",
+    "content_type": "실무 가이드",
+    "technical_core": "표준시장단가",
+    "related_keywords": [
+      "적산 및 공사비",
+      "표준시장단가"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "표준시장단가 업무에 대한 검토 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "품셈 우수 적용 사례 분석",
+    "topic_cluster": "적산 및 공사비",
+    "category": "품셈",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "품셈",
+    "related_keywords": [
+      "적산 및 공사비",
+      "품셈"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "품셈 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "공사비 분석 주요 하자의 원인과 대책",
+    "topic_cluster": "적산 및 공사비",
+    "category": "공사비 분석",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "공사비 분석",
+    "related_keywords": [
+      "적산 및 공사비",
+      "공사비 분석"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "공사비 분석 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "재료비 수량 산정 방법",
+    "topic_cluster": "적산 및 공사비",
+    "category": "재료비",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "재료비",
+    "related_keywords": [
+      "적산 및 공사비",
+      "재료비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "재료비 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "수량산출 주요 하자의 원인과 대책",
+    "topic_cluster": "적산 및 공사비",
+    "category": "수량산출",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "수량산출",
+    "related_keywords": [
+      "적산 및 공사비",
+      "수량산출"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "수량산출 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "장비비 기초 개념과 실무 적용 이해",
+    "topic_cluster": "적산 및 공사비",
+    "category": "장비비",
+    "search_intent": "개념 이해",
+    "content_type": "실무 가이드",
+    "technical_core": "장비비",
+    "related_keywords": [
+      "적산 및 공사비",
+      "장비비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "장비비 업무에 대한 개념 이해 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "일위대가 주요 하자의 원인과 대책",
+    "topic_cluster": "적산 및 공사비",
+    "category": "일위대가",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "일위대가",
+    "related_keywords": [
+      "적산 및 공사비",
+      "일위대가"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "일위대가 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "표준시장단가 적용 기준",
+    "topic_cluster": "적산 및 공사비",
+    "category": "표준시장단가",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "표준시장단가",
+    "related_keywords": [
+      "적산 및 공사비",
+      "표준시장단가"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "표준시장단가 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "품셈 수량 산정 방법",
+    "topic_cluster": "적산 및 공사비",
+    "category": "품셈",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "품셈",
+    "related_keywords": [
+      "적산 및 공사비",
+      "품셈"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "품셈 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "노무비 주요 하자의 원인과 대책",
+    "topic_cluster": "적산 및 공사비",
+    "category": "노무비",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "노무비",
+    "related_keywords": [
+      "적산 및 공사비",
+      "노무비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "노무비 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "수량 및 단가산출, 일위대가 등 내역 관리",
+    "taxonomy_boundary": "비용 및 수량 산출 특화",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "KDS 시공 중 주요 문제점과 대책",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "KDS",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "KDS",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "KDS"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "KDS 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "안전 관련 기준 현장 시공 가이드",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "안전 관련 기준",
+    "search_intent": "시공 방법",
+    "content_type": "시공 가이드",
+    "technical_core": "안전 관련 기준",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "안전 관련 기준"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "안전 관련 기준 업무에 대한 시공 방법 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "계약 관련 기준 기본 설계 원리 및 검토사항",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "계약 관련 기준",
+    "search_intent": "설계",
+    "content_type": "설계 검토",
+    "technical_core": "계약 관련 기준",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "계약 관련 기준"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "계약 관련 기준 업무에 대한 설계 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "KCS 실무 현장 적용 가이드",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "KCS",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "KCS",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "KCS"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "KCS 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "품질 관련 기준 주요 하자의 원인과 대책",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "품질 관련 기준",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "품질 관련 기준",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "품질 관련 기준"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "품질 관련 기준 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "국토부 지침 시공 전 필수 설계 검토사항",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "국토부 지침",
+    "search_intent": "검토",
+    "content_type": "실무 가이드",
+    "technical_core": "국토부 지침",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "국토부 지침"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "국토부 지침 업무에 대한 검토 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "관련 법령 시공 전 필수 설계 검토사항",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "관련 법령",
+    "search_intent": "검토",
+    "content_type": "실무 가이드",
+    "technical_core": "관련 법령",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "관련 법령"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "관련 법령 업무에 대한 검토 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "KDS 적용 기준",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "KDS",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "KDS",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "KDS"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "KDS 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "안전 관련 기준 핵심 품질관리 기준",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "안전 관련 기준",
+    "search_intent": "품질관리",
+    "content_type": "실무 가이드",
+    "technical_core": "안전 관련 기준",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "안전 관련 기준"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "안전 관련 기준 업무에 대한 품질관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "계약 관련 기준 우수 적용 사례 분석",
+    "topic_cluster": "건설기준 및 법규",
+    "category": "계약 관련 기준",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "계약 관련 기준",
+    "related_keywords": [
+      "건설기준 및 법규",
+      "계약 관련 기준"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "계약 관련 기준 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "KDS, KCS 및 건설 관련 법령과 지침",
+    "taxonomy_boundary": "법령 및 국가공식 기준서 자체에 대한 내용",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "소음_진동 현장 시공 가이드",
+    "topic_cluster": "환경",
+    "category": "소음_진동",
+    "search_intent": "시공 방법",
+    "content_type": "시공 가이드",
+    "technical_core": "소음_진동",
+    "related_keywords": [
+      "환경",
+      "소음_진동"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "소음_진동 업무에 대한 시공 방법 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "토양오염 시험 및 측정 방법",
+    "topic_cluster": "환경",
+    "category": "토양오염",
+    "search_intent": "시험/측정",
+    "content_type": "시험/검사",
+    "technical_core": "토양오염",
+    "related_keywords": [
+      "환경",
+      "토양오염"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "토양오염 업무에 대한 시험/측정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "폐기물관리 실무 현장 적용 가이드",
+    "topic_cluster": "환경",
+    "category": "폐기물관리",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "폐기물관리",
+    "related_keywords": [
+      "환경",
+      "폐기물관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "폐기물관리 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "환경관리실무 기초 개념과 실무 적용 이해",
+    "topic_cluster": "환경",
+    "category": "환경관리실무",
+    "search_intent": "개념 이해",
+    "content_type": "실무 가이드",
+    "technical_core": "환경관리실무",
+    "related_keywords": [
+      "환경",
+      "환경관리실무"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "환경관리실무 업무에 대한 개념 이해 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "비산먼지 핵심 품질관리 기준",
+    "topic_cluster": "환경",
+    "category": "비산먼지",
+    "search_intent": "품질관리",
+    "content_type": "실무 가이드",
+    "technical_core": "비산먼지",
+    "related_keywords": [
+      "환경",
+      "비산먼지"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "비산먼지 업무에 대한 품질관리 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "수질관리 주요 하자의 원인과 대책",
+    "topic_cluster": "환경",
+    "category": "수질관리",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "수질관리",
+    "related_keywords": [
+      "환경",
+      "수질관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "수질관리 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "건설환경 주요 하자의 원인과 대책",
+    "topic_cluster": "환경",
+    "category": "건설환경",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "건설환경",
+    "related_keywords": [
+      "환경",
+      "건설환경"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "건설환경 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "소음_진동 실무 현장 적용 가이드",
+    "topic_cluster": "환경",
+    "category": "소음_진동",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "소음_진동",
+    "related_keywords": [
+      "환경",
+      "소음_진동"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "소음_진동 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "토양오염 수량 산정 방법",
+    "topic_cluster": "환경",
+    "category": "토양오염",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "토양오염",
+    "related_keywords": [
+      "환경",
+      "토양오염"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "토양오염 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "폐기물관리 주요 하자의 원인과 대책",
+    "topic_cluster": "환경",
+    "category": "폐기물관리",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "폐기물관리",
+    "related_keywords": [
+      "환경",
+      "폐기물관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "폐기물관리 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "건설현장 환경관리, 소음/진동, 비산먼지 등",
+    "taxonomy_boundary": "시공 중 발생하는 환경 문제 및 대책 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "운반장비 시공 중 주요 문제점과 대책",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "운반장비",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "운반장비",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "운반장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "운반장비 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "굴착장비 시공 중 주요 문제점과 대책",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "굴착장비",
+    "search_intent": "문제 해결",
+    "content_type": "문제 해결",
+    "technical_core": "굴착장비",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "굴착장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "굴착장비 업무에 대한 문제 해결 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "장비 생산성 공법 선정 시 비교 기준",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "장비 생산성",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "장비 생산성",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "장비 생산성"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "장비 생산성 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "다짐장비 시공 장비 조합 및 자재 기준",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "다짐장비",
+    "search_intent": "장비/자재",
+    "content_type": "실무 가이드",
+    "technical_core": "다짐장비",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "다짐장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "다짐장비 업무에 대한 장비/자재 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "콘크리트 장비 주요 하자의 원인과 대책",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "콘크리트 장비",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "콘크리트 장비",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "콘크리트 장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "콘크리트 장비 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "포장장비 적용 기준",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "포장장비",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "포장장비",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "포장장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "포장장비 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "양중장비 수량 산정 방법",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "양중장비",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "양중장비",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "양중장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "양중장비 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "장비조합 우수 적용 사례 분석",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "장비조합",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "장비조합",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "장비조합"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "장비조합 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "운반장비 기본 설계 원리 및 검토사항",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "운반장비",
+    "search_intent": "설계",
+    "content_type": "설계 검토",
+    "technical_core": "운반장비",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "운반장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "운반장비 업무에 대한 설계 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "굴착장비 적용 기준",
+    "topic_cluster": "건설기계 및 장비",
+    "category": "굴착장비",
+    "search_intent": "기준/규정",
+    "content_type": "기준 정리",
+    "technical_core": "굴착장비",
+    "related_keywords": [
+      "건설기계 및 장비",
+      "굴착장비"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "굴착장비 업무에 대한 기준/규정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "토목공사에 사용되는 굴착, 운반, 다짐, 양중 장비",
+    "taxonomy_boundary": "장비 조합, 제원, 생산성 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "안전진단 실무 현장 적용 가이드",
+    "topic_cluster": "유지관리",
+    "category": "안전진단",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "안전진단",
+    "related_keywords": [
+      "유지관리",
+      "안전진단"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "안전진단 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "터널 유지관리 주요 하자의 원인과 대책",
+    "topic_cluster": "유지관리",
+    "category": "터널 유지관리",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "터널 유지관리",
+    "related_keywords": [
+      "유지관리",
+      "터널 유지관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "터널 유지관리 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "구조물 유지관리 수량 산정 방법",
+    "topic_cluster": "유지관리",
+    "category": "구조물 유지관리",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "구조물 유지관리",
+    "related_keywords": [
+      "유지관리",
+      "구조물 유지관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "구조물 유지관리 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "도로 유지관리 공법 선정 시 비교 기준",
+    "topic_cluster": "유지관리",
+    "category": "도로 유지관리",
+    "search_intent": "비교",
+    "content_type": "실무 가이드",
+    "technical_core": "도로 유지관리",
+    "related_keywords": [
+      "유지관리",
+      "도로 유지관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "도로 유지관리 업무에 대한 비교 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "보수보강 실무 현장 적용 가이드",
+    "topic_cluster": "유지관리",
+    "category": "보수보강",
+    "search_intent": "현장 적용",
+    "content_type": "실무 가이드",
+    "technical_core": "보수보강",
+    "related_keywords": [
+      "유지관리",
+      "보수보강"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "보수보강 업무에 대한 현장 적용 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "시설물 점검 현장 시공 가이드",
+    "topic_cluster": "유지관리",
+    "category": "시설물 점검",
+    "search_intent": "시공 방법",
+    "content_type": "시공 가이드",
+    "technical_core": "시설물 점검",
+    "related_keywords": [
+      "유지관리",
+      "시설물 점검"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "시설물 점검 업무에 대한 시공 방법 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "교량 유지관리 수량 산정 방법",
+    "topic_cluster": "유지관리",
+    "category": "교량 유지관리",
+    "search_intent": "계산/산정",
+    "content_type": "계산/산정",
+    "technical_core": "교량 유지관리",
+    "related_keywords": [
+      "유지관리",
+      "교량 유지관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "교량 유지관리 업무에 대한 계산/산정 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 88,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 85
+    }
+  },
+  {
+    "topic": "상하수도 유지관리 주요 하자의 원인과 대책",
+    "topic_cluster": "유지관리",
+    "category": "상하수도 유지관리",
+    "search_intent": "원인과 대책",
+    "content_type": "문제 해결",
+    "technical_core": "상하수도 유지관리",
+    "related_keywords": [
+      "유지관리",
+      "상하수도 유지관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "상하수도 유지관리 업무에 대한 원인과 대책 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "안전진단 우수 적용 사례 분석",
+    "topic_cluster": "유지관리",
+    "category": "안전진단",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "안전진단",
+    "related_keywords": [
+      "유지관리",
+      "안전진단"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "안전진단 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  },
+  {
+    "topic": "터널 유지관리 우수 적용 사례 분석",
+    "topic_cluster": "유지관리",
+    "category": "터널 유지관리",
+    "search_intent": "사례",
+    "content_type": "사례",
+    "technical_core": "터널 유지관리",
+    "related_keywords": [
+      "유지관리",
+      "터널 유지관리"
+    ],
+    "related_existing_posts": [],
+    "practical_value": "high",
+    "duplicate": false,
+    "reason": "터널 유지관리 업무에 대한 사례 목적의 실무형 콘텐츠",
+    "source": "taxonomy_generated_v2_2",
+    "taxonomy_description": "준공 후 토목시설물의 점검, 진단, 보수보강",
+    "taxonomy_boundary": "신규 시공이 아닌 기존 시설물의 관리 및 보수 중심",
+    "topic_decision": "keep",
+    "quality_score": 84,
+    "quality_flags": [],
+    "compatibility": {
+      "intent_level": "MEDIUM",
+      "intent_score": 70,
+      "semantic_score": 90,
+      "specificity_score": 90,
+      "searchability_score": 70
+    }
+  }
+]
