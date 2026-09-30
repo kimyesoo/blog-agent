@@ -2,7 +2,7 @@
 
 ## 1. 실행 정보
 - taxonomy version: 1.0
-- generation date: 2026-09-30 00:39:42
+- generation date: 2026-09-30 00:53:40
 - total categories: 16
 - total subcategories: 143
 - target candidates: 160
