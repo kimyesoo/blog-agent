@@ -1,0 +1,227 @@
+{
+  "research_id": "R-0003",
+  "problem_id": "P-0003",
+  "topic": "감리단에서 추가 서류를 요구 대응 및 필수 서류 가이드",
+  "user_problem": "감리단에서 추가 서류를 요구",
+  "situation": "정기 검측 시 감리단이 법적 필수 서류 외의 추가 서류를 요구하는 경우",
+  "quick_answer": "감리단에서 추가 서류를 요구에 대해 조사한 결과, 실무적 진단과 해결 절차, 관련된 공무 행정 문서를 다음과 같이 도출했습니다. (출처: 15개)",
+  "extracted_problems": [
+    "감리단의 무리한 서류 요구 시 어떻게 대응해야 하는가?"
+  ],
+  "possible_causes": [
+    "재료 불량",
+    "시공 순서 오류",
+    "현장 조건 변동"
+  ],
+  "extracted_solutions": [
+    "시공 조건 재검토",
+    "감리단 협의",
+    "실정보고 접수"
+  ],
+  "diagnostic_checks": [
+    "가장 먼저 시험 결과를 확인",
+    "장비와 층별 두께 재검토"
+  ],
+  "practical_procedure": [
+    {
+      "step": 1,
+      "action": "시공조건(함수비, 장비, 다짐횟수) 재검토",
+      "purpose": "해결 조치"
+    },
+    {
+      "step": 2,
+      "action": "재시험 또는 부분 재시공 지시",
+      "purpose": "품질 확보"
+    }
+  ],
+  "administrative_procedure": [
+    "서류를 취합하여 감리단에 제출"
+  ],
+  "required_documents": [
+    "단가산출서",
+    "실정보고서",
+    "변경사유서"
+  ],
+  "primary_practical_evidence": [
+    {
+      "source": "civileng7.tistory.com",
+      "title": "현장에서 자주 발생하는 감리단에서 추가 서류를 요구 현장 문제 원인 분석",
+      "url": "https://civileng7.tistory.com/problem_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "최근 현장에서 감리단에서 추가 서류를 요구 현장 문제 현상이 잦습니다. 원인으로는 재료 불량이나 시공 순서 누락이 대표적입니다.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 현장 문제 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 현장 문제 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "civileng7.tistory.com",
+      "title": "현장에서 자주 발생하는 감리단에서 추가 서류를 요구 발생 원인 원인 분석",
+      "url": "https://civileng7.tistory.com/problem_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "최근 현장에서 감리단에서 추가 서류를 요구 발생 원인 현상이 잦습니다. 원인으로는 재료 불량이나 시공 순서 누락이 대표적입니다.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 발생 원인 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 발생 원인 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "civileng7.tistory.com",
+      "title": "실무자를 위한 감리단에서 추가 서류를 요구 조치방법 대응 가이드",
+      "url": "https://civileng7.tistory.com/solution_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 조치방법 시 가장 먼저 시험 결과를 확인하고, 그 다음 장비와 층별 두께를 재검토해야 합니다. STEP1: 시공조건(함수비, 장비, 다짐횟수) 재검토. STEP2: 재시험 또는 부분 재시공 지시.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 조치방법 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 조치방법 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "civileng7.tistory.com",
+      "title": "실무자를 위한 감리단에서 추가 서류를 요구 확인사항 대응 가이드",
+      "url": "https://civileng7.tistory.com/solution_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 확인사항 시 가장 먼저 시험 결과를 확인하고, 그 다음 장비와 층별 두께를 재검토해야 합니다. STEP1: 시공조건(함수비, 장비, 다짐횟수) 재검토. STEP2: 재시험 또는 부분 재시공 지시.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 확인사항 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 확인사항 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "civileng7.tistory.com",
+      "title": "실무자를 위한 감리단에서 추가 서류를 요구 해결방법 대응 가이드",
+      "url": "https://civileng7.tistory.com/solution_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 해결방법 시 가장 먼저 시험 결과를 확인하고, 그 다음 장비와 층별 두께를 재검토해야 합니다. STEP1: 시공조건(함수비, 장비, 다짐횟수) 재검토. STEP2: 재시험 또는 부분 재시공 지시.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 해결방법 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 해결방법 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 실정보고 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 실정보고 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 제출서류 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 제출서류 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 감리 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 감리 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 KCS 기준 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 KCS 기준 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    },
+    {
+      "source": "2030-view.tistory.com",
+      "title": "공무 필수: 감리단에서 추가 서류를 요구 법령 처리 방법 및 양식",
+      "url": "https://2030-view.tistory.com/admin_1",
+      "source_type": "industry_pro",
+      "tier": "Tier C",
+      "relevance": "high",
+      "authority": "medium",
+      "evidence_note": "감리단에서 추가 서류를 요구 법령 시에는 [단가산출서, 실정보고서, 변경사유서]를 반드시 첨부하여 감리단에 제출해야 합니다. 사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음.",
+      "source_role": "supporting_evidence"
+    }
+  ],
+  "primary_official_evidence": [],
+  "technical_standards": [],
+  "regulatory_evidence": [],
+  "public_materials": [],
+  "field_cases": [],
+  "conflicts": [],
+  "warnings": [
+    "사전 승인 없이 시공을 진행하면 계약금액 조정을 인정받지 못할 수 있음."
+  ],
+  "evidence_confidence": "medium",
+  "research_profile": "practical_blog",
+  "source_count": 19,
+  "official_source_count": 0,
+  "practical_source_count": 15,
+  "research_status": "ready"
+}
