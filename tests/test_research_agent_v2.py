@@ -36,10 +36,22 @@ class TestResearchAgentV2(unittest.TestCase):
             "problem_decision": "keep"
         }
         pack = self.agent.generate_research_pack(problem)
-        self.assertIn("research_id", pack)
-        self.assertIn("user_problem", pack)
+        self.assertIn("problem_id", pack)
+        self.assertIn("situation", pack)
         self.assertIn("quick_answer", pack)
         self.assertIn("extracted_problems", pack)
+
+    def test_pack_schema(self):
+        problem = {
+            "problem_id": "P-TEST99",
+            "problem": "스키마 테스트",
+            "problem_type": "quality_problem"
+        }
+        pack = self.agent.generate_research_pack(problem)
+        self.assertIn("seo_context", pack)
+        self.assertIn("source_summary", pack)
+        self.assertIn("official_requirements", pack)
+        self.assertIn("common_mistakes", pack)
 
     def test_2_decision_filtering(self):
         # The agent logic (in run()) skips non-keep. We simulate the filtering here.
@@ -164,7 +176,8 @@ class TestResearchAgentV2(unittest.TestCase):
         }
         pack = self.agent.generate_research_pack(problem)
         # Assuming our mock returns both practical and official for this query mix
-        if pack["official_source_count"] > 0 and pack["practical_source_count"] > 0:
+        summary = pack.get("source_summary", {})
+        if summary.get("official_count", 0) > 0 and summary.get("practical_count", 0) > 0:
             self.assertEqual(pack["evidence_confidence"], "high")
 
 if __name__ == "__main__":
