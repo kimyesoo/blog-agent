@@ -207,6 +207,84 @@ class ResearchAgentV2:
             extracted_probs.append(problem_data["user_question"])
             secondary_keys.add(problem_data["user_question"])
 
+        # 1. Research Completeness Score
+        completeness_score = 0
+        missing_info = []
+
+        # Core checks
+        if ptitle and problem_data.get("situation") and problem_data.get("user_question"):
+            completeness_score += 20
+        else:
+            missing_info.append("problem_core_incomplete")
+
+        # Practical Evidence
+        if len(primary_practical) > 0:
+            completeness_score += 15
+        else:
+            missing_info.append("primary_practical_evidence")
+
+        # Official Evidence
+        if len(primary_official) > 0:
+            completeness_score += 15
+        else:
+            missing_info.append("primary_official_evidence")
+
+        # Possible Causes (Currently mocked empty, so it will miss points unless explicitly populated)
+        possible_causes = [] # Without LLM we leave blank, so this loses 10 points
+        if len(possible_causes) > 0:
+            completeness_score += 10
+        else:
+            missing_info.append("possible_causes")
+
+        if len(diagnostic_checks) > 0:
+            completeness_score += 10
+        else:
+            missing_info.append("diagnostic_checks")
+
+        if len(practical_procedure) > 0:
+            completeness_score += 10
+        else:
+            missing_info.append("practical_procedure")
+
+        if len(admin_procedure) > 0:
+            completeness_score += 10
+        else:
+            missing_info.append("administrative_procedure")
+
+        if len(req_docs) > 0:
+            completeness_score += 5
+        else:
+            missing_info.append("required_documents")
+
+        # SEO context is always built here, so it generally succeeds
+        completeness_score += 5
+
+        if len(conflicts) > 0:
+            completeness_score += 10
+
+        # 2. Writer Readiness
+        if completeness_score >= 80:
+            writer_readiness = "ready"
+        elif completeness_score >= 60:
+            writer_readiness = "partial"
+        else:
+            writer_readiness = "insufficient"
+
+        # 3. Writer Guidance
+        writer_guidance = {
+            "recommended_structure": [
+                "문제상황",
+                "원인분석",
+                "확인사항",
+                "실무조치",
+                "행정절차",
+                "관련기준",
+                "주의사항"
+            ],
+            "recommended_tone": "field_practical",
+            "confidence": conf
+        }
+
         pack = {
             "problem_id": pid,
             "problem": ptitle,
@@ -220,6 +298,8 @@ class ResearchAgentV2:
             "search_intent": problem_data.get("search_intent", ""),
 
             "research_status": status,
+            "research_completeness": completeness_score,
+            "writer_readiness": writer_readiness,
 
             "evidence_confidence": conf,
 
@@ -227,7 +307,7 @@ class ResearchAgentV2:
             "primary_official_evidence": primary_official,
 
             "extracted_problems": extracted_probs,
-            "possible_causes": [],  # Blanked out since we don't have LLM to safely generate
+            "possible_causes": possible_causes,
             "diagnostic_checks": diagnostic_checks,
             "practical_procedure": practical_procedure,
 
@@ -239,6 +319,9 @@ class ResearchAgentV2:
             "conflicts": conflicts,
             "quick_answer": qa,
             "warnings": warnings,
+
+            "missing_information": missing_info,
+            "writer_guidance": writer_guidance,
 
             "source_summary": {
                 "official_count": official_count,

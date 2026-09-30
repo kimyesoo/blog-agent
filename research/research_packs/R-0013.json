@@ -8,6 +8,8 @@
   "user_question": "암 판정 위원회 개최 및 암발파 설계변경 절차는?",
   "search_intent": "",
   "research_status": "insufficient_evidence",
+  "research_completeness": 25,
+  "writer_readiness": "insufficient",
   "evidence_confidence": "low",
   "primary_practical_evidence": [],
   "primary_official_evidence": [],
@@ -26,6 +28,28 @@
   "warnings": [
     "검색 결과가 존재하지 않아 절차를 추출할 수 없습니다. 실무 근거 추가 확보가 필요합니다."
   ],
+  "missing_information": [
+    "primary_practical_evidence",
+    "primary_official_evidence",
+    "possible_causes",
+    "diagnostic_checks",
+    "practical_procedure",
+    "administrative_procedure",
+    "required_documents"
+  ],
+  "writer_guidance": {
+    "recommended_structure": [
+      "문제상황",
+      "원인분석",
+      "확인사항",
+      "실무조치",
+      "행정절차",
+      "관련기준",
+      "주의사항"
+    ],
+    "recommended_tone": "field_practical",
+    "confidence": "low"
+  },
   "source_summary": {
     "official_count": 0,
     "practical_count": 0,

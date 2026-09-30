@@ -182,3 +182,99 @@ class TestResearchAgentV2(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+    def test_research_completeness_score(self):
+        problem = {
+            "problem_id": "P-TEST-SCORE",
+            "problem": "테스트 문제",
+            "problem_type": "quality_problem",
+            "situation": "상황",
+            "user_question": "질문"
+        }
+        pack = self.agent.generate_research_pack(problem)
+        self.assertTrue("research_completeness" in pack)
+        self.assertIsInstance(pack["research_completeness"], int)
+
+    def test_writer_readiness_ready(self):
+        # Full coverage mock
+        problem = {
+            "problem_id": "P-TEST-READY",
+            "problem": "완벽한 다짐도 미달 법령", # Will trigger practical + official + admin + docs + checks
+            "problem_type": "contract_problem",
+            "situation": "상황",
+            "user_question": "질문"
+        }
+        original_search = self.agent.search_provider.search
+        def full_mock(q, max_results=3):
+            return {"results": [
+                {"title": "실무", "url": "a", "domain": "civileng7.tistory.com", "snippet": "문제 시 가장 먼저 시험 결과를 확인하고 STEP1: 시공조건(함수비, 장비, 다짐횟수) 재검토. [단가산출서, 실정보고서, 변경사유서]를 감리단에 제출해야 합니다."},
+                {"title": "법령", "url": "b", "domain": "law.go.kr", "snippet": "전체 재검증이 원칙일 수 있음. 강풍 시 타워크레인 작업 중지."}
+            ]}
+        self.agent.search_provider.search = full_mock
+        pack = self.agent.generate_research_pack(problem)
+        self.agent.search_provider.search = original_search
+
+        # Core:20 + Pract:15 + Off:15 + Diag:10 + PractProc:10 + AdminProc:10 + Docs:5 + SEO:5 = 90
+        # If conflicts added: +10 = 100.
+        # This easily passes the 80 threshold for "ready"
+        self.assertEqual(pack["writer_readiness"], "ready")
+
+    def test_writer_readiness_partial(self):
+        problem = {
+            "problem_id": "P-TEST-PARTIAL",
+            "problem": "부분 법령",
+            "problem_type": "quality_problem",
+            "situation": "상황",
+            "user_question": "질문"
+        }
+        original_search = self.agent.search_provider.search
+        def partial_mock(q, max_results=3):
+            return {"results": [
+                {"title": "실무", "url": "a", "domain": "civileng7.tistory.com", "snippet": "가장 먼저 시험 결과를 확인하고"},
+                {"title": "법령", "url": "b", "domain": "law.go.kr", "snippet": "단순 법령."}
+            ]}
+        self.agent.search_provider.search = partial_mock
+        pack = self.agent.generate_research_pack(problem)
+        self.agent.search_provider.search = original_search
+
+        # Core:20 + Off:15 + Prac:15 + Diag:10 + SEO:5 = 65 -> Partial.
+        self.assertEqual(pack["writer_readiness"], "partial")
+
+    def test_writer_readiness_insufficient(self):
+        # Missing almost everything
+        problem = {
+            "problem_id": "P-TEST-INSUFF",
+            "problem": "텅빈",
+            "problem_type": "unknown"
+        }
+        original_search = self.agent.search_provider.search
+        self.agent.search_provider.search = lambda q, max_results=3: {"results": []}
+        pack = self.agent.generate_research_pack(problem)
+        self.agent.search_provider.search = original_search
+
+        self.assertEqual(pack["writer_readiness"], "insufficient")
+
+    def test_missing_information(self):
+        problem = {
+            "problem_id": "P-TEST-MISSING",
+            "problem": "텅빈",
+            "problem_type": "unknown"
+        }
+        original_search = self.agent.search_provider.search
+        self.agent.search_provider.search = lambda q, max_results=3: {"results": []}
+        pack = self.agent.generate_research_pack(problem)
+        self.agent.search_provider.search = original_search
+
+        self.assertIn("problem_core_incomplete", pack["missing_information"])
+        self.assertIn("primary_practical_evidence", pack["missing_information"])
+        self.assertIn("diagnostic_checks", pack["missing_information"])
+
+    def test_writer_guidance_generation(self):
+        problem = {
+            "problem_id": "P-TEST-GUIDE",
+            "problem": "가이드",
+            "problem_type": "unknown"
+        }
+        pack = self.agent.generate_research_pack(problem)
+        self.assertIn("writer_guidance", pack)
+        self.assertIn("recommended_structure", pack["writer_guidance"])
+        self.assertIn("recommended_tone", pack["writer_guidance"])
