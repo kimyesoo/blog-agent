@@ -3,7 +3,7 @@
 ## 1. 프로젝트 개요
 * **프로젝트명**: Civil Engineering Blog Agent
 * **목적**: 기존에 발행된 토목 공학 관련 콘텐츠를 기반으로 현장 실무의 문제(Problem)를 발굴하고 검증하여, 실무 중심의 검색 최적화된 주제(Topic)를 추출한 뒤, SERP API를 통해 증거(Evidence)를 수집 및 구조화하고 최종 블로그 포스트를 자동으로 작성하는 AI 에이전트 파이프라인입니다.
-* **현재 진행 상태**: **Research Agent V2.2 개발 완료** (16개 테스트 전체 통과, Completeness 스코어 기반 `writer_readiness` 평가 로직 및 실무 절차/행정 문서/관점 충돌 추출 엔진 완비)
+* **현재 진행 상태**: **최종 자동화 파이프라인(Orchestrator) 구축 완료 및 통합 연동 완료**. Research Agent V2.2 개발과 Writer Agent 간의 통합 테스트 및 스키마(`practical_view`, `official_view` 등) 매핑이 모두 적용되었습니다.
 * **시스템 철학 (핵심 원칙)**:
   * **LLM Hallucination 원천 차단**: 데이터베이스 로드, 텍스트 파싱, 주제 유사도 검증, 리서치 수집 및 분류 과정에서 거대 언어 모델(LLM)의 생성 능력을 배제하고, 결정론적(Deterministic)이고 재현 가능한 룰(Rule-based) 엔진을 사용합니다.
   * **현장 실무 우선(Practical Value First)**: 교과서적인 원리나 학술적 정의가 아닌, 현장 다짐도 미달, 실정보고 서류, 기준 상충 등 실무자의 문제 해결 중심 콘텐츠에 최우선 가중치를 부여합니다.
@@ -49,8 +49,14 @@
 python -m pytest tests/ -v
 ```
 
-### 파이프라인 수동 실행 흐름
-순차적인 실행을 통해 `content_db/` -> `problem_candidates/` -> `topic_candidates/` -> `research/research_packs/` -> `writer_output/` 로 데이터가 이동합니다.
+### 파이프라인 자동 실행 (Orchestrator)
+명령어 한 번으로 모든 에이전트를 순차적으로 실행(Problem Discovery -> Validation -> Topic -> Research -> Writer)하며, 진행 상태 로깅 및 에러 시 안전한 Skip 처리를 지원합니다.
+```bash
+python main.py
+```
+
+### 각 에이전트 독립 실행
+개별 컴포넌트의 수동 디버깅이 필요할 경우 개별 실행이 가능합니다:
 ```bash
 python problem_discovery_agent.py
 python problem_validation_agent.py
@@ -67,6 +73,5 @@ V1.x 시절 `taxonomy.json`에 의존하여 단순히 주제를 무작위 조합
 
 
 ## 6. 향후 로드맵 (To-Do)
-* **통합 테스트 진행**: 현재 독립적으로 작성된 `writer_agent.py`와 업데이트된 `Research Agent V2.2` 간의 통합(E2E) 테스트를 수행합니다.
-* **Writer 에이전트 내부 매핑 업데이트**: V2.2에서 도입된 최신 Research Pack 스키마(예: `practical_view`, `official_view` 등 충돌 분석 데이터)를 Writer 에이전트 템플릿에 온전히 렌더링하도록 매핑 로직을 고도화합니다.
-* **최종 자동화 파이프라인 구축**: 문제 발굴부터 마크다운 파일 출력까지 끊김없이 이어지는 완전한 최종 블로그 글 생성 파이프라인(CLI 툴 혹은 메인 오케스트레이터 스크립트)을 구축합니다.
+* **API Key Integration & 실 데이터 연동**: 현재 더미 환경으로 동작하는 Research Agent에 실제 Tavily SERP API 연동 테스트를 활성화하여 실제 블로그 문서를 생성합니다.
+* **Analytics 도입**: 생성되고 발행된 게시물의 조회수, 유입 검색어 등을 분석하는 Analytics 파이프라인을 추가하여 문제 발굴(Problem Discovery) 성능 개선에 피드백합니다.
