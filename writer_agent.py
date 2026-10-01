@@ -140,8 +140,8 @@ A. 최신 KCS/KDS 등 공식 기준을 우선하되, 현장 여건상 불가피�
         if conflicts:
             content.append("## 현장 관행과 공식 기준 차이\n")
             for c in conflicts:
-                content.append(f"현장에서는 {c.get('practical_claim', '약식으로 처리')}하는 경우가 많다.\n")
-                content.append(f"하지만 최신 기준은 {c.get('official_claim', '정식 절차')}를 요구한다.\n")
+                content.append(f"현장에서는 {c.get('practical_view', '약식으로 처리')}하는 경우가 많다.\n")
+                content.append(f"하지만 최신 기준은 {c.get('official_view', '정식 절차')}를 요구한다.\n")
                 content.append("실제 적용 시에는 감리단과 협의 후 판단해야 한다.\n")
 
         # 9. 결론

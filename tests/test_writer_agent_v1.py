@@ -43,8 +43,8 @@ class TestWriterAgentV1(unittest.TestCase):
     def test_conflict_generation(self):
         pack = self.base_pack.copy()
         pack["conflicts"] = [{
-            "official_claim": "전체 재검증",
-            "practical_claim": "부분 재시공"
+            "official_view": "전체 재검증",
+            "practical_view": "부분 재시공"
         }]
         res = self.agent.write(pack)
         md = res["content_markdown"]
