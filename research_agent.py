@@ -73,7 +73,7 @@ class ResearchAgentV2:
         sentences = re.split(r'[.!?](?:\s+|$)', snippet)
 
         extracted = list(existing)
-        stringified_existing = [e["action"] if isinstance(e, dict) else e for e in extracted]
+        stringified_existing = [e["action"] if isinstance(e, dict) else str(e) for e in extracted]
 
         for sentence in sentences:
             sentence = sentence.strip()
@@ -82,7 +82,7 @@ class ResearchAgentV2:
 
             if any(kw in sentence for kw in actionable_keywords):
                 if sentence not in stringified_existing:
-                    extracted.append(sentence)
+                    extracted.append({"step": 99, "action": sentence, "purpose": "추출된 조치"})
                     stringified_existing.append(sentence)
 
         return extracted
