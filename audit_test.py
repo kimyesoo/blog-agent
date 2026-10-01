@@ -1,9 +1,9 @@
 import json
 
-with open("research/search_results.json") as f:
+with open("research/search_results.json", encoding="utf-8") as f:
     results = json.load(f)
 
-with open("research/summary_reg.json") as f:
+with open("research/summary_reg.json", encoding="utf-8") as f:
     reg = json.load(f)
 
 print("Topics where Top Source is technical_standard in regulation_focus:")

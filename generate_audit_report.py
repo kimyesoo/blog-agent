@@ -3,7 +3,7 @@ import json
 PROFILES = ["practical_blog", "balanced", "technical_reference", "regulation_focus"]
 
 def get_weights(profile, archetype="field_problem_solving"):
-    with open("research/weights.json", "r") as f:
+    with open("research/weights.json", "r", encoding="utf-8") as f:
         w = json.load(f)
     return w[profile][archetype]
 
@@ -106,7 +106,7 @@ def run_5_topics_math_test():
     return "\n".join(report)
 
 
-with open("weighting_pipeline_audit.md", "w") as f:
+with open("weighting_pipeline_audit.md", "w", encoding="utf-8") as f:
     f.write("# Research Agent — Evidence Weighting Pipeline Integrity Audit\n\n")
 
     f.write("## 1. Current Pipeline Diagram & Code Trace\n")

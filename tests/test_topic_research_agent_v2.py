@@ -11,7 +11,7 @@ def test_v2_agent():
 
     # 1. Check taxonomy reading
     assert os.path.exists(agent.taxonomy_file), "Taxonomy file missing"
-    with open(agent.taxonomy_file, 'r') as f:
+    with open(agent.taxonomy_file, 'r', encoding='utf-8') as f:
         tax = json.load(f)
     assert len(tax) > 0, "Taxonomy is empty"
 

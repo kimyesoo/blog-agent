@@ -7,7 +7,7 @@ from topic_research_agent import TopicResearchAgentV2_2
 def test_v2_2_agent():
     agent = TopicResearchAgentV2_2()
 
-    with open('taxonomy.json', 'r') as f:
+    with open('taxonomy.json', 'r', encoding='utf-8') as f:
         taxonomy = json.load(f)
 
     # 1. Parent-child integrity test

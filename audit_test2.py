@@ -1,6 +1,6 @@
 import json
 
-with open("research/summary_reg.json") as f:
+with open("research/summary_reg.json", encoding="utf-8") as f:
     reg = json.load(f)
 
 for r in reg:

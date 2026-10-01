@@ -74,11 +74,11 @@ class SourceClassifier:
     def __init__(self, registry_file='research/source_registry.json', legal_registry_file='research/legal_source_registry.json'):
         self.registry = {}
         if os.path.exists(registry_file):
-            with open(registry_file, 'r') as f:
+            with open(registry_file, 'r', encoding='utf-8') as f:
                 self.registry = json.load(f)
 
         if os.path.exists(legal_registry_file):
-            with open(legal_registry_file, 'r') as f:
+            with open(legal_registry_file, 'r', encoding='utf-8') as f:
                 self.registry.update(json.load(f))
 
         self.tier_a_domains = ["law.go.kr", "kcsc.re.kr", "moleg.go.kr"]
@@ -141,7 +141,7 @@ class ArchetypeClassifier:
         self.profile_name = profile_name
         self.weights = {}
         if os.path.exists(weights_file):
-            with open(weights_file, 'r') as f:
+            with open(weights_file, 'r', encoding='utf-8') as f:
                 all_weights = json.load(f)
                 self.weights = all_weights.get(profile_name, all_weights.get("practical_blog", {}))
 
@@ -202,12 +202,12 @@ class ResearchSerpAgent:
         cache_file = os.path.join(self.cache_dir, f"{cache_key}.json")
 
         if os.path.exists(cache_file):
-            with open(cache_file, 'r') as f:
+            with open(cache_file, 'r', encoding='utf-8') as f:
                 return json.load(f)
 
         try:
             results = self.provider.search(query)
-            with open(cache_file, 'w') as f:
+            with open(cache_file, 'w', encoding='utf-8') as f:
                 json.dump(results, f, ensure_ascii=False, indent=2)
             return results
         except Exception as e:
@@ -276,7 +276,7 @@ class ResearchSerpAgent:
             print(f"Error: {input_file} not found.")
             return
 
-        with open(input_file, 'r') as f:
+        with open(input_file, 'r', encoding='utf-8') as f:
             topics = json.load(f)
 
         all_results = []
@@ -365,10 +365,10 @@ class ResearchSerpAgent:
                 "serp_results": topic_serp
             })
 
-        with open(output_summary, 'w') as f:
+        with open(output_summary, 'w', encoding='utf-8') as f:
             json.dump(all_summaries, f, ensure_ascii=False, indent=2)
 
-        with open(output_results, 'w') as f:
+        with open(output_results, 'w', encoding='utf-8') as f:
             json.dump(all_results, f, ensure_ascii=False, indent=2)
 
         print(f"Research SERP processing complete for {len(topics)} topics using profile: {self.profile}.")
@@ -401,7 +401,7 @@ if __name__ == '__main__':
                 "recommended_archetypes": ["regulatory", "field_problem_solving"]
             }
         }
-        with open('research/source_registry.json', 'w') as f:
+        with open('research/source_registry.json', 'w', encoding='utf-8') as f:
             json.dump(registry, f, ensure_ascii=False, indent=2)
 
     agent = ResearchSerpAgent(profile=args.profile)

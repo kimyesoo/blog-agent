@@ -5,7 +5,7 @@ d = "research/research_packs"
 for f in ["R-0001.json", "R-0002.json", "R-0015.json"]:
     p = os.path.join(d, f)
     if os.path.exists(p):
-        with open(p, "r") as file:
+        with open(p, "r", encoding="utf-8") as file:
             data = json.load(file)
 
         # Fake sufficient data to pass the block rule for testing writer output
@@ -20,7 +20,7 @@ for f in ["R-0001.json", "R-0002.json", "R-0015.json"]:
             "practical_claim": "부분 재시공(국소적)으로 조치하려는 경향 존재"
         }]
 
-        with open(p, "w") as file:
+        with open(p, "w", encoding="utf-8") as file:
             json.dump(data, file, ensure_ascii=False, indent=2)
 
 print("Modified packs for testing.")

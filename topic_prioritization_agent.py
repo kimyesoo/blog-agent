@@ -132,10 +132,10 @@ class TopicPrioritizationAgent:
             print("Error: Input files not found.")
             return
 
-        with open(self.validated_topics_file, 'r') as f:
+        with open(self.validated_topics_file, 'r', encoding='utf-8') as f:
             validated_topics = {t["topic"]: t for t in json.load(f)}
 
-        with open(self.search_results_file, 'r') as f:
+        with open(self.search_results_file, 'r', encoding='utf-8') as f:
             search_results = json.load(f)
 
         priorities = []
@@ -186,7 +186,7 @@ class TopicPrioritizationAgent:
         priorities.sort(key=lambda x: x["priority_score"], reverse=True)
 
         # Save JSON
-        with open(self.output_json, 'w') as f:
+        with open(self.output_json, 'w', encoding='utf-8') as f:
             json.dump(priorities, f, ensure_ascii=False, indent=2)
 
         # Summary metrics
@@ -198,7 +198,7 @@ class TopicPrioritizationAgent:
         ignore = sum(1 for p in priorities if p["classification"] == "Ignore")
 
         # Save Markdown
-        with open(self.output_md, 'w') as f:
+        with open(self.output_md, 'w', encoding='utf-8') as f:
             f.write("# Topic Priority Report\n\n")
 
             f.write("## Summary\n")

@@ -7,7 +7,7 @@ def load_summaries():
     data = {}
     for profile in PROFILES:
         filename = f"research/summary_{'practical' if profile == 'practical_blog' else 'reg' if profile == 'regulation_focus' else 'tech' if profile == 'technical_reference' else 'balanced'}.json"
-        with open(filename, 'r') as f:
+        with open(filename, 'r', encoding='utf-8') as f:
             data[profile] = json.load(f)
     return data
 
@@ -130,7 +130,7 @@ def generate_report():
     report.append("2. **Adjust Readiness Thresholds:** Research readiness could be tied directly to the *presence* of the top-weighted tier for the active profile, rather than a cumulative score. For example, 'regulation_focus' might require Tier A to be 'high' readiness, whereas 'practical_blog' could achieve 'high' readiness with only Tier C.")
     report.append("3. **Widen Weight Deltas:** The differences between weights in `weights.json` could be increased to force more dramatic re-ranking, especially for borderline sources.")
 
-    with open("weight_sensitivity_report.md", "w") as f:
+    with open("weight_sensitivity_report.md", "w", encoding="utf-8") as f:
         f.write("\n".join(report))
 
 if __name__ == "__main__":

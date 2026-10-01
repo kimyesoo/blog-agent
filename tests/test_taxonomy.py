@@ -4,7 +4,7 @@ import os
 def test_taxonomy():
     assert os.path.exists('taxonomy.json'), "taxonomy.json is missing"
 
-    with open('taxonomy.json', 'r') as f:
+    with open('taxonomy.json', 'r', encoding='utf-8') as f:
         tax = json.load(f)
 
     assert len(tax) > 0, "Taxonomy is empty"

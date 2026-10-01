@@ -143,7 +143,7 @@ class TopicOpportunityScoringAgent:
             print(f"Error: Input file {self.input_file} not found.")
             return
 
-        with open(self.input_file, 'r') as f:
+        with open(self.input_file, 'r', encoding='utf-8') as f:
             search_results = json.load(f)
 
         scores = []
@@ -155,11 +155,11 @@ class TopicOpportunityScoringAgent:
         scores.sort(key=lambda x: x["opportunity_score"], reverse=True)
 
         # Output JSON
-        with open(self.output_json, 'w') as f:
+        with open(self.output_json, 'w', encoding='utf-8') as f:
             json.dump(scores, f, ensure_ascii=False, indent=2)
 
         # Output Markdown
-        with open(self.output_md, 'w') as f:
+        with open(self.output_md, 'w', encoding='utf-8') as f:
             f.write("# Topic Opportunity Report\n\n")
             f.write("Deterministic scoring based on observable SERP structures.\n\n")
             for idx, item in enumerate(scores):

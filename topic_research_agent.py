@@ -76,12 +76,12 @@ class TopicResearchAgentV2:
     def run_taxonomy_test(self, output_json='topic_research/v2_test_candidates.json', output_md='topic_research/v2_generation_report.md'):
         print("Blog Agent - Topic Research Agent V2 (Taxonomy-Based)\n")
 
-        with open(self.taxonomy_file, 'r') as f:
+        with open(self.taxonomy_file, 'r', encoding='utf-8') as f:
             taxonomy = json.load(f)
 
         existing_posts = []
         if os.path.exists(self.posts_file):
-            with open(self.posts_file, 'r') as f:
+            with open(self.posts_file, 'r', encoding='utf-8') as f:
                 existing_posts = json.load(f)
 
         candidates = []
@@ -150,10 +150,10 @@ class TopicResearchAgentV2:
                 stats["by_type"][content_type] = stats["by_type"].get(content_type, 0) + 1
                 count += 1
 
-        with open(output_json, 'w') as f:
+        with open(output_json, 'w', encoding='utf-8') as f:
             json.dump(candidates, f, ensure_ascii=False, indent=2)
 
-        with open(output_md, 'w') as f:
+        with open(output_md, 'w', encoding='utf-8') as f:
             f.write("# Topic Research Agent V2 Test Report\n\n")
             f.write("## 1. 실행 정보\n")
             f.write(f"- taxonomy version: 1.0\n")
@@ -336,12 +336,12 @@ class TopicResearchAgentV2_1:
     def run_taxonomy_test(self, output_json='topic_research/v2_1_test_candidates.json', output_md='topic_research/v2_1_generation_report.md'):
         print("Blog Agent - Topic Research Agent V2.1 (Semantic Compatibility)\n")
 
-        with open(self.taxonomy_file, 'r') as f:
+        with open(self.taxonomy_file, 'r', encoding='utf-8') as f:
             taxonomy = json.load(f)
 
         existing_posts = []
         if os.path.exists(self.posts_file):
-            with open(self.posts_file, 'r') as f:
+            with open(self.posts_file, 'r', encoding='utf-8') as f:
                 existing_posts = json.load(f)
 
         candidates = []
@@ -433,10 +433,10 @@ class TopicResearchAgentV2_1:
                 stats["by_type"][content_type] = stats["by_type"].get(content_type, 0) + 1
                 count += 1
 
-        with open(output_json, 'w') as f:
+        with open(output_json, 'w', encoding='utf-8') as f:
             json.dump(candidates, f, ensure_ascii=False, indent=2)
 
-        with open(output_md, 'w') as f:
+        with open(output_md, 'w', encoding='utf-8') as f:
             f.write("# Topic Research Agent V2.1 Test Report\n\n")
             f.write("## 1. 실행 정보\n")
             f.write(f"- taxonomy version: 1.0\n")
@@ -642,12 +642,12 @@ class TopicResearchAgentV2_2:
     def run_taxonomy_test(self, output_json='topic_research/v2_2_test_candidates.json', output_md='topic_research/v2_2_generation_report.md'):
         print("Blog Agent - Topic Research Agent V2.2 (Integrity & False Positives)\n")
 
-        with open(self.taxonomy_file, 'r') as f:
+        with open(self.taxonomy_file, 'r', encoding='utf-8') as f:
             taxonomy = json.load(f)
 
         existing_posts = []
         if os.path.exists(self.posts_file):
-            with open(self.posts_file, 'r') as f:
+            with open(self.posts_file, 'r', encoding='utf-8') as f:
                 existing_posts = json.load(f)
 
         candidates = []
@@ -747,10 +747,10 @@ class TopicResearchAgentV2_2:
                 stats["by_category"][main_cat] += 1
                 count += 1
 
-        with open(output_json, 'w') as f:
+        with open(output_json, 'w', encoding='utf-8') as f:
             json.dump(candidates, f, ensure_ascii=False, indent=2)
 
-        with open(output_md, 'w') as f:
+        with open(output_md, 'w', encoding='utf-8') as f:
             f.write("# Topic Research Agent V2.2 Test Report\n\n")
             f.write("## 1. 실행 정보\n")
             f.write(f"- taxonomy version: 1.0\n")

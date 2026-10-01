@@ -6,12 +6,12 @@ from topic_research_agent import TopicResearchAgentV2_1
 
 class MetricAgent(TopicResearchAgentV2_1):
     def extract_metrics(self):
-        with open(self.taxonomy_file, 'r') as f:
+        with open(self.taxonomy_file, 'r', encoding='utf-8') as f:
             taxonomy = json.load(f)
 
         existing_posts = []
         if os.path.exists(self.posts_file):
-            with open(self.posts_file, 'r') as f:
+            with open(self.posts_file, 'r', encoding='utf-8') as f:
                 existing_posts = json.load(f)
 
         all_evaluated = []
