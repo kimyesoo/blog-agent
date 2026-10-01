@@ -1,0 +1,26 @@
+{
+  "practical_blog": {
+    "field_problem_solving": {"problem_solving": 40, "field_practice": 30, "technical_standard": 20, "law": 10},
+    "construction_methods": {"problem_solving": 35, "field_practice": 35, "technical_standard": 25, "law": 5},
+    "technical_standard": {"problem_solving": 20, "field_practice": 25, "technical_standard": 45, "law": 10},
+    "regulatory": {"problem_solving": 15, "field_practice": 15, "technical_standard": 20, "law": 50}
+  },
+  "balanced": {
+    "field_problem_solving": {"problem_solving": 30, "field_practice": 30, "technical_standard": 25, "law": 15},
+    "construction_methods": {"problem_solving": 30, "field_practice": 30, "technical_standard": 25, "law": 15},
+    "technical_standard": {"problem_solving": 20, "field_practice": 20, "technical_standard": 40, "law": 20},
+    "regulatory": {"problem_solving": 10, "field_practice": 15, "technical_standard": 25, "law": 50}
+  },
+  "technical_reference": {
+    "field_problem_solving": {"problem_solving": 10, "field_practice": 20, "technical_standard": 40, "law": 30},
+    "construction_methods": {"problem_solving": 10, "field_practice": 20, "technical_standard": 40, "law": 30},
+    "technical_standard": {"problem_solving": 5, "field_practice": 10, "technical_standard": 60, "law": 25},
+    "regulatory": {"problem_solving": 5, "field_practice": 5, "technical_standard": 30, "law": 60}
+  },
+  "regulation_focus": {
+    "field_problem_solving": {"problem_solving": 10, "field_practice": 10, "technical_standard": 30, "law": 50},
+    "construction_methods": {"problem_solving": 10, "field_practice": 10, "technical_standard": 30, "law": 50},
+    "technical_standard": {"problem_solving": 5, "field_practice": 10, "technical_standard": 35, "law": 50},
+    "regulatory": {"problem_solving": 5, "field_practice": 5, "technical_standard": 20, "law": 70}
+  }
+}
